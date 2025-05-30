@@ -1,0 +1,404 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="/src/style.css" rel="stylesheet">
+    <title>AquaCheck – Water Testing & Legionella Control</title>
+  </head>
+  <body class="bg-white text-gray-800">
+
+    <header class="bg-white shadow-md">
+      <div class="container mx-auto px-6 py-4 flex justify-between items-center">
+        <h1 class="text-2xl lg:text-4xl font-bold text-primary py-2">AquaCheck</h1>
+    
+        <!-- Desktop Nav -->
+        <nav class="hidden md:flex gap-6 text-sm font-medium">
+          <a href="/index.html" class="text-primary hover:text-dark">Home</a>
+          <a href="/services.html" class="hover:text-primary">Services</a>
+          <a href="/booking.html" class="hover:text-primary">Booking</a>
+          <a href="/about.html" class="hover:text-primary">About</a>
+          <a href="/resource.html" class="hover:text-primary">Resources</a>
+          <a href="/contact.html" class="hover:text-primary">Contact</a>
+        </nav>
+    
+        <!-- Mobile Hamburger -->
+        <button id="menu-toggle" class="md:hidden focus:outline-none text-gray-700">
+          <svg class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="2"
+            viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M4 6h16M4 12h16M4 18h16" />
+          </svg>
+        </button>
+      </div>
+    
+      <!-- Mobile Nav Menu -->
+      <nav id="mobile-menu" class="md:hidden hidden px-6 pb-4">
+        <ul class="flex flex-col gap-4 text-sm font-medium">
+          <li><a href="/index.html" class="block hover:text-primary">Home</a></li>
+          <li><a href="/services.html" class="block hover:text-primary">Services</a></li>
+          <li><a href="/booking.html" class="block hover:text-primary">Booking</a></li>
+          <li><a href="/about.html" class="block hover:text-primary">About</a></li>
+          <li><a href="/resource.html" class="block hover:text-primary">Resources</a></li>
+          <li><a href="/contact.html" class="block hover:text-primary">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <!--Hero -->
+    <section class="relative bg-black text-white overflow-hidden">
+      <!-- Background Image with Overlay -->
+      <div class="absolute inset-0">
+        <img src="/assets/img/indexHero.jpg" alt="Water testing" class="w-full h-full object-cover" />
+        <div class="absolute inset-0 bg-black/60"></div>
+      </div>
+
+      <!-- Content Container -->
+      <div class="relative z-10 flex items-center justify-center min-h-[80vh] px-6">
+        <div class="text-center max-w-3xl mx-auto">
+          <h1 class="hero-text text-4xl lg:text-5xl font-extrabold leading-tight drop-shadow-md">
+            Water Testing & Legionella Control Experts
+          </h1>
+          <p class="text-lg lg:text-xl text-gray-200 mt-6 mb-8 leading-relaxed" id="heroSubtitle">
+            Certified inspections, ongoing monitoring, and total compliance—all in one service.
+          </p>
+          <div class="hero-cta flex flex-row sm:flex-row justify-center gap-4">
+            <a href="/booking.html" class="bg-primary hover:bg-btn text-white shadow-btn px-8 py-3 rounded-lg text-lg font-semibold transition transform hover:scale-95">
+              Book a Water Test
+            </a>
+            <a href="/services.html" class="text-white underline font-medium hover:text-blue-400 mt-4 text-lg transition">
+              Learn More
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Services Section -->
+    <section class="py-28 bg-gradient-to-b from-white to-ice" id="services">
+      <div class="container mx-auto px-8 max-w-7xl">
+        <h2 class="text-3xl lg:text-5xl font-extrabold text-primary mb-16 text-center tracking-wide">
+          Our Expertise at Your Service
+        </h2>
+
+        <div class="flex flex-col md:flex-row md:justify-between md:gap-8">
+          <!-- Service Card -->
+          <div class="service-card flex-1 bg-white p-10 rounded-2xl shadow-lg hover:shadow-xl transition-transform transform hover:-translate-y-2 mb-12 md:mb-0">
+            <div class="mb-6">
+              <svg class="w-12 h-12 text-primary mb-4" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                <path d="M12 2C8.13 2 5 5.13 5 9c0 4.58 5.45 10.95 6.24 11.74a1 1 0 0 0 1.52 0C13.55 19.95 19 13.58 19 9c0-3.87-3.13-7-7-7z"/>
+                <circle cx="12" cy="9" r="2.5"/>
+              </svg>
+              <h3 class="text-2xl font-semibold text-gray-900">Advanced Water Quality Testing</h3>
+            </div>
+            <p class="text-gray-700 mb-8 leading-relaxed">
+              Utilizing state-of-the-art laboratories, we deliver precise detection of bacteria, chemicals, and contaminants to ensure your water safety.
+            </p>
+            <a href="#booking" class="inline-block text-primary font-semibold hover:underline hover:text-primary-dark transition">
+              Book Your Test Now →
+            </a>
+          </div>
+
+          <!-- Service Card -->
+          <div class="service-card flex-1 bg-white p-10 rounded-2xl shadow-lg hover:shadow-xl transition-transform transform hover:-translate-y-2 mb-12 md:mb-0">
+            <div class="mb-6">
+              <svg class="w-12 h-12 text-primary mb-4" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                <path d="M12 8v4l3 3"/>
+                <circle cx="12" cy="12" r="10"/>
+              </svg>
+              <h3 class="text-2xl font-semibold text-gray-900">Comprehensive Legionella Risk Assessment</h3>
+            </div>
+            <p class="text-gray-700 mb-8 leading-relaxed">
+              Our certified experts evaluate your water systems against UK HSE standards, providing actionable reports to keep you fully compliant.
+            </p>
+            <a href="#contact" class="inline-block text-primary font-semibold hover:underline hover:text-primary-dark transition">
+              Contact Our Specialists →
+            </a>
+          </div>
+
+          <!-- Service Card -->
+          <div class="service-card flex-1 bg-white p-10 rounded-2xl shadow-lg hover:shadow-xl transition-transform transform hover:-translate-y-2">
+            <div class="mb-6">
+              <svg class="w-12 h-12 text-primary mb-4" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                <path d="M3 10h18M3 14h18M10 3v18"/>
+              </svg>
+              <h3 class="text-2xl font-semibold text-gray-900">Ongoing Compliance & Monitoring</h3>
+            </div>
+            <p class="text-gray-700 mb-8 leading-relaxed">
+              We provide scheduled system flushing, temperature logging, and compliance documentation, giving you peace of mind year-round.
+            </p>
+            <a href="#contact" class="inline-block text-primary font-semibold hover:underline hover:text-primary-dark transition">
+              Learn More →
+            </a>
+          </div>
+        </div>
+
+        <!-- CTA Button -->
+        <div class="mt-20 text-center">
+          <a href="/public/services.html" class="inline-block bg-primary text-white px-10 py-4 rounded-full font-semibold shadow-btn hover:bg-primary-dark hover:shadow-hover transition duration-300 tracking-wide">
+            Explore All Our Services
+          </a>
+        </div>
+      </div>
+    </section>
+
+
+    <section id="about" class="pb-28 bg-gradient-to-b from-ice to-white">
+      <div class="container mx-auto px-8 max-w-6xl">
+
+        <!-- Section Header -->
+        <div class="text-center mb-16">
+          <h2 class="text-3xl lg:text-5xl font-extrabold text-primary mb-4 tracking-wide">
+            Why AquaCheck Leads the Industry
+          </h2>
+          <p class="text-lg text-gray-700 max-w-2xl mx-auto">
+            From initial inspection to ongoing compliance, our end-to-end water safety solutions keep your facilities safe, efficient, and fully certified.
+          </p>
+        </div>
+
+        <!-- Flex Layout -->
+        <div class="md:flex gap-12">
+          
+          <!-- Left Column: Image + 3rd Card -->
+          <div class="md:w-1/2 flex flex-col gap-8 mb-12 md:mb-0">
+            <!-- Image -->
+            <img src="/assets/img/Image_fx (2).jpg" alt="AquaCheck team at work" 
+                class="w-full h-auto rounded-2xl shadow-lg object-cover" />
+
+            <!-- Benefit 3 -->
+            <div class="bg-white p-8 rounded-2xl shadow-lg hover:shadow-xl transition transform hover:-translate-y-1">
+              <div class="flex items-center mb-4">
+                <span class="inline-flex items-center justify-center w-12 h-12 bg-primary/10 rounded-full mr-4">
+                  <svg class="w-6 h-6 text-primary" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                    <path d="M5 12h14"/>
+                    <path d="M12 5v14"/>
+                  </svg>
+                </span>
+                <h3 class="text-xl font-semibold text-gray-900">End-to-End Solutions</h3>
+              </div>
+              <p class="text-gray-700 leading-relaxed">
+                From system installation and purification to ongoing monitoring and reporting, we handle all your water safety needs under one roof.
+              </p>
+            </div>
+          </div>
+
+          <!-- Right Column: Benefit 1 & 2 -->
+          <div class="md:w-1/2 flex flex-col gap-32">
+            <!-- Benefit 1 -->
+            <div class="bg-white p-8 rounded-2xl shadow-lg hover:shadow-xl transition transform hover:-translate-y-1">
+              <div class="flex items-center mb-4">
+                <span class="inline-flex items-center justify-center w-12 h-12 bg-primary/10 rounded-full mr-4">
+                  <svg class="w-6 h-6 text-primary" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                    <path d="M12 2C8.13 2 5 5.13 5 9c0 4.58 5.45 10.95 6.24 11.74a1 1 0 0 0 1.52 0C13.55 19.95 19 13.58 19 9c0-3.87-3.13-7-7-7z"/>
+                    <circle cx="12" cy="9" r="2.5"/>
+                  </svg>
+                </span>
+                <h3 class="text-xl font-semibold text-gray-900">Certified Expertise</h3>
+              </div>
+              <p class="text-gray-700 leading-relaxed">
+                Our team holds all required HSE & UKAS accreditations, ensuring every inspection and report meets the highest standards.
+              </p>
+            </div>
+
+            <!-- Benefit 2 -->
+            <div class="bg-white p-8 rounded-2xl shadow-lg hover:shadow-xl transition transform hover:-translate-y-1">
+              <div class="flex items-center mb-4">
+                <span class="inline-flex items-center justify-center w-12 h-12 bg-primary/10 rounded-full mr-4">
+                  <svg class="w-6 h-6 text-primary" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                    <path d="M3 10h18M3 14h18"/>
+                    <path d="M10 3v18"/>
+                  </svg>
+                </span>
+                <h3 class="text-xl font-semibold text-gray-900">Nationwide Coverage</h3>
+              </div>
+              <p class="text-gray-700 leading-relaxed">
+                With engineers in every region, we guarantee fast response times and consistent service quality across the UK.
+              </p>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!--Testimonials Section -->
+    <section id="testimonials" class="bg-ice py-28">
+      <div class="container mx-auto px-8 max-w-6xl">
+
+        <!-- Section Header -->
+        <div class="text-center mb-16">
+          <h2 class="text-3xl lg:text-5xl font-extrabold text-primary mb-4 tracking-wide">
+            What Our Clients Say
+          </h2>
+          <p class="text-lg text-gray-700 max-w-2xl mx-auto">
+            Trusted by professionals across the UK, our clients rely on AquaCheck for consistent quality, safety, and compliance.
+          </p>
+        </div>
+
+        <!-- Swiper Container -->
+        <div class="swiper testimonial-swiper">
+          <div class="swiper-wrapper">
+
+            <!-- Testimonial 1 -->
+            <div class="swiper-slide testimonial-slide bg-white p-8 rounded-2xl shadow-[0_6px_24px_-4px_rgba(0,0,0,0.15)] hover:shadow-[0_12px_32px_-6px_rgba(0,0,0,0.25)] transition duration-300 transform hover:-translate-y-1">
+              <div class="relative mb-6">
+                <svg class="absolute -top-6 -left-4 w-12 h-12 text-gray-200 opacity-60" fill="currentColor">
+                  <text x="0" y="35" font-size="48">“</text>
+                </svg>
+                <p class="text-gray-700 italic leading-relaxed">
+                  “AquaCheck helped us identify risks we didn’t know we had. Their professionalism and speed were outstanding.”
+                </p>
+              </div>
+              <div class="flex items-center gap-4 mt-4">
+                <img src="/avatars/sarah.jpg" alt="Sarah M." class="w-10 h-10 rounded-full object-cover" />
+                <div>
+                  <div class="text-primary font-semibold text-lg">Sarah M.</div>
+                  <div class="text-sm text-gray-500">Facilities Manager, NHS Trust</div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Testimonial 2 -->
+            <div class="swiper-slide testimonial-slide bg-white p-8 rounded-2xl shadow-[0_6px_24px_-4px_rgba(0,0,0,0.15)] hover:shadow-[0_12px_32px_-6px_rgba(0,0,0,0.25)] transition duration-300 transform hover:-translate-y-1">
+              <div class="relative mb-6">
+                <svg class="absolute -top-6 -left-4 w-12 h-12 text-gray-200 opacity-60" fill="currentColor">
+                  <text x="0" y="35" font-size="48">“</text>
+                </svg>
+                <p class="text-gray-700 italic leading-relaxed">
+                  “They made compliance simple and hassle-free. Highly recommend their ongoing monitoring packages.”
+                </p>
+              </div>
+              <div class="flex items-center gap-4 mt-4">
+                <img src="/avatars/james.jpg" alt="James L." class="w-10 h-10 rounded-full object-cover" />
+                <div>
+                  <div class="text-primary font-semibold text-lg">James L.</div>
+                  <div class="text-sm text-gray-500">Property Owner, London</div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Testimonial 3 -->
+            <div class="swiper-slide testimonial-slide bg-white p-8 rounded-2xl shadow-[0_6px_24px_-4px_rgba(0,0,0,0.15)] hover:shadow-[0_12px_32px_-6px_rgba(0,0,0,0.25)] transition duration-300 transform hover:-translate-y-1">
+              <div class="relative mb-6">
+                <svg class="absolute -top-6 -left-4 w-12 h-12 text-gray-200 opacity-60" fill="currentColor">
+                  <text x="0" y="35" font-size="48">“</text>
+                </svg>
+                <p class="text-gray-700 italic leading-relaxed">
+                  “Reliable, knowledgeable, and thorough. AquaCheck is now our go-to for all water safety needs.”
+                </p>
+              </div>
+              <div class="flex items-center gap-4 mt-4">
+                <img src="/avatars/helen.jpg" alt="Helen T." class="w-10 h-10 rounded-full object-cover" />
+                <div>
+                  <div class="text-primary font-semibold text-lg">Helen T.</div>
+                  <div class="text-sm text-gray-500">Care Home Director</div>
+                </div>
+              </div>
+            </div>
+
+          </div>
+
+          <!-- Swiper Navigation and Pagination -->
+          <div class="swiper-pagination mt-8"></div>
+          <div class="swiper-button-prev"></div>
+          <div class="swiper-button-next"></div>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- Booking CTA -->
+    <section id="booking" class="py-16 bg-background">
+      <div class=" container mx-auto px-6 text-center max-w-3xl">
+        <h2 class="text-3xl lg:text-4xl font-extrabold text-white mb-4 tracking-wide">
+          Book a Professional Water Test or Risk Assessment
+        </h2>
+        <p class="text-gray-100 text-lg mb-8">
+          Ensure your facility meets the latest safety and compliance standards. Our accredited specialists are ready to help.
+        </p>
+        <a href="./public/booking.html" class="inline-block bg-white text-primary font-semibold px-8 py-4 rounded-full shadow-btn hover:bg-gray-100 transition hover:shadow-hover">
+          Request an Appointment
+        </a>
+      </div>
+    </section>
+
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-28 bg-ice">
+      <div class="container mx-auto px-8 max-w-4xl">
+        <h2 class="text-3xl lg:text-5xl font-extrabold text-primary text-center mb-12 tracking-wide">
+          Get in Touch with AquaCheck
+        </h2>
+
+        <div class="bg-white rounded-3xl shadow-lg p-10 md:p-16">
+          <div class="grid sm:grid-cols-3 gap-10 text-center text-gray-800 mb-10">
+            <!-- Location -->
+            <div>
+              <div class="text-4xl mb-2">📍</div>
+              <p class="font-semibold text-lg">Head Office</p>
+              <p class="text-sm text-gray-600">London, UK</p>
+            </div>
+
+            <!-- Phone -->
+            <div>
+              <div class="text-4xl mb-2">📞</div>
+              <p class="font-semibold text-lg">Call Us</p>
+              <p class="text-sm text-gray-600">+44 1234 567 890</p>
+            </div>
+
+            <!-- Email -->
+            <div>
+              <div class="text-4xl mb-2">📧</div>
+              <p class="font-semibold text-lg">Email</p>
+              <p class="text-sm text-gray-600">info@aquacheck.co.uk</p>
+            </div>
+          </div>
+
+          <div class="text-center text-sm text-gray-500">
+            Fully certified by UK HSE standards | Serving clients nationwide with reliability and care
+          </div>
+        </div>
+      </div>
+    </section>
+
+      <!-- Footer -->
+    <footer class="bg-gray-900 text-gray-300 py-16 text-sm">
+      <div class="container mx-auto px-6 grid grid-cols-1 md:grid-cols-3 gap-12">
+
+        <!-- Company Summary -->
+        <div>
+          <h4 class="text-lg font-semibold text-white mb-4">AquaCheck Ltd.</h4>
+          <p class="text-gray-400 leading-relaxed">
+            Specialists in water safety and compliance. Delivering certified testing, Legionella risk assessment, and regulatory support for facilities across the UK.
+          </p>
+        </div>
+
+        <!-- Contact Information -->
+        <div>
+          <h4 class="text-lg font-semibold text-white mb-4">Contact</h4>
+          <ul class="space-y-2 text-gray-400">
+            <li>📧 <a href="mailto:info@aquacheck.co.uk" class="hover:text-white">info@aquacheck.co.uk</a></li>
+            <li>📞 <a href="tel:+441234567890" class="hover:text-white">+44 1234 567 890</a></li>
+            <li>📍 123 Aqua Street, London, UK</li>
+          </ul>
+        </div>
+
+        <!-- Legal -->
+        <div>
+          <h4 class="text-lg font-semibold text-white mb-4">Legal</h4>
+          <ul class="space-y-2 text-gray-400">
+            <li><a href="/privacy.html" class="hover:text-white">Privacy Policy</a></li>
+            <li><a href="/terms.html" class="hover:text-white">Terms of Service</a></li>
+          </ul>
+        </div>
+        
+      </div>
+
+      <div class="mt-12 border-t border-gray-800 pt-6 text-center text-xs text-gray-500">
+        &copy; 2025 AquaCheck Ltd. All rights reserved.
+      </div>
+    </footer>
+
+    
+    <script type="module" src="/src/main.ts"></script>
+  </body>
+</html>

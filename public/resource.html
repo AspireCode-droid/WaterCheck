@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Resources | AquaCheck</title>
+    <link rel="stylesheet" href="/src/styles.css" />
+    </head>
+    <body class="text-gray-800 font-sans leading-relaxed">
+
+        <header class="bg-white shadow-md">
+            <div class="container mx-auto px-6 py-4 flex justify-between items-center">
+              <h1 class="text-2xl lg:text-4xl py-2 font-bold text-primary">AquaCheck</h1>
+          
+              <!-- Desktop Nav -->
+              <nav class="hidden md:flex gap-6 text-sm font-medium">
+                <a href="/index.html" class="hover:text-blue-600">Home</a>
+                <a href="/services.html" class="hover:text-blue-600">Services</a>
+                <a href="/booking.html" class="hover:text-blue-600">Booking</a>
+                <a href="/about.html" class="hover:text-blue-600">About</a>
+                <a href="/resource.html" class="hover:text-blue-600">Resources</a>
+                <a href="/contact.html" class="hover:text-blue-600">Contact</a>
+              </nav>
+          
+              <!-- Mobile Hamburger -->
+              <button id="menu-toggle" class="md:hidden focus:outline-none text-gray-700">
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="2"
+                  viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M4 6h16M4 12h16M4 18h16" />
+                </svg>
+              </button>
+            </div>
+          
+            <!-- Mobile Nav Menu -->
+            <nav id="mobile-menu" class="md:hidden hidden px-6 pb-4">
+              <ul class="flex flex-col gap-4 text-sm font-medium">
+                <li><a href="/index.html" class="block hover:text-blue-600">Home</a></li>
+                <li><a href="/services.html" class="block hover:text-blue-600">Services</a></li>
+                <li><a href="/booking.html" class="block hover:text-blue-600">Booking</a></li>
+                <li><a href="/about.html" class="block hover:text-blue-600">About</a></li>
+                <li><a href="/resource.html" class="block hover:text-blue-600">Resources</a></li>
+                <li><a href="/contact.html" class="block hover:text-blue-600">Contact</a></li>
+              </ul>
+            </nav>
+        </header>
+
+    <!-- Hero Section -->
+    <section class="bg-ice py-24 text-center relative overflow-hidden">
+        <div class="container mx-auto px-6">
+        <h2 class="text-4xl lg:text-5xl font-bold text-primary mb-4">Resources & Compliance Center</h2>
+        <p class="text-lg text-gray-700 max-w-2xl mx-auto">
+            Stay informed with expert guides, compliance templates, FAQs, and the latest in water safety practices.
+        </p>
+        </div>
+    </section>
+
+    <!-- Resource Categories -->
+    <section class="py-20 bg-white">
+        <div class="container mx-auto px-6">
+        <h3 class="text-3xl font-bold text-primary text-center mb-12">Explore Our Resources</h3>
+        <div class="grid sm:grid-cols-2 md:grid-cols-3 gap-10">
+            <div class="bg-ice p-6 rounded-lg shadow hover:shadow-md transition">
+                <h4 class="font-semibold text-lg mb-2">Legionella Compliance</h4>
+                <p class="text-gray-600 text-sm">Download risk assessment checklists and policy templates.</p>
+            </div>
+            <div class="bg-ice p-6 rounded-lg shadow hover:shadow-md transition">
+                <h4 class="font-semibold text-lg mb-2">Water Testing Guides</h4>
+                <p class="text-gray-600 text-sm">Step-by-step guides to water sampling and lab testing protocols.</p>
+            </div>
+            <div class="bg-ice p-6 rounded-lg shadow hover:shadow-md transition">
+                <h4 class="font-semibold text-lg mb-2">Education & Training</h4>
+                <p class="text-gray-600 text-sm">Free PDFs and videos to educate your team on safety measures.</p>
+            </div>
+        </div>
+        </div>
+    </section>
+
+    <!-- Featured Downloads -->
+    <section class="py-20 bg-background">
+        <div class="container mx-auto px-6">
+        <h3 class="text-2xl font-bold text-white mb-8 text-center">Featured Downloads</h3>
+        <div class="grid md:grid-cols-2 gap-8">
+            <div class="bg-white p-6 rounded-lg shadow flex items-start gap-4">
+            <div class="text-blue-600 text-3xl">📄</div>
+            <div>
+                <h4 class="text-primary font-semibold text-lg">Legionella Risk Assessment Template</h4>
+                <p class="text-gray-600 text-sm mb-2">Comprehensive editable document to ensure full compliance.</p>
+                <a href="/assets/docs/legionella-template.pdf" class="text-primary underline text-sm">Download PDF</a>
+            </div>
+            </div>
+            <div class="bg-white p-6 rounded-lg shadow flex items-start gap-4">
+            <div class="text-blue-600 text-3xl">📘</div>
+            <div>
+                <h4 class="text-primary font-semibold text-lg">Facility Water Safety Manual</h4>
+                <p class="text-gray-600 text-sm mb-2">Detailed reference for water hygiene monitoring protocols.</p>
+                <a href="/assets/docs/water-safety-manual.pdf" class="text-primary underline text-sm">Download PDF</a>
+            </div>
+            </div>
+        </div>
+        </div>
+    </section>
+
+    <!-- FAQs -->
+    <section class="py-20 bg-white">
+        <div class="container mx-auto px-6 max-w-3xl">
+        <h3 class="text-2xl font-bold text-primary mb-8 text-center">Frequently Asked Questions</h3>
+        <div class="space-y-6">
+            <div>
+            <h4 class="font-semibold text-lg mb-2">How often should Legionella testing be done?</h4>
+            <p class="text-gray-700 text-sm">For most commercial buildings, every 3 to 6 months is recommended based on risk level.</p>
+            </div>
+            <div>
+            <h4 class="font-semibold text-lg mb-2">Are your resources free?</h4>
+            <p class="text-gray-700 text-sm">Yes — all PDF downloads and learning materials are free for clients and subscribers.</p>
+            </div>
+            <div>
+            <h4 class="font-semibold text-lg mb-2">Can I customize the compliance templates?</h4>
+            <p class="text-gray-700 text-sm">Absolutely. We encourage organizations to tailor them to their specific facility layout and risks.</p>
+            </div>
+        </div>
+        </div>
+    </section>
+
+    <!-- Call to Action -->
+    <section class="bg-background text-white py-16 text-center">
+        <div class="container mx-auto px-6">
+            <h4 class="text-2xl font-semibold mb-4">Need help applying these resources?</h4>
+            <a href="/booking.html" class="bg-btn text-white mt-2 px-6 py-3 rounded-lg font-medium hover:bg-blue-100 transition">
+                Book a Consultation
+            </a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-gray-200 py-12">
+        <div class="container mx-auto px-6 grid grid-cols-1 md:grid-cols-4 gap-10 text-sm">
+      
+          <!-- Company Info -->
+          <div>
+            <h4 class="text-lg font-bold text-white mb-4">AquaCheck Ltd.</h4>
+            <p>Experts in Water Testing & Legionella Control across the UK. Ensuring safety, compliance, and peace of mind.</p>
+          </div>
+      
+          <!-- Quick Links -->
+          <div>
+            <h4 class="text-lg font-bold text-white mb-4">Quick Links</h4>
+            <ul class="space-y-2">
+              <li><a href="#services" class="hover:text-white">Services</a></li>
+              <li><a href="#about" class="hover:text-white">About Us</a></li>
+              <li><a href="#booking" class="hover:text-white">Book a Test</a></li>
+              <li><a href="#contact" class="hover:text-white">Contact</a></li>
+            </ul>
+          </div>
+      
+          <!-- Contact Info -->
+          <div>
+            <h4 class="text-lg font-bold text-white mb-4">Contact</h4>
+            <ul class="space-y-2">
+              <li>Email: <a href="mailto:info@aquacheck.co.uk" class="hover:text-white">info@aquacheck.co.uk</a></li>
+              <li>Phone: <a href="tel:+441234567890" class="hover:text-white">+44 1234 567890</a></li>
+              <li>Address: 123 Aqua Street, London, UK</li>
+            </ul>
+          </div>
+      
+          <!-- Legal & Social -->
+          <div>
+            <h4 class="text-lg font-bold text-white mb-4">Legal</h4>
+            <ul class="space-y-2">
+              <li><a href="#" class="hover:text-white">Privacy Policy</a></li>
+              <li><a href="#" class="hover:text-white">Terms of Service</a></li>
+            </ul>
+            <div class="mt-4 flex space-x-4">
+              <a href="#" aria-label="LinkedIn" class="hover:text-white">🔗</a>
+              <a href="#" aria-label="Twitter" class="hover:text-white">🐦</a>
+              <a href="#" aria-label="Facebook" class="hover:text-white">📘</a>
+            </div>
+          </div>
+        </div>
+      
+        <div class="text-center text-xs text-gray-500 mt-10 border-t border-gray-700 pt-6">
+          &copy; 2025 AquaCheck Ltd. All rights reserved.
+        </div>
+      </footer>
+
+      <script type="module" src="/src/main.ts"></script>
+
+    </body>
+</html>

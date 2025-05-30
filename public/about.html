@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>About Us | AquaCheck</title>
+        <link rel="stylesheet" href="/src/styles.css" />
+    </head>
+    <body class="text-gray-800 font-sans leading-relaxed">
+
+        <header class="bg-white shadow-md">
+            <div class="container mx-auto px-6 py-4 flex justify-between items-center">
+              <h1 class="text-2xl lg:text-4xl py-2 font-bold text-primary">AquaCheck</h1>
+          
+              <!-- Desktop Nav -->
+              <nav class="hidden md:flex gap-6 text-sm font-medium">
+                <a href="/index.html" class="hover:text-blue-600">Home</a>
+                <a href="/services.html" class="hover:text-blue-600">Services</a>
+                <a href="/booking.html" class="hover:text-blue-600">Booking</a>
+                <a href="/about.html" class="hover:text-blue-600">About</a>
+                <a href="/resource.html" class="hover:text-blue-600">Resources</a>
+                <a href="/contact.html" class="hover:text-blue-600">Contact</a>
+              </nav>
+          
+              <!-- Mobile Hamburger -->
+              <button id="menu-toggle" class="md:hidden focus:outline-none text-gray-700">
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="2"
+                  viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M4 6h16M4 12h16M4 18h16" />
+                </svg>
+              </button>
+            </div>
+          
+            <!-- Mobile Nav Menu -->
+            <nav id="mobile-menu" class="md:hidden hidden px-6 pb-4">
+              <ul class="flex flex-col gap-4 text-sm font-medium">
+                <li><a href="/index.html" class="block hover:text-blue-600">Home</a></li>
+                <li><a href="/services.html" class="block hover:text-blue-600">Services</a></li>
+                <li><a href="/booking.html" class="block hover:text-blue-600">Booking</a></li>
+                <li><a href="/about.html" class="block hover:text-blue-600">About</a></li>
+                <li><a href="/resource.html" class="block hover:text-blue-600">Resources</a></li>
+                <li><a href="/contact.html" class="block hover:text-blue-600">Contact</a></li>
+              </ul>
+            </nav>
+        </header>
+
+
+        <!-- Hero -->
+        <section class="bg-background py-16 text-center relative overflow-hidden">
+        <div class="container mx-auto px-6 relative">
+            <h2 class="text-4xl lg:text-5xl font-bold text-white mb-4">About AquaCheck</h2>
+            <p class="text-lg text-gray-100 max-w-2xl mx-auto">
+            Your trusted partner in water safety, quality testing, and compliance across facilities.
+            </p>
+        </div>
+        </section>
+
+        <!-- Company Overview -->
+        <section class="py-20 bg-ice">
+        <div class="container mx-auto px-6">
+            <div class="grid lg:grid-cols-2 gap-12 items-center">
+            <div>
+                <h3 class="text-2xl lg:text-3xl font-bold text-primary mb-4">Who We Are</h3>
+                <p class="text-gray-700 mb-4">
+                AquaCheck is a leading water testing and Legionella risk assessment company founded to help organizations stay compliant and safe. With a dedicated team of certified professionals, we provide inspections, monitoring, and control services across commercial and industrial sectors.
+                </p>
+                <p class="text-gray-700">
+                We are passionate about water safety and specialize in modern, data-driven solutions that exceed regulatory standards.
+                </p>
+            </div>
+            <div>
+                <img src="/assets/img/Image_fx.jpg" alt="Lab Testing" class="rounded-xl shadow-lg border-2 border-primary" />
+            </div>
+            </div>
+        </div>
+        </section>
+
+        <!-- Mission & Vision -->
+        <section class="bg-background py-20">
+        <div class="container mx-auto px-6 grid md:grid-cols-2 gap-12">
+            <div>
+                <h4 class="text-2xl font-semibold text-white mb-2">Our Mission</h4>
+                <p class="text-gray-100">
+                    To ensure water safety for all by delivering reliable testing, clear compliance guidance, and accessible education for our clients and their stakeholders.
+                </p>
+            </div>
+            <div class="border-l-2 border-gray-200 p-3">
+                <h4 class="text-2xl font-semibold text-white mb-2">Our Vision</h4>
+                <p class="text-gray-100">
+                    A world where every facility has access to safe, clean water — free from health risks and aligned with the highest industry standards.
+                </p>
+            </div>
+        </div>
+        </section>
+
+        <!-- Team (optional placeholder) -->
+        <section class="py-20 bg-ice">
+        <div class="container mx-auto px-6 text-center">
+            <h3 class="text-3xl font-bold text-primary mb-6">Meet Our Experts</h3>
+            <p class="text-gray-600 mb-8 max-w-xl mx-auto">
+            Our team of microbiologists, certified inspectors, and environmental specialists bring decades of expertise to every project.
+            </p>
+            <div class="grid sm:grid-cols-2 md:grid-cols-3 gap-8">
+            <!-- Placeholder team cards -->
+            <div class="bg-blue-50 p-6 rounded-lg shadow">
+                <div class="h-24 w-24 mx-auto bg-gray-300 rounded-full mb-4"></div>
+                <h4 class="font-semibold text-lg">Jane Doe</h4>
+                <p class="text-sm text-gray-600">Lead Water Analyst</p>
+            </div>
+            <div class="bg-blue-50 p-6 rounded-lg shadow">
+                <div class="h-24 w-24 mx-auto bg-gray-300 rounded-full mb-4"></div>
+                <h4 class="font-semibold text-lg">John Smith</h4>
+                <p class="text-sm text-gray-600">Environmental Consultant</p>
+            </div>
+            <div class="bg-blue-50 p-6 rounded-lg shadow">
+                <div class="h-24 w-24 mx-auto bg-gray-300 rounded-full mb-4"></div>
+                <h4 class="font-semibold text-lg">Emily White</h4>
+                <p class="text-sm text-gray-600">Compliance Officer</p>
+            </div>
+            </div>
+        </div>
+        </section>
+
+        <!-- Call to Action -->
+        <section class="bg-background text-white py-16 text-center">
+            <div class="container mx-auto px-6">
+                <h4 class="text-2xl font-semibold mb-4">Ready to protect your facility?</h4>
+                <a href="/booking.html" class="bg-white text-primary px-6 py-3 rounded-lg font-medium hover:bg-blue-100 transition">
+                Book a Water Test
+                </a>
+            </div>
+        </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-gray-200 py-12">
+        <div class="container mx-auto px-6 grid grid-cols-1 md:grid-cols-4 gap-10 text-sm">
+      
+          <!-- Company Info -->
+          <div>
+            <h4 class="text-lg font-bold text-white mb-4">AquaCheck Ltd.</h4>
+            <p>Experts in Water Testing & Legionella Control across the UK. Ensuring safety, compliance, and peace of mind.</p>
+          </div>
+      
+          <!-- Quick Links -->
+          <div>
+            <h4 class="text-lg font-bold text-white mb-4">Quick Links</h4>
+            <ul class="space-y-2">
+              <li><a href="#services" class="hover:text-white">Services</a></li>
+              <li><a href="#about" class="hover:text-white">About Us</a></li>
+              <li><a href="#booking" class="hover:text-white">Book a Test</a></li>
+              <li><a href="#contact" class="hover:text-white">Contact</a></li>
+            </ul>
+          </div>
+      
+          <!-- Contact Info -->
+          <div>
+            <h4 class="text-lg font-bold text-white mb-4">Contact</h4>
+            <ul class="space-y-2">
+              <li>Email: <a href="mailto:info@aquacheck.co.uk" class="hover:text-white">info@aquacheck.co.uk</a></li>
+              <li>Phone: <a href="tel:+441234567890" class="hover:text-white">+44 1234 567890</a></li>
+              <li>Address: 123 Aqua Street, London, UK</li>
+            </ul>
+          </div>
+      
+          <!-- Legal & Social -->
+          <div>
+            <h4 class="text-lg font-bold text-white mb-4">Legal</h4>
+            <ul class="space-y-2">
+              <li><a href="#" class="hover:text-white">Privacy Policy</a></li>
+              <li><a href="#" class="hover:text-white">Terms of Service</a></li>
+            </ul>
+            <div class="mt-4 flex space-x-4">
+              <a href="#" aria-label="LinkedIn" class="hover:text-white">🔗</a>
+              <a href="#" aria-label="Twitter" class="hover:text-white">🐦</a>
+              <a href="#" aria-label="Facebook" class="hover:text-white">📘</a>
+            </div>
+          </div>
+        </div>
+      
+        <div class="text-center text-xs text-gray-500 mt-10 border-t border-gray-700 pt-6">
+          &copy; 2025 AquaCheck Ltd. All rights reserved.
+        </div>
+      </footer>
+    <script type="module" src="/src/main.ts"></script>
+    </body>
+</html>
