@@ -1,11 +1,18 @@
 import Swiper from 'swiper';
 import type { SwiperOptions } from 'swiper/types';
-import 'swiper/modules/navigation-element.css';
-import 'swiper/modules/pagination-element.css';
+import {Navigation, Pagination, Autoplay} from 'swiper/modules';
+import 'swiper/swiper-bundle.css';
+
+Swiper.use([Navigation, Pagination, Autoplay]); 
 
 const swiperParams: SwiperOptions = {
   slidesPerView: 1,
-  spaceBetween: 30,
+  init:true,
+  speed: 400,
+  spaceBetween: 50,
+  autoplay: {
+    delay: 5000,
+  },
   loop: true,
   pagination: {
     el: '.swiper-pagination',

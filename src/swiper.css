@@ -1,0 +1,58 @@
+/* In your global stylesheet or a scoped <style> block */
+.swiper {
+  /* Primary theme color for navigation & pagination */
+  --swiper-theme-color: #1e40af;
+  /* Size of the navigation arrows */
+  --swiper-navigation-size: 2.5rem;
+  /* Color of pagination bullets (active/inactive) */
+  --swiper-pagination-color: #1e40af;
+  --swiper-pagination-bullet-inactive-color: #94a3b8;
+  /* Size of pagination bullets */
+  --swiper-pagination-bullet-size: 0.75rem;
+  --swiper-pagination-bullet-horizontal-gap: 0.5rem;
+}
+/* Navigation arrows */
+.swiper-button-next,
+.swiper-button-prev {
+  background-color: rgba(0, 0, 0, 0.1);
+  width: 3rem;
+  height: 3rem;
+  border-radius: 50%;
+  top: 50%;
+  transform: translateY(-50%);
+  /* Hide default background image if you want to use your own icon */
+  background-image: none;
+}
+
+.swiper-button-next::after,
+.swiper-button-prev::after {
+  font-size: 1.5rem;
+  color: #1e40af;
+  /* Replace default arrow glyphs (› ‹) with custom content if desired */
+  content: '›';           /* for next */
+}
+.swiper-button-prev::after { content: '‹'; }
+
+.swiper-button-next:hover,
+.swiper-button-prev:hover {
+  background-color: rgba(30, 64, 175, 0.1);
+}
+
+/* Pagination bullets */
+.swiper-pagination-bullet {
+  background: #94a3b8;
+  opacity: 1;
+  border: 2px solid transparent;
+  transition: background-color 0.3s, border-color 0.3s;
+}
+.swiper-pagination-bullet-active {
+  background: #1e40af;
+  border-color: #1e40af;
+}
+.swiper-pagination{
+  top: 100;
+  opacity: 1;
+  border: 2px solid transparent;
+  transition: background-color 0.3s, border-color 0.3s;
+
+}

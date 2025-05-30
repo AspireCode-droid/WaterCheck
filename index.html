@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link href="/src/style.css" rel="stylesheet">
+    <link rel="stylesheet" href="/src/swiper.css">
     <title>AquaCheck – Water Testing & Legionella Control</title>
   </head>
   <body class="bg-white text-gray-800">
@@ -249,7 +250,7 @@
                 </p>
               </div>
               <div class="flex items-center gap-4 mt-4">
-                <img src="/avatars/sarah.jpg" alt="Sarah M." class="w-10 h-10 rounded-full object-cover" />
+                <img src="/assets/img/avatar1.jpg" alt="Sarah M." class="w-10 h-10 rounded-full object-cover" />
                 <div>
                   <div class="text-primary font-semibold text-lg">Sarah M.</div>
                   <div class="text-sm text-gray-500">Facilities Manager, NHS Trust</div>
@@ -268,7 +269,7 @@
                 </p>
               </div>
               <div class="flex items-center gap-4 mt-4">
-                <img src="/avatars/james.jpg" alt="James L." class="w-10 h-10 rounded-full object-cover" />
+                <img src="/assets/img/avatar2.jpg" alt="James L." class="w-10 h-10 rounded-full object-cover" />
                 <div>
                   <div class="text-primary font-semibold text-lg">James L.</div>
                   <div class="text-sm text-gray-500">Property Owner, London</div>
@@ -287,7 +288,25 @@
                 </p>
               </div>
               <div class="flex items-center gap-4 mt-4">
-                <img src="/avatars/helen.jpg" alt="Helen T." class="w-10 h-10 rounded-full object-cover" />
+                <img src="/assets/img/avatar3.jpg" alt="Helen T." class="w-10 h-10 rounded-full object-cover" />
+                <div>
+                  <div class="text-primary font-semibold text-lg">Helen T.</div>
+                  <div class="text-sm text-gray-500">Care Home Director</div>
+                </div>
+              </div>
+            </div>
+             <!-- Testimonial 4 -->
+            <div class="swiper-slide testimonial-slide bg-white p-8 rounded-2xl shadow-[0_6px_24px_-4px_rgba(0,0,0,0.15)] hover:shadow-[0_12px_32px_-6px_rgba(0,0,0,0.25)] transition duration-300 transform hover:-translate-y-1">
+              <div class="relative mb-6">
+                <svg class="absolute -top-6 -left-4 w-12 h-12 text-gray-200 opacity-60" fill="currentColor">
+                  <text x="0" y="35" font-size="48">“</text>
+                </svg>
+                <p class="text-gray-700 italic leading-relaxed">
+                  “Reliable, knowledgeable, and thorough. AquaCheck is now our go-to for all water safety needs.”
+                </p>
+              </div>
+              <div class="flex items-center gap-4 mt-4">
+                <img src="/assets/img/avatar3.jpg" alt="Helen T." class="w-10 h-10 rounded-full object-cover" />
                 <div>
                   <div class="text-primary font-semibold text-lg">Helen T.</div>
                   <div class="text-sm text-gray-500">Care Home Director</div>
@@ -298,9 +317,7 @@
           </div>
 
           <!-- Swiper Navigation and Pagination -->
-          <div class="swiper-pagination mt-8"></div>
-          <div class="swiper-button-prev"></div>
-          <div class="swiper-button-next"></div>
+          <div class="swiper-pagination mt-20"></div>
         </div>
       </div>
     </section>
@@ -400,5 +417,6 @@
 
     
     <script type="module" src="/src/main.ts"></script>
+    <script type="module" src="/src/carousel.ts"></script>
   </body>
 </html>
