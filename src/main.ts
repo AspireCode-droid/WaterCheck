@@ -51,10 +51,54 @@ document.addEventListener('DOMContentLoaded', () => {
       stagger: 0.5,
       scrollTrigger:{
       trigger: "#services",
-      // The animation starts when the top of the #services element reaches 80% of the viewport height.
       start: "top 80%"
       }
       })
     }
+    const ctatext = document.getElementById('ctatext');
+    if (ctatext && ctatext.textContent) {
+      const words = ctatext.textContent.trim().split(' ');
+      ctatext.innerHTML = words.map(word => `<span class="cta-word">${word}</span>`).join(" ");
+      gsap.from('.cta-word', {
+      opacity: 0,
+      y: 20,
+      duration: 0.4,
+      ease: "power2.out",
+      scrollTrigger:{
+      trigger: "#booking",
+      // The animation starts when the top of the #services element reaches 80% of the viewport height.
+      start: "top 80%"
+      },
+      stagger: 0.1,
+      delay: 0.5
+      });
+    }
+    const ctasub = document.getElementById('ctasub');
+    if (ctasub && ctasub.textContent) {
+      const words = ctasub.textContent.trim().split(' ');
+      ctasub.innerHTML = words.map(word => `<span class="cta-sub">${word}</span>`).join(" ");
+      gsap.from('.cta-sub', {
+      opacity: 0,
+      y: 20,
+      duration: 0.4,
+      ease: "power2.out",
+       scrollTrigger:{
+      trigger: "#booking",
+      start: "top 80%"
+      },
+      stagger: 0.1,
+      delay: 1.7
+      });
+    }
+    gsap.from('.cta-btn', {
+      opacity: 0, 
+      duration: 2, 
+      delay: 2,    
+      ease: "power2.in",
+      scrollTrigger:{
+        trigger: '#booking',
+        start: 'top 80%'
+      }
+    });
     console.log('App started');
 });

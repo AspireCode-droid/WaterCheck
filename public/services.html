@@ -14,12 +14,12 @@
     
         <!-- Desktop Nav -->
         <nav class="hidden md:flex gap-6 text-sm font-medium">
-          <a href="/index.html" class="hover:text-blue-600">Home</a>
-          <a href="/services.html" class="hover:text-blue-600">Services</a>
-          <a href="/booking.html" class="hover:text-blue-600">Booking</a>
-          <a href="/about.html" class="hover:text-blue-600">About</a>
-          <a href="/resource.html" class="hover:text-blue-600">Resources</a>
-          <a href="/contact.html" class="hover:text-blue-600">Contact</a>
+          <a href="/index.html" class="hover:text-primary">Home</a>
+          <a href="/services.html" class="text-primary">Services</a>
+          <a href="/booking.html" class="hover:text-primary">Booking</a>
+          <a href="/about.html" class="hover:text-primary">About</a>
+          <a href="/resource.html" class="hover:text-primary">Resources</a>
+          <a href="/contact.html" class="hover:text-primary">Contact</a>
         </nav>
     
         <!-- Mobile Hamburger -->
@@ -48,101 +48,197 @@
     <!-- Intro Section -->
     <section class="py-24 bg-ice text-center">
       <div class="container mx-auto px-6">
-        <h1 class="text-3xl lg:text-5xl font-bold text-primary mb-4">Reliable Water Safety & Compliance Services</h1>
-        <p class="text-lg text-gray-600 max-w-2xl mx-auto">
+        <h1 class="hero-header text-3xl lg:text-5xl font-bold text-white mb-4">Reliable Water Safety & Compliance Services</h1>
+        <p class="hero-sub text-lg text-gray-50 max-w-2xl mx-auto">
           Protecting your water systems with professional testing, monitoring, and treatment solutions — fully compliant with UK regulations.
         </p>
-      </div>
-    </section>
-
-    <!-- Services Grid -->
-    <section class="py-20 bg-white">
-      <div class="container mx-auto px-6">
-        <h2 class="text-2xl lg:text-4xl font-bold text-primary mb-12 text-center">What We Offer</h2>
-        <div class="grid md:grid-cols-3 gap-10">
-
-          <!-- Service Cards -->
-          <div class="bg-ice p-6 rounded-xl shadow hover:shadow-md transition">
-            <h3 class="text-xl font-semibold mb-3">Water Quality Testing</h3>
-            <p class="text-sm text-gray-700 mb-4">Thorough lab analysis for bacteria, chemical levels, and contaminants in water systems.</p>
-            <a href="#booking" class="text-primary font-medium hover:underline">Book Now →</a>
-          </div>
-
-          <div class="bg-ice p-6 rounded-xl shadow hover:shadow-md transition">
-            <h3 class="text-xl font-semibold mb-3">Legionella Risk Assessment</h3>
-            <p class="text-sm text-gray-700 mb-4">Certified assessments aligned with UK HSE guidelines. Full reports included.</p>
-            <a href="#contact" class="text-primary font-medium hover:underline">Contact Us →</a>
-          </div>
-
-          <div class="bg-ice p-6 rounded-xl shadow hover:shadow-md transition">
-            <h3 class="text-xl font-semibold mb-3">Ongoing Compliance Monitoring</h3>
-            <p class="text-sm text-gray-700 mb-4">Scheduled inspections, logging, flushing, and documentation services.</p>
-            <a href="#contact" class="text-primary font-medium hover:underline">Learn More →</a>
-          </div>
-
-          <div class="bg-ice p-6 rounded-xl shadow hover:shadow-md transition">
-            <h3 class="text-xl font-semibold mb-3">Tank Cleaning & Disinfection</h3>
-            <p class="text-sm text-gray-700 mb-4">Deep cleaning and sterilisation of water storage tanks to maintain system hygiene.</p>
-            <a href="#contact" class="text-primary font-medium hover:underline">Enquire →</a>
-          </div>
-
-          <div class="bg-ice p-6 rounded-xl shadow hover:shadow-md transition">
-            <h3 class="text-xl font-semibold mb-3">Water Purification Solutions</h3>
-            <p class="text-sm text-gray-700 mb-4">Custom filtration and treatment for clean, safe water in commercial environments.</p>
-            <a href="#contact" class="text-primary font-medium hover:underline">Explore Options →</a>
-          </div>
-
-          <div class="bg-ice p-6 rounded-xl shadow hover:shadow-md transition">
-            <h3 class="text-xl font-semibold mb-3">Water System Installations</h3>
-            <p class="text-sm text-gray-700 mb-4">Design and installation of compliant water systems tailored to your property.</p>
-            <a href="#contact" class="text-primary font-medium hover:underline">Get Started →</a>
-          </div>
+        <div class="mt-8">
+          <a href="#services" class="inline-block bg-background text-white py-3 px-6 rounded-4xl hover:bg-[#122747] transition font-medium shadow-btn">
+            Explore our Services
+          </a> 
 
         </div>
       </div>
     </section>
 
-    <!-- Industries Served Section -->
-    <section class="py-20 bg-gray-50">
+    <!--Services Grid Section -->
+    <section class="relative py-24 bg-[#f3f7fd] services overflow-hidden">
+      <!-- Decorative SVG Background -->
+      <svg class="absolute top-0 left-0 w-full h-full pointer-events-none" viewBox="0 0 1440 320" fill="none">
+        <path fill="#e6f0fa" fill-opacity="1" d="M0,64L40,80C80,96,160,128,240,128C320,128,400,96,480,85.3C560,75,640,85,720,117.3C800,149,880,203,960,229.3C1040,256,1120,256,1200,229.3C1280,203,1360,149,1400,122.7L1440,96L1440,0L1400,0C1360,0,1280,0,1200,0C1120,0,1040,0,960,0C880,0,800,0,720,0C640,0,560,0,480,0C400,0,320,0,240,0C160,0,80,0,40,0L0,0Z"></path>
+      </svg>
+
+      <div class="relative container mx-auto px-6">
+        <h2 class="text-3xl lg:text-4xl font-bold text-[#0077be] mb-16 text-center">What We Offer</h2>
+
+        <div class="services grid md:grid-cols-3 gap-10 transition-all duration-300">
+          <!-- Service Card -->
+          <div class="bg-white p-6 rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1">
+            <div class="w-12 h-12 mb-4 flex items-center justify-center bg-[#0077be1a] text-[#0077be] rounded-full">
+              <!-- Water Test Icon -->
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 2C12 2 7 8 7 12a5 5 0 0010 0c0-4-5-10-5-10z" />
+              </svg>
+            </div>
+            <h3 class="text-xl font-semibold mb-2">Water Quality Testing</h3>
+            <p class="text-sm text-gray-700 mb-4">Thorough lab analysis for bacteria, chemical levels, and contaminants in water systems.</p>
+            <a href="#booking" class="text-[#0077be] font-medium hover:underline">Book Now →</a>
+          </div>
+
+          <!-- Legionella -->
+          <div class="bg-white p-6 rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1">
+            <div class="w-12 h-12 mb-4 flex items-center justify-center bg-[#0077be1a] text-[#0077be] rounded-full">
+              <!-- Shield Icon -->
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 2l8 4v6c0 5.25-3.25 9.75-8 11-4.75-1.25-8-5.75-8-11V6l8-4z" />
+              </svg>
+            </div>
+            <h3 class="text-xl font-semibold mb-2">Legionella Risk Assessment</h3>
+            <p class="text-sm text-gray-700 mb-4">Certified assessments aligned with UK HSE guidelines. Full reports included.</p>
+            <a href="#contact" class="text-[#0077be] font-medium hover:underline">Contact Us →</a>
+          </div>
+
+          <!-- Monitoring -->
+          <div class="bg-white p-6 rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1">
+            <div class="w-12 h-12 mb-4 flex items-center justify-center bg-[#0077be1a] text-[#0077be] rounded-full">
+              <!-- Clock Icon -->
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6v6l4 2m-4-14a10 10 0 100 20 10 10 0 000-20z" />
+              </svg>
+            </div>
+            <h3 class="text-xl font-semibold mb-2">Ongoing Compliance Monitoring</h3>
+            <p class="text-sm text-gray-700 mb-4">Scheduled inspections, logging, flushing, and documentation services.</p>
+            <a href="#contact" class="text-[#0077be] font-medium hover:underline">Learn More →</a>
+          </div>
+
+          <!-- Tank Cleaning -->
+          <div class="bg-white p-6 rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1">
+            <div class="w-12 h-12 mb-4 flex items-center justify-center bg-[#0077be1a] text-[#0077be] rounded-full">
+              <!-- Water Icon -->
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20.24 12.24a7.5 7.5 0 01-10.61 10.61A7.5 7.5 0 0120.24 12.24z" />
+              </svg>
+            </div>
+            <h3 class="text-xl font-semibold mb-2">Tank Cleaning & Disinfection</h3>
+            <p class="text-sm text-gray-700 mb-4">Deep cleaning and sterilisation of water storage tanks to maintain system hygiene.</p>
+            <a href="#contact" class="text-[#0077be] font-medium hover:underline">Enquire →</a>
+          </div>
+
+          <!-- Water Purification -->
+          <div class="bg-white p-6 rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1">
+            <div class="w-12 h-12 mb-4 flex items-center justify-center bg-[#0077be1a] text-[#0077be] rounded-full">
+              <!-- Filter Icon -->
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 4a1 1 0 011-1h16a1 1 0 011 1v2a1 1 0 01-.293.707L15 13.414V19a1 1 0 01-1.447.894l-4-2A1 1 0 019 17v-3.586L3.293 6.707A1 1 0 013 6V4z" />
+              </svg>
+            </div>
+            <h3 class="text-xl font-semibold mb-2">Water Purification Solutions</h3>
+            <p class="text-sm text-gray-700 mb-4">Custom filtration and treatment for clean, safe water in commercial environments.</p>
+            <a href="#contact" class="text-[#0077be] font-medium hover:underline">Explore Options →</a>
+          </div>
+
+          <!-- Installations -->
+          <div class="bg-white p-6 rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1">
+            <div class="w-12 h-12 mb-4 flex items-center justify-center bg-[#0077be1a] text-[#0077be] rounded-full">
+              <!-- Tools Icon -->
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 17h5l-1.405-1.405M4 4l16 16M9.172 9.172a4 4 0 005.656 5.656" />
+              </svg>
+            </div>
+            <h3 class="text-xl font-semibold mb-2">Water System Installations</h3>
+            <p class="text-sm text-gray-700 mb-4">Design and installation of compliant water systems tailored to your property.</p>
+            <a href="#contact" class="text-[#0077be] font-medium hover:underline">Get Started →</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <section class="py-20 bg-neutral overflow-hidden" aria-label="Industries We Serve">
       <div class="container mx-auto px-6">
         <h2 class="text-2xl lg:text-4xl font-bold text-primary mb-12 text-center">Industries We Serve</h2>
-        
-        <div class="grid grid-cols-2 md:grid-cols-4 gap-10 text-center">
-          
-          <!-- Residential -->
-          <div class="served flex flex-col items-center">
-            <svg class="w-12 h-12 text-primary mb-4" fill="none" stroke="currentColor" stroke-width="1.8" viewBox="0 0 24 24">
-              <path stroke-linecap="round" stroke-linejoin="round" d="M3 12l9-9 9 9v9a2 2 0 01-2 2h-4a2 2 0 01-2-2v-4H9v4a2 2 0 01-2 2H3a2 2 0 01-2-2v-9z" />
-            </svg>
-            <h4 class="text-lg font-semibold tracking-wider">Residential</h4>
-            <p class="text-gray-800">Ensuring safe and clean drinking water for homeowners</p>
-          </div>
 
-          <!-- Commercial -->
-          <div class="served flex flex-col items-center">
-            <svg class="w-12 h-12 text-primary mb-4" fill="none" stroke="currentColor" stroke-width="1.8" viewBox="0 0 24 24">
-              <path stroke-linecap="round" stroke-linejoin="round" d="M4 4h16v16H4V4zM9 4v16M15 4v16" />
-            </svg>
-            <h4 class="text-lg font-semibold tracking-wider">Commercial</h4>
-            <p class="text-gray-800">Tailored water testing services for businesses and commerical properties</p>
-          </div>
+        <div id="carousel-wrapper" class="overflow-hidden">
+          <div id="carousel" class="flex space-x-10 select-none will-change-transform">
+            <!-- Cards -->
+            <div class="served flex flex-col items-center min-w-[220px] max-w-xs flex-shrink-0 bg-white p-6 rounded-lg shadow-md text-center">
+              <svg class="w-12 h-12 text-primary mb-4" fill="none" stroke="currentColor" stroke-width="1.8" viewBox="0 0 24 24" aria-hidden="true" role="img">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M3 12l9-9 9 9v9a2 2 0 01-2 2h-4a2 2 0 01-2-2v-4H9v4a2 2 0 01-2 2H3a2 2 0 01-2-2v-9z" />
+              </svg>
+              <h4 class="text-lg font-semibold tracking-wide mb-2">Residential</h4>
+              <p class="text-gray-800">Ensuring safe and clean drinking water for homeowners</p>
+            </div>
 
-          <!-- Industrial -->
-          <div class="served flex flex-col items-center">
-            <svg class="w-12 h-12 text-primary mb-4" fill="none" stroke="currentColor" stroke-width="1.8" viewBox="0 0 24 24">
-              <path stroke-linecap="round" stroke-linejoin="round" d="M2 13h20v7H2v-7zm0-4l5-4v4h5V5l5 4v4" />
-            </svg>
-            <h4 class="text-lg font-semibold tracking-wider">Industrial</h4>
-            <p class="text-gray-800">Comprehensive testing solutions for industrial facilities</p>
-          </div>
+            <div class="served flex flex-col items-center min-w-[220px] max-w-xs flex-shrink-0 bg-white p-6 rounded-lg shadow-md text-center">
+              <svg class="w-12 h-12 text-primary mb-4" fill="none" stroke="currentColor" stroke-width="1.8" viewBox="0 0 24 24" aria-hidden="true" role="img">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M4 4h16v16H4V4zM9 4v16M15 4v16" />
+              </svg>
+              <h4 class="text-lg font-semibold tracking-wide mb-2">Commercial</h4>
+              <p class="text-gray-800">Tailored water testing services for businesses and commercial properties</p>
+            </div>
 
-          <!-- Institutional -->
-          <div class="served flex flex-col items-center">
-            <svg class="w-12 h-12 text-primary mb-4" fill="none" stroke="currentColor" stroke-width="1.8" viewBox="0 0 24 24">
-              <path stroke-linecap="round" stroke-linejoin="round" d="M12 2l8 4v2H4V6l8-4zm0 6v14m-6 0h12" />
-            </svg>
-            <h4 class="text-lg font-semibold tracking-wider">Institutional</h4>
-            <p class="text-gray-800">Supporting institusions in maintaining oublic water systems</p>
+            <div class="served flex flex-col items-center min-w-[220px] max-w-xs flex-shrink-0 bg-white p-6 rounded-lg shadow-md text-center">
+              <svg class="w-12 h-12 text-primary mb-4" fill="none" stroke="currentColor" stroke-width="1.8" viewBox="0 0 24 24" aria-hidden="true" role="img">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M2 13h20v7H2v-7zm0-4l5-4v4h5V5l5 4v4" />
+              </svg>
+              <h4 class="text-lg font-semibold tracking-wide mb-2">Industrial</h4>
+              <p class="text-gray-800">Comprehensive testing solutions for industrial facilities</p>
+            </div>
+
+            <div class="served flex flex-col items-center min-w-[220px] max-w-xs flex-shrink-0 bg-white p-6 rounded-lg shadow-md text-center">
+              <svg class="w-12 h-12 text-primary mb-4" fill="none" stroke="currentColor" stroke-width="1.8" viewBox="0 0 24 24" aria-hidden="true" role="img">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M12 2l8 4v2H4V6l8-4zm0 6v14m-6 0h12" />
+              </svg>
+              <h4 class="text-lg font-semibold tracking-wide mb-2">Institutional</h4>
+              <p class="text-gray-800">Supporting institutions in maintaining public water systems</p>
+            </div>
+            <div class="served flex flex-col items-center min-w-[220px] max-w-xs flex-shrink-0 bg-white p-6 rounded-lg shadow-md text-center">
+              <svg class="w-12 h-12 text-primary mb-4" fill="none" stroke="currentColor" stroke-width="1.8" viewBox="0 0 24 24" aria-hidden="true" role="img">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M12 2a10 10 0 0110 10c0 5.523-4.477 10-10 10S2 17.523 2 12a10 10 0 0110-10zM12 6v12M6 12h12" />
+              </svg>
+              <h4 class="text-lg font-semibold tracking-wide mb-2">Healthcare</h4>
+              <p class="text-gray-800">Ensuring safe and compliant water systems in hospitals, clinics, and care centers</p>
+            </div>
+            
+            <!-- Duplicate cards for seamless loop -->
+            <div class="served flex flex-col items-center min-w-[220px] max-w-xs flex-shrink-0 bg-white p-6 rounded-lg shadow-md text-center">
+              <svg class="w-12 h-12 text-primary mb-4" fill="none" stroke="currentColor" stroke-width="1.8" viewBox="0 0 24 24" aria-hidden="true" role="img">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M3 12l9-9 9 9v9a2 2 0 01-2 2h-4a2 2 0 01-2-2v-4H9v4a2 2 0 01-2 2H3a2 2 0 01-2-2v-9z" />
+              </svg>
+              <h4 class="text-lg font-semibold tracking-wide mb-2">Residential</h4>
+              <p class="text-gray-800">Ensuring safe and clean drinking water for homeowners</p>
+            </div>
+
+            <div class="served flex flex-col items-center min-w-[220px] max-w-xs flex-shrink-0 bg-white p-6 rounded-lg shadow-md text-center">
+              <svg class="w-12 h-12 text-primary mb-4" fill="none" stroke="currentColor" stroke-width="1.8" viewBox="0 0 24 24" aria-hidden="true" role="img">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M4 4h16v16H4V4zM9 4v16M15 4v16" />
+              </svg>
+              <h4 class="text-lg font-semibold tracking-wide mb-2">Commercial</h4>
+              <p class="text-gray-800">Tailored water testing services for businesses and commercial properties</p>
+            </div>
+
+            <div class="served flex flex-col items-center min-w-[220px] max-w-xs flex-shrink-0 bg-white p-6 rounded-lg shadow-md text-center">
+              <svg class="w-12 h-12 text-primary mb-4" fill="none" stroke="currentColor" stroke-width="1.8" viewBox="0 0 24 24" aria-hidden="true" role="img">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M2 13h20v7H2v-7zm0-4l5-4v4h5V5l5 4v4" />
+              </svg>
+              <h4 class="text-lg font-semibold tracking-wide mb-2">Industrial</h4>
+              <p class="text-gray-800">Comprehensive testing solutions for industrial facilities</p>
+            </div>
+
+            <div class="served flex flex-col items-center min-w-[220px] max-w-xs flex-shrink-0 bg-white p-6 rounded-lg shadow-md text-center">
+              <svg class="w-12 h-12 text-primary mb-4" fill="none" stroke="currentColor" stroke-width="1.8" viewBox="0 0 24 24" aria-hidden="true" role="img">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M12 2l8 4v2H4V6l8-4zm0 6v14m-6 0h12" />
+              </svg>
+              <h4 class="text-lg font-semibold tracking-wide mb-2">Institutional</h4>
+              <p class="text-gray-800">Supporting institutions in maintaining public water systems</p>
+            </div>
+            <div class="served flex flex-col items-center min-w-[220px] max-w-xs flex-shrink-0 bg-white p-6 rounded-lg shadow-md text-center">
+              <svg class="w-12 h-12 text-primary mb-4" fill="none" stroke="currentColor" stroke-width="1.8" viewBox="0 0 24 24" aria-hidden="true" role="img">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M12 2a10 10 0 0110 10c0 5.523-4.477 10-10 10S2 17.523 2 12a10 10 0 0110-10zM12 6v12M6 12h12" />
+              </svg>
+              <h4 class="text-lg font-semibold tracking-wide mb-2">Healthcare</h4>
+              <p class="text-gray-800">Ensuring safe and compliant water systems in hospitals, clinics, and care centers</p>
+            </div>
           </div>
         </div>
       </div>
@@ -242,5 +338,6 @@
     </footer>
     
   <script type="module" src="/src/main.ts"></script>
+  <script type="module" src="/src/services.ts"></script>
 </body>
 </html>

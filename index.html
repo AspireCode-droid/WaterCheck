@@ -63,7 +63,7 @@
             Certified inspections, ongoing monitoring, and total compliance—all in one service.
           </p>
           <div class="hero-cta flex flex-row sm:flex-row justify-center gap-4">
-            <a href="/booking.html" class="bg-primary hover:bg-btn text-white shadow-btn px-8 py-3 rounded-lg text-lg font-semibold transition transform hover:scale-95">
+            <a href="/booking.html" class="bg-primary hover:bg-btn text-white shadow-btn px-8 py-3 rounded-4xl text-lg font-semibold transition transform hover:scale-95">
               Book a Water Test
             </a>
             <a href="/services.html" class="text-white underline font-medium hover:text-blue-400 mt-4 text-lg transition">
@@ -216,13 +216,12 @@
               </p>
             </div>
           </div>
-
         </div>
       </div>
     </section>
 
     <!--Testimonials Section -->
-    <section id="testimonials" class="bg-ice py-28">
+    <section id="testimonials" class="bg-white py-28">
       <div class="container mx-auto px-8 max-w-6xl">
 
         <!-- Section Header -->
@@ -236,11 +235,11 @@
         </div>
 
         <!-- Swiper Container -->
-        <div class="swiper testimonial-swiper">
-          <div class="swiper-wrapper">
+        <div class="swiper testimonial-swiper rounded-4xl">
+          <div class="swiper-wrapper mb-12">
 
             <!-- Testimonial 1 -->
-            <div class="swiper-slide testimonial-slide bg-white p-8 rounded-2xl shadow-[0_6px_24px_-4px_rgba(0,0,0,0.15)] hover:shadow-[0_12px_32px_-6px_rgba(0,0,0,0.25)] transition duration-300 transform hover:-translate-y-1">
+            <div class="swiper-slide testimonial-slide bg-white p-8 rounded-2xl">
               <div class="relative mb-6">
                 <svg class="absolute -top-6 -left-4 w-12 h-12 text-gray-200 opacity-60" fill="currentColor">
                   <text x="0" y="35" font-size="48">“</text>
@@ -259,7 +258,7 @@
             </div>
 
             <!-- Testimonial 2 -->
-            <div class="swiper-slide testimonial-slide bg-white p-8 rounded-2xl shadow-[0_6px_24px_-4px_rgba(0,0,0,0.15)] hover:shadow-[0_12px_32px_-6px_rgba(0,0,0,0.25)] transition duration-300 transform hover:-translate-y-1">
+            <div class="swiper-slide testimonial-slide bg-white p-8 rounded-2xl">
               <div class="relative mb-6">
                 <svg class="absolute -top-6 -left-4 w-12 h-12 text-gray-200 opacity-60" fill="currentColor">
                   <text x="0" y="35" font-size="48">“</text>
@@ -278,7 +277,7 @@
             </div>
 
             <!-- Testimonial 3 -->
-            <div class="swiper-slide testimonial-slide bg-white p-8 rounded-2xl shadow-[0_6px_24px_-4px_rgba(0,0,0,0.15)] hover:shadow-[0_12px_32px_-6px_rgba(0,0,0,0.25)] transition duration-300 transform hover:-translate-y-1">
+            <div class="swiper-slide testimonial-slide bg-white p-8 rounded-2xl">
               <div class="relative mb-6">
                 <svg class="absolute -top-6 -left-4 w-12 h-12 text-gray-200 opacity-60" fill="currentColor">
                   <text x="0" y="35" font-size="48">“</text>
@@ -296,7 +295,7 @@
               </div>
             </div>
              <!-- Testimonial 4 -->
-            <div class="swiper-slide testimonial-slide bg-white p-8 rounded-2xl shadow-[0_6px_24px_-4px_rgba(0,0,0,0.15)] hover:shadow-[0_12px_32px_-6px_rgba(0,0,0,0.25)] transition duration-300 transform hover:-translate-y-1">
+            <div class="swiper-slide testimonial-slide bg-white p-8 rounded-2xl">
               <div class="relative mb-6">
                 <svg class="absolute -top-6 -left-4 w-12 h-12 text-gray-200 opacity-60" fill="currentColor">
                   <text x="0" y="35" font-size="48">“</text>
@@ -317,85 +316,114 @@
           </div>
 
           <!-- Swiper Navigation and Pagination -->
-          <div class="swiper-pagination mt-20"></div>
+          <div class="swiper-pagination"></div>
         </div>
       </div>
     </section>
 
 
     <!-- Booking CTA -->
-    <section id="booking" class="py-16 bg-background">
-      <div class=" container mx-auto px-6 text-center max-w-3xl">
-        <h2 class="text-3xl lg:text-4xl font-extrabold text-white mb-4 tracking-wide">
+    <section id="booking" class="py-16 bg-ice relative">
+      <!-- Top Wave Divider -->
+      <div class="absolute z-10 top-0 left-0 w-full overflow-hidden leading-none rotate-180">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 100" preserveAspectRatio="none" class="w-full h-24">
+          <path fill="#0B3D91" fill-opacity="0.1" d="M0,50 C200,80 400,20 720,50 C1040,80 1240,20 1440,50 L1440,100 L0,100 Z"></path>
+          <path fill="#0B3D91" fill-opacity="0.2" d="M0,60 C200,90 400,30 720,60 C1040,90 1240,30 1440,60 L1440,100 L0,100 Z"></path>
+        </svg>
+      </div>
+
+      <div class="container mx-auto px-6 text-center max-w-3xl relative z-10">
+        <h2 class="text-3xl lg:text-4xl font-extrabold text-white mb-4 tracking-wide" id="ctatext">
           Book a Professional Water Test or Risk Assessment
         </h2>
-        <p class="text-gray-100 text-lg mb-8">
+        <p class="text-gray-100 text-lg mb-8" id="ctasub">
           Ensure your facility meets the latest safety and compliance standards. Our accredited specialists are ready to help.
         </p>
-        <a href="./public/booking.html" class="inline-block bg-white text-primary font-semibold px-8 py-4 rounded-full shadow-btn hover:bg-gray-100 transition hover:shadow-hover">
+        <a href="./public/booking.html" class="cta-btn inline-block bg-white text-primary font-semibold px-8 py-4 rounded-full shadow-btn hover:bg-gray-100 transition duration-300 transform hover:shadow-hover hover:scale-95">
           Request an Appointment
         </a>
       </div>
     </section>
 
-
     <!-- Contact Section -->
-    <section id="contact" class="py-28 bg-ice">
-      <div class="container mx-auto px-8 max-w-4xl">
+    <section id="contact" class="py-28 bg-white">
+      <div class="container mx-auto px-6 max-w-4xl">
         <h2 class="text-3xl lg:text-5xl font-extrabold text-primary text-center mb-12 tracking-wide">
           Get in Touch with AquaCheck
         </h2>
 
-        <div class="bg-white rounded-3xl shadow-lg p-10 md:p-16">
+        <div class="bg-white rounded-3xl shadow-xl p-10 md:p-16">
           <div class="grid sm:grid-cols-3 gap-10 text-center text-gray-800 mb-10">
+
             <!-- Location -->
-            <div>
-              <div class="text-4xl mb-2">📍</div>
+            <div class="space-y-2">
+              <svg class="mx-auto h-8 w-8 text-primary" fill="none" stroke="currentColor" stroke-width="1.5"
+                viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round"
+                  d="M15 10a3 3 0 11-6 0 3 3 0 016 0z" />
+                <path stroke-linecap="round" stroke-linejoin="round"
+                  d="M19.5 10c0 7-7.5 11-7.5 11S4.5 17 4.5 10a7.5 7.5 0 1115 0z" />
+              </svg>
               <p class="font-semibold text-lg">Head Office</p>
-              <p class="text-sm text-gray-600">London, UK</p>
+              <p class="text-sm text-gray-600">London, United Kingdom</p>
             </div>
 
             <!-- Phone -->
-            <div>
-              <div class="text-4xl mb-2">📞</div>
+            <div class="space-y-2">
+              <svg class="mx-auto h-8 w-8 text-primary" fill="none" stroke="currentColor" stroke-width="1.5"
+                viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round"
+                  d="M2 8.5C2 5.462 4.462 3 7.5 3h9a5.5 5.5 0 015.5 5.5v7A5.5 5.5 0 0116.5 21h-9A5.5 5.5 0 012 15.5v-7z" />
+                <path stroke-linecap="round" stroke-linejoin="round"
+                  d="M16 8h.01M8 8h.01M12 14h.01" />
+              </svg>
               <p class="font-semibold text-lg">Call Us</p>
               <p class="text-sm text-gray-600">+44 1234 567 890</p>
             </div>
 
             <!-- Email -->
-            <div>
-              <div class="text-4xl mb-2">📧</div>
+            <div class="space-y-2">
+              <svg class="mx-auto h-8 w-8 text-primary" fill="none" stroke="currentColor" stroke-width="1.5"
+                viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round"
+                  d="M21.75 6.75v10.5A2.25 2.25 0 0119.5 19.5H4.5a2.25 2.25 0 01-2.25-2.25V6.75A2.25 2.25 0 014.5 4.5h15A2.25 2.25 0 0121.75 6.75z" />
+                <path stroke-linecap="round" stroke-linejoin="round"
+                  d="M3.75 6.75l8.25 6 8.25-6" />
+              </svg>
               <p class="font-semibold text-lg">Email</p>
               <p class="text-sm text-gray-600">info@aquacheck.co.uk</p>
             </div>
           </div>
 
           <div class="text-center text-sm text-gray-500">
-            Fully certified by UK HSE standards | Serving clients nationwide with reliability and care
+            Fully certified under UK HSE standards. Nationwide service. Trusted compliance partner.
           </div>
         </div>
       </div>
     </section>
 
-      <!-- Footer -->
-    <footer class="bg-gray-900 text-gray-300 py-16 text-sm">
-      <div class="container mx-auto px-6 grid grid-cols-1 md:grid-cols-3 gap-12">
+
+    <!-- Footer -->
+    <footer class="bg-footer text-gray-300 pt-16 pb-10 text-sm">
+      <div class="container mx-auto px-6 grid grid-cols-1 md:grid-cols-4 gap-12">
 
         <!-- Company Summary -->
         <div>
           <h4 class="text-lg font-semibold text-white mb-4">AquaCheck Ltd.</h4>
           <p class="text-gray-400 leading-relaxed">
-            Specialists in water safety and compliance. Delivering certified testing, Legionella risk assessment, and regulatory support for facilities across the UK.
+            UK specialists in water safety and compliance. We deliver certified testing, Legionella risk assessment, and regulatory support tailored for facilities nationwide.
           </p>
         </div>
 
-        <!-- Contact Information -->
+        <!-- Quick Links -->
         <div>
-          <h4 class="text-lg font-semibold text-white mb-4">Contact</h4>
+          <h4 class="text-lg font-semibold text-white mb-4">Quick Links</h4>
           <ul class="space-y-2 text-gray-400">
-            <li>📧 <a href="mailto:info@aquacheck.co.uk" class="hover:text-white">info@aquacheck.co.uk</a></li>
-            <li>📞 <a href="tel:+441234567890" class="hover:text-white">+44 1234 567 890</a></li>
-            <li>📍 123 Aqua Street, London, UK</li>
+            <li><a href="/" class="hover:text-white transition">Home</a></li>
+            <li><a href="/services" class="hover:text-white transition">Services</a></li>
+            <li><a href="/about" class="hover:text-white transition">About Us</a></li>
+            <li><a href="/contact" class="hover:text-white transition">Contact</a></li>
+            <li><a href="/careers" class="hover:text-white transition">Careers</a></li>
           </ul>
         </div>
 
@@ -403,19 +431,43 @@
         <div>
           <h4 class="text-lg font-semibold text-white mb-4">Legal</h4>
           <ul class="space-y-2 text-gray-400">
-            <li><a href="/privacy.html" class="hover:text-white">Privacy Policy</a></li>
-            <li><a href="/terms.html" class="hover:text-white">Terms of Service</a></li>
+            <li><a href="/privacy-policy" class="hover:text-white transition">Privacy Policy</a></li>
+            <li><a href="/terms-of-service" class="hover:text-white transition">Terms of Service</a></li>
+            <li><a href="/cookie-policy" class="hover:text-white transition">Cookie Policy</a></li>
+            <li><a href="/accessibility" class="hover:text-white transition">Accessibility Statement</a></li>
           </ul>
         </div>
-        
+
+        <!-- Contact Info -->
+        <div>
+          <h4 class="text-lg font-semibold text-white mb-4">Contact</h4>
+          <ul class="space-y-2 text-gray-400">
+            <li><span class="text-white">Email:</span> <a href="mailto:info@aquacheck.co.uk" class="hover:text-white transition">info@aquacheck.co.uk</a></li>
+            <li><span class="text-white">Phone:</span> <a href="tel:+441234567890" class="hover:text-white transition">+44 1234 567 890</a></li>
+            <li><span class="text-white">Address:</span> 123 Aqua Street, London, UK</li>
+          </ul>
+
+          <!-- Optional Social Icons -->
+          <div class="flex space-x-4 mt-4">
+            <a href="#" aria-label="LinkedIn" class="text-gray-400 hover:text-white transition">
+              <!-- LinkedIn Icon SVG -->
+              <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+                <path d="M4.98 3.5C4.98 4.88 3.86 6 2.5 6S0 4.88 0 3.5 1.12 1 2.5 1 4.98 2.12 4.98 3.5zM0 8h5v16H0V8zm7.5 0h4.7v2.2h.1c.7-1.3 2.4-2.7 4.9-2.7 5.2 0 6.2 3.4 6.2 7.7V24h-5v-7.6c0-1.8 0-4.2-2.5-4.2s-2.9 2-2.9 4v7.8h-5V8z"/>
+              </svg>
+            </a>
+            <!-- Add other platforms similarly -->
+          </div>
+        </div>
+
       </div>
 
+      <!-- Bottom Disclaimer -->
       <div class="mt-12 border-t border-gray-800 pt-6 text-center text-xs text-gray-500">
-        &copy; 2025 AquaCheck Ltd. All rights reserved.
+        &copy; 2025 AquaCheck Ltd. All rights reserved. Company No. 12345678 | VAT GB123456789
       </div>
     </footer>
 
-    
+
     <script type="module" src="/src/main.ts"></script>
     <script type="module" src="/src/carousel.ts"></script>
   </body>
