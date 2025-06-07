@@ -1,408 +1,346 @@
-<!doctype html>
-<html lang="en">
+<html>
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link href="/src/style.css" rel="stylesheet">
-    <link rel="stylesheet" href="/src/swiper.css">
-    <title>AquaCheck – Water Testing & Legionella Control</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="description" content="AquaCheck offers comprehensive water testing and treatment solutions for homes and businesses. Ensure your water's purity with our expert services." />
+    <meta name="keywords" content="water testing, water treatment, system maintenance, AquaCheck, water quality, home, business" />
+    <meta name="author" content="AquaCheck" />
+
+    <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin="" />
+    <link
+      rel="stylesheet"
+      as="style"
+      onload="this.rel='stylesheet'"
+      href="https://fonts.googleapis.com/css2?display=swap&amp;family=Inter%3Awght%40400%3B500%3B700%3B900&amp;family=Noto+Sans%3Awght%40400%3B500%3B700%3B900"
+    />
+
+    <title>Our Services | AquaCheck</title>
+    <link rel="icon" type="image/x-icon" href="data:image/x-icon;base64," />
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined" rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"/>
+
   </head>
-  <body class="bg-white text-gray-800">
-
-    <header class="header bg-white sticky top-0 z-10 transition-all duration-300">
-      <div class="container mx-auto px-6 py-4 flex justify-between items-center">
-        <h1 class="text-2xl lg:text-4xl font-bold text-primary py-2">AquaCheck</h1>
-    
-        <!-- Desktop Nav -->
-        <nav class="hidden md:flex gap-6 text-sm font-medium" aria-label="Main Navigation">
-          <ul class="flex gap-6">
-            <li><a href="/index.html" class="hover:text-primary">Home</a></li>
-            <li><a href="/services.html" class="text-primary">Services</a></li>
-            <li><a href="/booking.html" class="hover:text-primary">Booking</a></li>
-            <li><a href="/about.html" class="hover:text-primary">About</a></li>
-            <li><a href="/resource.html" class="hover:text-primary">Resources</a></li>
-            <li><a href="/contact.html" class="hover:text-primary">Contact</a></li>
-          </ul>
-        </nav>
-    
-        <!-- Mobile Hamburger -->
-        <button id="menu-toggle" class="md:hidden focus:outline-none text-gray-700">
-          <svg class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="2"
-            viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round">
-            <path d="M4 6h16M4 12h16M4 18h16" />
-          </svg>
-        </button>
-      <!-- Mobile Nav Menu -->
-      <nav id="mobile-menu" class="md:hidden hidden px-6 pb-4" aria-label="Mobile Navigation">
-        <ul class="flex flex-col gap-4 text-sm font-medium">
-          <li><a href="/index.html" class="block hover:text-blue-600">Home</a></li>
-          <li><a href="/services.html" class="block hover:text-blue-600">Services</a></li>
-          <li><a href="/booking.html" class="block hover:text-blue-600">Booking</a></li>
-          <li><a href="/about.html" class="block hover:text-blue-600">About</a></li>
-          <li><a href="/resource.html" class="block hover:text-blue-600">Resources</a></li>
-          <li><a href="/contact.html" class="block hover:text-blue-600">Contact</a></li>
-        </ul>
-      </nav>
-    </header>
-
-    <!-- Intro Section -->
-    <section class="py-24 bg-primary text-center">
-      <div class="container mx-auto px-6">
-        <h1 class="hero-header text-3xl lg:text-5xl font-bold text-white mb-4">Reliable Water Safety & Compliance Services</h1>
-        <p class="hero-sub text-lg text-gray-50 max-w-2xl mx-auto">
-          Protecting your water systems with professional testing, monitoring, and treatment solutions — fully compliant with UK regulations.
-        </p>
-        <div class="mt-8">
-          <a href="#services" class="inline-block bg-background text-white py-3 px-6 rounded-4xl hover:bg-[#122747] transition font-medium shadow-btn">
-            Explore our Services
-          </a> 
-
+  <body>
+      <!-- ================= HEADER / NAVIGATION ================= -->
+      <header class="nav-header bg-white sticky top-0 z-20 transition-all duration-300">
+        <div class="container mx-auto px-6 py-4 flex justify-between items-center">
+          <h1 class="text-2xl lg:text-4xl font-bold text-primary py-2">AquaCheck</h1>
+          <!-- Desktop Nav -->
+          <nav class="hidden md:flex gap-6 text-base font-medium" aria-label="Main Navigation">
+            <ul class="flex gap-6">
+              <li><a href="/index.html" class="hover:text-primary">Home</a></li>
+              <li><a href="/services.html" class="text-primary">Services</a></li>
+              <li><a href="/booking.html" class="hover:text-primary">Booking</a></li>
+              <li><a href="/about.html" class="hover:text-primary">About</a></li>
+              <li><a href="/resource.html" class="hover:text-primary">Resources</a></li>
+              <li><a href="/contact.html" class="hover:text-primary">Contact</a></li>
+            </ul>
+          </nav>
+          <!-- Mobile Hamburger -->
+          <button id="menu-toggle" class="md:hidden focus:outline-none text-gray-700">
+            <svg class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="2"
+              viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M4 6h16M4 12h16M4 18h16" />
+            </svg>
+          </button>
+          <!-- Mobile Nav Menu -->
+          <nav id="mobile-menu" class="md:hidden hidden px-6 pb-4" aria-label="Mobile Navigation">
+            <ul class="flex flex-col gap-4 text-sm font-medium">
+              <li><a href="/index.html" class="block hover:text-blue-600">Home</a></li>
+              <li><a href="/services.html" class="block hover:text-blue-600">Services</a></li>
+              <li><a href="/booking.html" class="block hover:text-blue-600">Booking</a></li>
+              <li><a href="/about.html" class="block hover:text-blue-600">About</a></li>
+              <li><a href="/resource.html" class="block hover:text-blue-600">Resources</a></li>
+              <li><a href="/contact.html" class="block hover:text-blue-600">Contact</a></li>
+            </ul>
+          </nav>
         </div>
-      </div>
-    </section>
-
-    <!--Services Grid Section -->
-    <section class="relative py-24 bg-neutral services overflow-hidden">
-      <!-- Decorative SVG Background -->
-      <div class="absolute top-0 left-0 w-full overflow-hidden z-0">
-        <svg viewBox="0 0 1440 320" class="w-full h-[100px]" preserveAspectRatio="none">
-          <path fill="#e6f0fa" d="M0,64L40,80C80,96,160,128,240,128C320,128,400,96,480,85.3C560,75,640,85,720,117.3C800,149,880,203,960,229.3C1040,256,1120,256,1200,229.3C1280,203,1360,149,1400,122.7L1440,96V0H0Z" />
-        </svg>
-      </div>
-      <div class="absolute -top-32 -left-20 w-[400px] h-[400px] bg-[#0077be1a] rounded-full blur-3xl opacity-40 animate-pulse-slow z-0"></div>
-
-      <div class="relative container mx-auto px-6">
-        <h2 class="text-3xl lg:text-4xl font-bold text-[#0077be] mb-16 text-center">What We Offer</h2>
-
-        <div class="services grid md:grid-cols-3 gap-10 transition-all duration-300">
-          <!-- Service Card -->
-          <div class="bg-white p-6 rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1">
-            <div class="w-12 h-12 mb-4 flex items-center justify-center bg-[#0077be1a] text-[#0077be] rounded-full">
-              <!-- Water Test Icon -->
-              <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 2C12 2 7 8 7 12a5 5 0 0010 0c0-4-5-10-5-10z" />
-              </svg>
-            </div>
-            <h3 class="text-xl font-semibold mb-2">Water Quality Testing</h3>
-            <p class="text-sm text-gray-700 mb-4">Thorough lab analysis for bacteria, chemical levels, and contaminants in water systems.</p>
-            <a href="#booking" class="text-[#0077be] font-medium hover:underline">Book Now →</a>
-          </div>
-
-          <!-- Legionella -->
-          <div class="bg-white p-6 rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1">
-            <div class="w-12 h-12 mb-4 flex items-center justify-center bg-[#0077be1a] text-[#0077be] rounded-full">
-              <!-- Shield Icon -->
-              <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 2l8 4v6c0 5.25-3.25 9.75-8 11-4.75-1.25-8-5.75-8-11V6l8-4z" />
-              </svg>
-            </div>
-            <h3 class="text-xl font-semibold mb-2">Legionella Risk Assessment</h3>
-            <p class="text-sm text-gray-700 mb-4">Certified assessments aligned with UK HSE guidelines. Full reports included.</p>
-            <a href="#contact" class="text-[#0077be] font-medium hover:underline">Contact Us →</a>
-          </div>
-
-          <!-- Monitoring -->
-          <div class="bg-white p-6 rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1">
-            <div class="w-12 h-12 mb-4 flex items-center justify-center bg-[#0077be1a] text-[#0077be] rounded-full">
-              <!-- Clock Icon -->
-              <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6v6l4 2m-4-14a10 10 0 100 20 10 10 0 000-20z" />
-              </svg>
-            </div>
-            <h3 class="text-xl font-semibold mb-2">Ongoing Compliance Monitoring</h3>
-            <p class="text-sm text-gray-700 mb-4">Scheduled inspections, logging, flushing, and documentation services.</p>
-            <a href="#contact" class="text-[#0077be] font-medium hover:underline">Learn More →</a>
-          </div>
-
-          <!-- Tank Cleaning -->
-          <div class="bg-white p-6 rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1">
-            <div class="w-12 h-12 mb-4 flex items-center justify-center bg-[#0077be1a] text-[#0077be] rounded-full">
-              <!-- Water Icon -->
-              <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20.24 12.24a7.5 7.5 0 01-10.61 10.61A7.5 7.5 0 0120.24 12.24z" />
-              </svg>
-            </div>
-            <h3 class="text-xl font-semibold mb-2">Tank Cleaning & Disinfection</h3>
-            <p class="text-sm text-gray-700 mb-4">Deep cleaning and sterilisation of water storage tanks to maintain system hygiene.</p>
-            <a href="#contact" class="text-[#0077be] font-medium hover:underline">Enquire →</a>
-          </div>
-
-          <!-- Water Purification -->
-          <div class="bg-white p-6 rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1">
-            <div class="w-12 h-12 mb-4 flex items-center justify-center bg-[#0077be1a] text-[#0077be] rounded-full">
-              <!-- Filter Icon -->
-              <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 4a1 1 0 011-1h16a1 1 0 011 1v2a1 1 0 01-.293.707L15 13.414V19a1 1 0 01-1.447.894l-4-2A1 1 0 019 17v-3.586L3.293 6.707A1 1 0 013 6V4z" />
-              </svg>
-            </div>
-            <h3 class="text-xl font-semibold mb-2">Water Purification Solutions</h3>
-            <p class="text-sm text-gray-700 mb-4">Custom filtration and treatment for clean, safe water in commercial environments.</p>
-            <a href="#contact" class="text-[#0077be] font-medium hover:underline">Explore Options →</a>
-          </div>
-
-          <!-- Installations -->
-          <div class="bg-white p-6 rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1">
-            <div class="w-12 h-12 mb-4 flex items-center justify-center bg-[#0077be1a] text-[#0077be] rounded-full">
-              <!-- Tools Icon -->
-              <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 17h5l-1.405-1.405M4 4l16 16M9.172 9.172a4 4 0 005.656 5.656" />
-              </svg>
-            </div>
-            <h3 class="text-xl font-semibold mb-2">Water System Installations</h3>
-            <p class="text-sm text-gray-700 mb-4">Design and installation of compliant water systems tailored to your property.</p>
-            <a href="#contact" class="text-[#0077be] font-medium hover:underline">Get Started →</a>
-          </div>
-        </div>
-      </div>
-      <div class="absolute bottom-0 left-0 w-full overflow-hidden z-0">
-        <svg viewBox="0 0 1440 320" class="w-full h-[100px] rotate-180" preserveAspectRatio="none">
-          <path fill="#e6f0fa" d="M0,64L40,80C80,96,160,128,240,128C320,128,400,96,480,85.3C560,75,640,85,720,117.3C800,149,880,203,960,229.3C1040,256,1120,256,1200,229.3C1280,203,1360,149,1400,122.7L1440,96V0H0Z" />
-        </svg>
-      </div>
-    </section>
-
-
-    <section class="py-20 bg-neutral overflow-hidden" aria-label="Industries We Serve">
-      <div class="container mx-auto px-6">
-        <h2 class="text-2xl lg:text-4xl font-bold text-primary mb-12 text-center">Industries We Serve</h2>
-
-        <div id="carousel-wrapper" class="overflow-hidden">
-          <div id="carousel" class="flex space-x-10 select-none will-change-transform">
-            <!-- Cards -->
-            <div class="served flex flex-col items-center min-w-[220px] max-w-xs flex-shrink-0 bg-white p-6 rounded-lg shadow-md text-center">
-              <svg class="w-12 h-12 text-primary mb-4" fill="none" stroke="currentColor" stroke-width="1.8" viewBox="0 0 24 24" aria-hidden="true" role="img">
-                <path stroke-linecap="round" stroke-linejoin="round" d="M3 12l9-9 9 9v9a2 2 0 01-2 2h-4a2 2 0 01-2-2v-4H9v4a2 2 0 01-2 2H3a2 2 0 01-2-2v-9z" />
-              </svg>
-              <h4 class="text-lg font-semibold tracking-wide mb-2">Residential</h4>
-              <p class="text-gray-800">Ensuring safe and clean drinking water for homeowners</p>
-            </div>
-
-            <div class="served flex flex-col items-center min-w-[220px] max-w-xs flex-shrink-0 bg-white p-6 rounded-lg shadow-md text-center">
-              <svg class="w-12 h-12 text-primary mb-4" fill="none" stroke="currentColor" stroke-width="1.8" viewBox="0 0 24 24" aria-hidden="true" role="img">
-                <path stroke-linecap="round" stroke-linejoin="round" d="M4 4h16v16H4V4zM9 4v16M15 4v16" />
-              </svg>
-              <h4 class="text-lg font-semibold tracking-wide mb-2">Commercial</h4>
-              <p class="text-gray-800">Tailored water testing services for businesses and commercial properties</p>
-            </div>
-
-            <div class="served flex flex-col items-center min-w-[220px] max-w-xs flex-shrink-0 bg-white p-6 rounded-lg shadow-md text-center">
-              <svg class="w-12 h-12 text-primary mb-4" fill="none" stroke="currentColor" stroke-width="1.8" viewBox="0 0 24 24" aria-hidden="true" role="img">
-                <path stroke-linecap="round" stroke-linejoin="round" d="M2 13h20v7H2v-7zm0-4l5-4v4h5V5l5 4v4" />
-              </svg>
-              <h4 class="text-lg font-semibold tracking-wide mb-2">Industrial</h4>
-              <p class="text-gray-800">Comprehensive testing solutions for industrial facilities</p>
-            </div>
-
-            <div class="served flex flex-col items-center min-w-[220px] max-w-xs flex-shrink-0 bg-white p-6 rounded-lg shadow-md text-center">
-              <svg class="w-12 h-12 text-primary mb-4" fill="none" stroke="currentColor" stroke-width="1.8" viewBox="0 0 24 24" aria-hidden="true" role="img">
-                <path stroke-linecap="round" stroke-linejoin="round" d="M12 2l8 4v2H4V6l8-4zm0 6v14m-6 0h12" />
-              </svg>
-              <h4 class="text-lg font-semibold tracking-wide mb-2">Institutional</h4>
-              <p class="text-gray-800">Supporting institutions in maintaining public water systems</p>
-            </div>
-            <div class="served flex flex-col items-center min-w-[220px] max-w-xs flex-shrink-0 bg-white p-6 rounded-lg shadow-md text-center">
-              <svg class="w-12 h-12 text-primary mb-4" fill="none" stroke="currentColor" stroke-width="1.8" viewBox="0 0 24 24" aria-hidden="true" role="img">
-                <path stroke-linecap="round" stroke-linejoin="round" d="M12 2a10 10 0 0110 10c0 5.523-4.477 10-10 10S2 17.523 2 12a10 10 0 0110-10zM12 6v12M6 12h12" />
-              </svg>
-              <h4 class="text-lg font-semibold tracking-wide mb-2">Healthcare</h4>
-              <p class="text-gray-800">Ensuring safe and compliant water systems in hospitals, clinics, and care centers</p>
-            </div>
-            
-            <!-- Duplicate cards for seamless loop -->
-            <div class="served flex flex-col items-center min-w-[220px] max-w-xs flex-shrink-0 bg-white p-6 rounded-lg shadow-md text-center">
-              <svg class="w-12 h-12 text-primary mb-4" fill="none" stroke="currentColor" stroke-width="1.8" viewBox="0 0 24 24" aria-hidden="true" role="img">
-                <path stroke-linecap="round" stroke-linejoin="round" d="M3 12l9-9 9 9v9a2 2 0 01-2 2h-4a2 2 0 01-2-2v-4H9v4a2 2 0 01-2 2H3a2 2 0 01-2-2v-9z" />
-              </svg>
-              <h4 class="text-lg font-semibold tracking-wide mb-2">Residential</h4>
-              <p class="text-gray-800">Ensuring safe and clean drinking water for homeowners</p>
-            </div>
-
-            <div class="served flex flex-col items-center min-w-[220px] max-w-xs flex-shrink-0 bg-white p-6 rounded-lg shadow-md text-center">
-              <svg class="w-12 h-12 text-primary mb-4" fill="none" stroke="currentColor" stroke-width="1.8" viewBox="0 0 24 24" aria-hidden="true" role="img">
-                <path stroke-linecap="round" stroke-linejoin="round" d="M4 4h16v16H4V4zM9 4v16M15 4v16" />
-              </svg>
-              <h4 class="text-lg font-semibold tracking-wide mb-2">Commercial</h4>
-              <p class="text-gray-800">Tailored water testing services for businesses and commercial properties</p>
-            </div>
-
-            <div class="served flex flex-col items-center min-w-[220px] max-w-xs flex-shrink-0 bg-white p-6 rounded-lg shadow-md text-center">
-              <svg class="w-12 h-12 text-primary mb-4" fill="none" stroke="currentColor" stroke-width="1.8" viewBox="0 0 24 24" aria-hidden="true" role="img">
-                <path stroke-linecap="round" stroke-linejoin="round" d="M2 13h20v7H2v-7zm0-4l5-4v4h5V5l5 4v4" />
-              </svg>
-              <h4 class="text-lg font-semibold tracking-wide mb-2">Industrial</h4>
-              <p class="text-gray-800">Comprehensive testing solutions for industrial facilities</p>
-            </div>
-
-            <div class="served flex flex-col items-center min-w-[220px] max-w-xs flex-shrink-0 bg-white p-6 rounded-lg shadow-md text-center">
-              <svg class="w-12 h-12 text-primary mb-4" fill="none" stroke="currentColor" stroke-width="1.8" viewBox="0 0 24 24" aria-hidden="true" role="img">
-                <path stroke-linecap="round" stroke-linejoin="round" d="M12 2l8 4v2H4V6l8-4zm0 6v14m-6 0h12" />
-              </svg>
-              <h4 class="text-lg font-semibold tracking-wide mb-2">Institutional</h4>
-              <p class="text-gray-800">Supporting institutions in maintaining public water systems</p>
-            </div>
-            <div class="served flex flex-col items-center min-w-[220px] max-w-xs flex-shrink-0 bg-white p-6 rounded-lg shadow-md text-center">
-              <svg class="w-12 h-12 text-primary mb-4" fill="none" stroke="currentColor" stroke-width="1.8" viewBox="0 0 24 24" aria-hidden="true" role="img">
-                <path stroke-linecap="round" stroke-linejoin="round" d="M12 2a10 10 0 0110 10c0 5.523-4.477 10-10 10S2 17.523 2 12a10 10 0 0110-10zM12 6v12M6 12h12" />
-              </svg>
-              <h4 class="text-lg font-semibold tracking-wide mb-2">Healthcare</h4>
-              <p class="text-gray-800">Ensuring safe and compliant water systems in hospitals, clinics, and care centers</p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Why Choose Us -->
-    <section class="py-16 bg-primary">
-      <svg class="w-full h-24 -mt-1" viewBox="0 0 1440 100" preserveAspectRatio="none">
-        <path d="M0,0 C360,100 1080,0 1440,100 L1440,0 L0,0 Z" fill="#f3f7fd" />
-      </svg>
-      <div class="container mx-auto px-6">
-        <h2 class="text-white text-2xl font-bold text-center mb-12">Why Clients Trust AquaCheck</h2>
-        <div class="grid md:grid-cols-3 gap-8">
-          <div class="border-l-2 border-neutral/60 pl-4">
-            <h4 class="text-white font-semibold mb-2">Certified Professionals</h4>
-            <p class="text-sm text-gray-100">Compliance-ready engineers with industry certifications and hands-on expertise.</p>
-          </div>
-          <div class="border-l-2 border-neutral/60 pl-4">
-            <h4 class="text-white font-semibold mb-2">End-to-End Service</h4>
-            <p class="text-sm text-gray-100">We handle assessment, treatment, and reporting — all through one reliable contact.</p>
-          </div>
-          <div class="border-l-2 border-neutral/60 pl-4">
-            <h4 class="text-white font-semibold mb-2">Trusted Across Industries</h4>
-            <p class="text-sm text-gray-100">Proven results for hospitality, education, and public sectors nationwide.</p>
-          </div>
-        </div>
-      </div>
-    </section>
-
-
-    <!--Testimonials Section -->
-    <section id="testimonials" class="bg-white pt-16 pb-12">
-      
-      <div class="container mx-auto px-8 max-w-6xl">
-
-        <!-- Section Header -->
-        <div class="text-center mb-16">
-          <h2 class="text-3xl lg:text-5xl font-extrabold text-primary mb-4 tracking-wide">
-            What Our Clients Say
-          </h2>
-          <p class="text-lg text-gray-700 max-w-2xl mx-auto">
-            Trusted by professionals across the UK, our clients rely on AquaCheck for consistent quality, safety, and compliance.
-          </p>
-        </div>
-
-        <!-- Swiper Container -->
-        <div class="swiper testimonial-swiper rounded-4xl">
-          <div class="swiper-wrapper mb-12">
-
-            <!-- Testimonial 1 -->
-            <div class="swiper-slide testimonial-slide bg-white p-8 rounded-2xl">
-              <div class="relative mb-6">
-                <svg class="absolute -top-6 -left-4 w-12 h-12 text-gray-200 opacity-60" fill="currentColor">
-                  <text x="0" y="35" font-size="48">“</text>
-                </svg>
-                <p class="text-gray-700 italic leading-relaxed">
-                  “AquaCheck made water testing easy. Clear, professional, and stress-free.”
+      </header>
+      <main class="flex flex-col gap-16">
+        <!--Hero Section-->
+        <section class="flex justify-center px-6 md:px-20 py-10 bg-white">
+          <div class="max-w-6xl w-full">
+            <div class="relative rounded-2xl overflow-hidden min-h-[480px] flex flex-col justify-end p-6 md:p-12 bg-cover bg-center"
+                style='background-image: linear-gradient(to bottom, rgba(0,0,0,0.2), rgba(0,0,0,0.6)), url("/assets/img/servicesHero.png");'>
+              <div class="text-white max-w-xl space-y-4">
+                <h1 class="hero-animate text-4xl md:text-5xl font-extrabold leading-tight tracking-tight">
+                  Ensure Your Water's Purity with AquaCheck
+                </h1>
+                <p class="hero-sub-animate text-base md:text-lg font-medium">
+                  Comprehensive water testing and treatment solutions for homes and businesses. Discover the quality of your water and how we can help.
                 </p>
-              </div>
-              <div class="flex items-center gap-4 mt-4">
-                <img src="/assets/img/avatar11.jpg" alt="Sarah M." class="w-12 h-12 rounded-full  object-cover" />
-                <div>
-                  <div class="text-primary font-semibold text-lg">Sophie J.</div>
-                  <div class="text-sm text-gray-500">Nursery Owner</div>
-                </div>
+                <a href="#contact" class="hero-cta bg-[#13aeeb] text-white font-semibold text-sm md:text-base px-6 py-3 rounded-lg shadow-md hover:bg-[#0ea5e9] transition">
+                  Get Started
+                </a>
               </div>
             </div>
-
-            <!-- Testimonial 2 -->
-            <div class="swiper-slide testimonial-slide bg-white p-8 rounded-2xl">
-              <div class="relative mb-6">
-                <svg class="absolute -top-6 -left-4 w-12 h-12 text-gray-200 opacity-60" fill="currentColor">
-                  <text x="0" y="35" font-size="48">“</text>
-                </svg>
-                <p class="text-gray-700 italic leading-relaxed">
-                  “They showed up on time, knew what they were doing, and handled everything smoothly.”
-                </p>
-              </div>
-              <div class="flex items-center gap-4 mt-4">
-                <img src="/assets/img/avatar12.jpg" alt="James L." class="w-12 h-12 rounded-full  object-cover" />
-                <div>
-                  <div class="text-primary font-semibold text-lg">Ben M.</div>
-                  <div class="text-sm text-gray-500">Restaurant Manager</div>
-                </div>
-              </div>
-            </div>
-
-            <!-- Testimonial 3 -->
-            <div class="swiper-slide testimonial-slide bg-white p-8 rounded-2xl">
-              <div class="relative mb-6">
-                <svg class="absolute -top-6 -left-4 w-12 h-12 text-gray-200 opacity-60" fill="currentColor">
-                  <text x="0" y="35" font-size="48">“</text>
-                </svg>
-                <p class="text-gray-700 italic leading-relaxed">
-                  “Quick, clear, and no jargon. The Legionella report was spot on.”
-                </p>
-              </div>
-              <div class="flex items-center gap-4 mt-4">
-                <img src="/assets/img/avatar13.jpg" alt="Helen T." class="w-12 h-12 rounded-full object-cover" />
-                <div>
-                  <div class="text-primary font-semibold text-lg"> Tom S.</div>
-                  <div class="text-sm text-gray-500">Small Business Owner</div>
-                </div>
-              </div>
-            </div>
-             <!-- Testimonial 4 -->
-            <div class="swiper-slide testimonial-slide bg-white p-8 rounded-2xl">
-              <div class="relative mb-6">
-                <svg class="absolute -top-6 -left-4 w-12 h-12 text-gray-200 opacity-60" fill="currentColor">
-                  <text x="0" y="35" font-size="48">“</text>
-                </svg>
-                <p class="text-gray-700 italic leading-relaxed">
-                  “They took care of all the paperwork and kept me updated. Super helpful.”
-                </p>
-              </div>
-              <div class="flex items-center  gap-4 mt-4">
-                <img src="/assets/img/avatar10.jpg" alt="Helen T." class="w-12 h-12 rounded-full object-cover" />
-                <div>
-                  <div class="text-primary font-semibold text-lg">Julie R.</div>
-                  <div class="text-sm text-gray-500">Landlord</div>
-                </div>
-              </div>
-            </div>
-
           </div>
+        </section>
 
-          <!-- Swiper Navigation and Pagination -->
-          <div class="swiper-pagination"></div>
-        </div>
-      </div>
-    </section>
+        <!--Services Grid-->
+        <section aria-labelledby="services" class="mx-3 md:mx-16">
+          <h2 id="services" class="text-primary text-2xl md:text-4xl font-bold text-center leading-tight tracking-[-0.015em] px-4 pb-5 pt-5">Our Services</h2>
+          <div class="grid grid-cols-1 md:grid-cols-3 gap-8 p-4">
+            <!-- Water Testing -->
+            <article class="service-card flex flex-1 gap-3 rounded-xl border border-[#cfe6ef] bg-white p-4 flex-col shadow-sm">
+              <div class="text-primary" data-icon="Flask" data-size="24px" data-weight="regular">
+                <svg xmlns="http://www.w3.org/2000/svg" width="36px" height="36px" fill="currentColor" viewBox="0 0 256 256">
+                  <path
+                    d="M221.69,199.77,160,96.92V40h8a8,8,0,0,0,0-16H88a8,8,0,0,0,0,16h8V96.92L34.31,199.77A16,16,0,0,0,48,224H208a16,16,0,0,0,13.72-24.23ZM110.86,103.25A7.93,7.93,0,0,0,112,99.14V40h32V99.14a7.93,7.93,0,0,0,1.14,4.11L183.36,167c-12,2.37-29.07,1.37-51.75-10.11-15.91-8.05-31.05-12.32-45.22-12.81ZM48,208l28.54-47.58c14.25-1.74,30.31,1.85,47.82,10.72,19,9.61,35,12.88,48,12.88a69.89,69.89,0,0,0,19.55-2.7L208,208Z"
+                  ></path>
+                </svg>
+              </div>
+              <div class="flex flex-col gap-1">
+                <h3 class="text-primary text-lg font-bold leading-tight">Water Testing</h3>
+                <p class="text-[#325867] text-base font-normal leading-normal">Accurate and detailed analysis of your water to identify any contaminants.</p>
+              </div>
+            </article>
+            <!-- Water Treatment -->
+            <article class="service-card flex flex-1 gap-3 rounded-xl border border-[#cfe6ef] bg-white p-4 flex-col shadow-sm">
+              <div class="text-primary" data-icon="Drop" data-size="24px" data-weight="regular">
+                <svg xmlns="http://www.w3.org/2000/svg" width="36px" height="36px" fill="currentColor" viewBox="0 0 256 256">
+                  <path
+                    d="M174,47.75a254.19,254.19,0,0,0-41.45-38.3,8,8,0,0,0-9.18,0A254.19,254.19,0,0,0,82,47.75C54.51,79.32,40,112.6,40,144a88,88,0,0,0,176,0C216,112.6,201.49,79.32,174,47.75ZM128,216a72.08,72.08,0,0,1-72-72c0-57.23,55.47-105,72-118,16.53,13,72,60.75,72,118A72.08,72.08,0,0,1,128,216Zm55.89-62.66a57.6,57.6,0,0,1-46.56,46.55A8.75,8.75,0,0,1,136,200a8,8,0,0,1-1.32-15.89c16.57-2.79,30.63-16.85,33.44-33.45a8,8,0,0,1,15.78,2.68Z"
+                  ></path>
+                </svg>
+              </div>
+              <div class="flex flex-col gap-1">
+                <h3 class="text-primary text-lg font-bold leading-tight">Water Treatment</h3>
+                <p class="text-[#325867] text-base font-normal leading-normal">Customized treatment solutions to address specific water quality issues.</p>
+              </div>
+            </article>
+            <!-- System Maintenance -->
+            <article class="service-card flex flex-1 gap-3 rounded-xl border border-[#cfe6ef] bg-white p-4 flex-col shadow-sm">
+              <div class="text-primary" data-icon="Gear" data-size="24px" data-weight="regular">
+                <svg xmlns="http://www.w3.org/2000/svg" width="36px" height="36px" fill="currentColor" viewBox="0 0 256 256">
+                  <path
+                    d="M128,80a48,48,0,1,0,48,48A48.05,48.05,0,0,0,128,80Zm0,80a32,32,0,1,1,32-32A32,32,0,0,1,128,160Zm88-29.84q.06-2.16,0-4.32l14.92-18.64a8,8,0,0,0,1.48-7.06,107.21,107.21,0,0,0-10.88-26.25,8,8,0,0,0-6-3.93l-23.72-2.64q-1.48-1.56-3-3L186,40.54a8,8,0,0,0-3.94-6,107.71,107.71,0,0,0-26.25-10.87,8,8,0,0,0-7.06,1.49L130.16,40Q128,40,125.84,40L107.2,25.11a8,8,0,0,0-7.06-1.48A107.6,107.6,0,0,0,73.89,34.51a8,8,0,0,0-3.93,6L67.32,64.27q-1.56,1.49-3,3L40.54,70a8,8,0,0,0-6,3.94,107.71,107.71,0,0,0-10.87,26.25,8,8,0,0,0,1.49,7.06L40,125.84Q40,128,40,130.16L25.11,148.8a8,8,0,0,0-1.48,7.06,107.21,107.21,0,0,0,10.88,26.25,8,8,0,0,0,6,3.93l23.72,2.64q1.49,1.56,3,3L70,215.46a8,8,0,0,0,3.94,6,107.71,107.71,0,0,0,26.25,10.87,8,8,0,0,0,7.06-1.49L125.84,216q2.16.06,4.32,0l18.64,14.92a8,8,0,0,0,7.06,1.48,107.21,107.21,0,0,0,26.25-10.88,8,8,0,0,0,3.93-6l2.64-23.72q1.56-1.48,3-3L215.46,186a8,8,0,0,0,6-3.94,107.71,107.71,0,0,0,10.87-26.25,8,8,0,0,0-1.49-7.06Zm-16.1-6.5a73.93,73.93,0,0,1,0,8.68,8,8,0,0,0,1.74,5.48l14.19,17.73a91.57,91.57,0,0,1-6.23,15L187,173.11a8,8,0,0,0-5.1,2.64,74.11,74.11,0,0,1-6.14,6.14,8,8,0,0,0-2.64,5.1l-2.51,22.58a91.32,91.32,0,0,1-15,6.23l-17.74-14.19a8,8,0,0,0-5-1.75h-.48a73.93,73.93,0,0,1-8.68,0,8,8,0,0,0-5.48,1.74L100.45,215.8a91.57,91.57,0,0,1-15-6.23L82.89,187a8,8,0,0,0-2.64-5.1,74.11,74.11,0,0,1-6.14-6.14,8,8,0,0,0-5.1-2.64L46.43,170.6a91.32,91.32,0,0,1-6.23-15l14.19-17.74a8,8,0,0,0,1.74-5.48,73.93,73.93,0,0,1,0-8.68,8,8,0,0,0-1.74-5.48L40.2,100.45a91.57,91.57,0,0,1,6.23-15L69,82.89a8,8,0,0,0,5.1-2.64,74.11,74.11,0,0,1,6.14-6.14A8,8,0,0,0,82.89,69L85.4,46.43a91.32,91.32,0,0,1,15-6.23l17.74,14.19a8,8,0,0,0,5.48,1.74,73.93,73.93,0,0,1,8.68,0,8,8,0,0,0,5.48-1.74L155.55,40.2a91.57,91.57,0,0,1,15,6.23L173.11,69a8,8,0,0,0,2.64,5.1,74.11,74.11,0,0,1,6.14,6.14,8,8,0,0,0,5.1,2.64l22.58,2.51a91.32,91.32,0,0,1,6.23,15l-14.19,17.74A8,8,0,0,0,199.87,123.66Z"
+                  ></path>
+                </svg>
+              </div>
+              <div class="flex flex-col gap-1">
+                <h3 class="text-primary text-lg font-bold leading-tight">System Maintenance</h3>
+                <p class="text-[#325867] text-base font-normal leading-normal">Regular maintenance to ensure your system operates efficiently and effectively.</p>
+              </div>
+            </article>
+            <!-- Legionella Risk Assessment -->
+            <article class="service-card flex flex-1 gap-3 rounded-xl border border-[#cfe6ef] bg-white p-4 flex-col shadow-sm">
+              <div class="text-primary" data-icon="ShieldCheck" data-size="24px" data-weight="regular">
+                <svg xmlns="http://www.w3.org/2000/svg" width="36px" height="36px" fill="currentColor" viewBox="0 0 24 24">
+                  <path d="M12 2.25c-.2 0-.4.04-.58.13l-7 3.11A1.25 1.25 0 0 0 3 6.46v5.77c0 5.13 3.82 8.7 8.36 9.5.1.02.19.02.28 0 4.54-.8 8.36-4.37 8.36-9.5V6.46c0-.5-.3-.96-.83-1.17l-7-3.11A1.25 1.25 0 0 0 12 2.25zm-6.5 4.3 6.5-2.89 6.5 2.89v5.68c0 4.37-3.14 7.44-6.5 8.18-3.36-.74-6.5-3.81-6.5-8.18V6.55zm9.53 4.22a.75.75 0 0 0-1.06 0l-2.47 2.47-.97-.97a.75.75 0 1 0-1.06 1.06l1.5 1.5a.75.75 0 0 0 1.06 0l3-3a.75.75 0 0 0 0-1.06z"/>
+                </svg>
+              </div>
+              <div class="flex flex-col gap-1">
+               <h3 class="text-primary text-lg font-bold leading-tight">Legionella Risk Assessment</h3>
+                <p class="text-[#325867] text-base font-normal leading-normal">Identify and manage risks of Legionella bacteria in your water systems.</p>
+              </div>
+            </article>
+            <!-- Water Systems Installations -->
+            <article class="service-card flex flex-1 gap-3 rounded-xl border border-[#cfe6ef] bg-white p-4 flex-col shadow-sm">
+              <div class="text-primary" data-icon="Plumbing" data-size="24px" data-weight="regular">
+                <!-- Plumbing / Pipe SVG for Water Systems Installations -->
+                <svg xmlns="http://www.w3.org/2000/svg" width="36px" height="36px" fill="currentColor" viewBox="0 0 24 24">
+                  <path d="M21 13h-2v-2a1 1 0 0 0-1-1h-2V7a5 5 0 0 0-10 0v3H4a1 1 0 0 0-1 1v2H1a1 1 0 1 0 0 2h2v2a1 1 0 0 0 1 1h2v3a5 5 0 0 0 10 0v-3h2a1 1 0 0 0 1-1v-2h2a1 1 0 1 0 0-2ZM7 7a3 3 0 0 1 6 0v3H7Zm6 10a3 3 0 0 1-6 0v-3h6Zm3-3h-2v-2a1 1 0 0 0-1-1h-6a1 1 0 0 0-1 1v2H4v-2h2v-2h12v2h2Z"/>
+                </svg>
+              </div>
+              <div class="flex flex-col gap-1">
+                <h3 class="text-primary text-lg font-bold leading-tight">Water Systems Installations</h3>
+                <p class="text-[#325867] text-base font-normal leading-normal">Design and installation of compliant water systems tailored to your property</p>
+              </div>
+            </article>
+            <!-- Reverse Osmosis systems -->
+            <article class="service-card flex flex-1 gap-3 rounded-xl border border-[#cfe6ef] bg-white p-4 flex-col shadow-sm">
+              <div class="text-primary" data-icon="ReverseOsmosis" data-size="24px" data-weight="regular">
+               <svg xmlns="http://www.w3.org/2000/svg" width="36px" height="36px" fill="none" viewBox="0 0 36 36">
+                <g stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                 <!-- Main droplet shape -->
+                  <path d="M18 4C18 4 8 15.5 8 23a10 10 0 0 0 20 0C28 15.5 18 4 18 4Z" fill="none"/>
+                  <!-- Filter lines inside droplet -->
+                  <path d="M13 23h10"/>
+                  <path d="M15 27h6"/>
+                  <path d="M15 19h6"/>
+                </g>
+                <!-- Water drop highlight -->
+                <ellipse cx="18" cy="13" rx="2" ry="1.2" fill="currentColor" opacity="0.2"/>
+              </svg>
+              </div>
+              <div class="flex flex-col gap-1">
+                <h3 class="text-primary text-lg font-bold leading-tight">Reverse Osmosis systems</h3>
+                <p class="text-[#325867] text-base font-normal leading-normal">High purity water solutions for homes and businesses</p>
+              </div>
+            </article>
+          </div>
+          <div class="flex justify-center mt-8">
+          <a href="/booking.html" class="inline-block bg-[#13aeeb] text-white tracking-wide font-semibold text-lg px-8 py-4 rounded-lg shadow-md hover:bg-background transition-colors duration-300">
+            Book Now
+          </a>
+          </div>
+        </section>
 
-    <!-- Booking CTA -->
-    <section id="booking" class="py-16 bg-primary relative">
-      <!-- Top Wave Divider -->
-      <div class="absolute top-0 left-0 w-full overflow-hidden leading-none rotate-180">
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 100" preserveAspectRatio="none" class="w-full h-24">
-          <path fill="#0B3D91" fill-opacity="0.1" d="M0,50 C200,80 400,20 720,50 C1040,80 1240,20 1440,50 L1440,100 L0,100 Z"></path>
-          <path fill="#0B3D91" fill-opacity="0.2" d="M0,60 C200,90 400,30 720,60 C1040,90 1240,30 1440,60 L1440,100 L0,100 Z"></path>
-        </svg>
-      </div>
+         <!-- Section: Customer Reviews -->
+        <section aria-labelledby="customer-reviews" class="mb-16">
+          <h3 id="customer-reviews" class="text-3xl font-bold text-primary mb-10 text-center tracking-tight">Straight from Our Customers</h3>
+          <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8 mx-3 md:mx-16">
+            <article class="bg-white p-6 rounded-xl shadow-lg hover:shadow-xl transition-shadow duration-300">
+              <header class="flex items-center mb-4">
+                <img alt="Reviewer - Michael Johnson" class="w-12 h-12 rounded-full object-cover mr-4" src="/assets/img/avatar13.jpg"/>
+                <div>
+                  <p class="font-semibold text-slate-800">Michael Johnson</p>
+                  <p class="text-sm text-slate-500">2 months ago</p>
+                </div>
+              </header>
+              <div class="flex items-center mb-3">
+                <span class="material-icons text-yellow-400">star</span>
+                <span class="material-icons text-yellow-400">star</span>
+                <span class="material-icons text-yellow-400">star</span>
+                <span class="material-icons text-yellow-400">star</span>
+                <span class="material-icons text-yellow-400">star</span>
+              </div>
+              <p class="text-slate-600 text-sm mb-4 leading-relaxed">
+                "AquaCheck provided exceptional service and accurate results. Their team was knowledgeable and responsive, addressing all our concerns promptly."
+              </p>
+              <footer class="flex gap-4 text-slate-500">
+                <button class="flex items-center gap-1 text-sm hover:text-[#1993e5] transition-colors">
+                  <span class="material-icons-outlined text-base">thumb_up</span> 12
+                </button>
+                <button class="flex items-center gap-1 text-sm hover:text-red-500 transition-colors">
+                  <span class="material-icons-outlined text-base">thumb_down</span> 2
+                </button>
+              </footer>
+            </article>
+            <article class="bg-white p-6 rounded-xl shadow-lg hover:shadow-xl transition-shadow duration-300">
+              <header class="flex items-center mb-4">
+                <img alt="Reviewer - Jessica Lee" class="w-12 h-12 rounded-full object-cover mr-4" src="/assets/img/avatar3.jpg"/>
+                <div>
+                  <p class="font-semibold text-slate-800">Jessica Lee</p>
+                  <p class="text-sm text-slate-500">3 months ago</p>
+                </div>
+              </header>
+              <div class="flex items-center mb-3">
+                <span class="material-icons text-yellow-400">star</span>
+                <span class="material-icons text-yellow-400">star</span>
+                <span class="material-icons text-yellow-400">star</span>
+                <span class="material-icons text-yellow-400">star</span>
+                <span class="material-icons text-yellow-400">star</span>
+              </div>
+              <p class="text-slate-600 text-sm mb-4 leading-relaxed">
+                "We were impressed with AquaCheck's professionalism and attention to detail. Their comprehensive testing gave us peace of mind about our water quality."
+              </p>
+              <footer class="flex gap-4 text-slate-500">
+                <button class="flex items-center gap-1 text-sm hover:text-[#1993e5] transition-colors">
+                  <span class="material-icons-outlined text-base">thumb_up</span> 8
+                </button>
+                <button class="flex items-center gap-1 text-sm hover:text-red-500 transition-colors">
+                  <span class="material-icons-outlined text-base">thumb_down</span> 1
+                </button>
+              </footer>
+            </article>
+            <article class="bg-white p-6 rounded-xl shadow-lg hover:shadow-xl transition-shadow duration-300">
+              <header class="flex items-center mb-4">
+                <img alt="Reviewer - Robert Davis" class="w-12 h-12 rounded-full object-cover mr-4" src="/assets/img/avatar6.jpg"/>
+                <div>
+                  <p class="font-semibold text-slate-800">Robert Davis</p>
+                  <p class="text-sm text-slate-500">5 months ago</p>
+                </div>
+              </header>
+              <div class="flex items-center mb-3">
+                <span class="material-icons text-yellow-400">star</span>
+                <span class="material-icons text-yellow-400">star</span>
+                <span class="material-icons text-yellow-400">star</span>
+                <span class="material-icons text-yellow-400">star</span>
+                <span class="material-icons text-slate-300">star_border</span>
+              </div>
+              <p class="text-slate-600 text-sm mb-4 leading-relaxed">
+                "AquaCheck's testing was thorough, and their report was easy to understand. While the process took a bit longer than expected, the results were worth the wait."
+              </p>
+              <footer class="flex gap-4 text-slate-500">
+                <button class="flex items-center gap-1 text-sm hover:text-[#1993e5] transition-colors">
+                  <span class="material-icons-outlined text-base">thumb_up</span> 5
+                </button>
+                <button class="flex items-center gap-1 text-sm hover:text-red-500 transition-colors">
+                  <span class="material-icons-outlined text-base">thumb_down</span>
+                </button>
+              </footer>
+            </article>
+          </div>
+        </section>
+        <!-- End Section: Customer Reviews -->
 
-      <div class="container mx-auto px-6 text-center max-w-3xl relative z-10">
-        <h2 class="text-3xl lg:text-4xl font-extrabold text-white mb-4 tracking-wide" id="ctatext">
-          Custom water safety plans
-        </h2>
-        <p class="text-gray-100 text-lg mb-8" id="ctasub">
-          Let's design a solutionn that fits your building's exact needs.
-        </p>
-        <a href="./public/booking.html" class="cta-btn inline-block bg-white text-primary font-semibold px-8 py-4 rounded-full shadow-btn hover:bg-gray-100 transition duration-300 transform hover:shadow-hover hover:scale-95">
-          Speak with us
-        </a>
-      </div>
-    </section>
-  
-    <!-- Footer -->
+        <!-- Section: Why AquaCheck -->
+        <section class="why-aquacheck bg-slate-50 overflow-hidden py-10 px-4">
+          <header class="mb-8 text-center">
+            <h2 class="text-navy text-4xl font-bold leading-tight tracking-tight -mb-6">Why AquaCheck</h2>
+          </header>
+          <div class="mx-3 md:mx-14">
+            <section class="mb-10 text-center">
+              <h3 class="text-primary text-3xl sm:text-4xl font-extrabold tracking-tight mb-4">
+                Comprehensive Water Analysis
+              </h3>
+              <p class="text-[#0c151d] text-base max-w-xl mx-auto">
+                AquaCheck provides detailed analysis of your water, identifying potential contaminants and ensuring it meets safety standards.
+              </p>
+            </section>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-10">
+              <article class="why-card flex flex-col gap-4">
+                <figure
+                  class="w-full aspect-video bg-center bg-no-repeat bg-cover rounded-xl"
+                  style='background-image: url("/assets/img/reliableresults.png");'
+                  aria-label="Accurate Results"
+                  role="img"
+                ></figure>
+                <h4 class="text-[#0c151d] font-medium text-lg">Accurate Results</h4>
+                <p class="text-[#4574a1] text-base">Our state-of-the-art lab delivers precise and reliable water quality data.</p>
+              </article>
+              <article class="why-card flex flex-col gap-4">
+                <figure
+                  class="w-full aspect-video bg-center bg-no-repeat bg-cover rounded-xl"
+                  style='background-image: url("/assets/img/fastTurn.png");'
+                  aria-label="Fast Turnaround"
+                  role="img"
+                ></figure>
+                <h4 class="text-[#0c151d] font-medium text-lg">Fast Turnaround</h4>
+                <p class="text-[#4574a1] text-base">Receive your detailed water analysis report within 2-3 business days.</p>
+              </article>
+              <article class="why-card flex flex-col gap-4">
+                <figure
+                  class="w-full aspect-video bg-center bg-no-repeat bg-cover rounded-xl"
+                  style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuCUkQMZh9Mol29W6rejmKeWmA3j8jVeALo8EQQnHPzPemTg4muo4JZQEHqUPnYCL9sBeKddB5CE_4ORLhhZu97-Pri4ijWjxUlFQXGGl2yhLf6dRGmzgiPRuPLO0RG5VrCZBIn-c1ov9HFgdjEA7rOKijGf56hdRZUKE3HV8kIJlSTwnri10BqpT_VWwzx5yceqBFHxwvq_Kf3Z5J2zDjEVKHZ14pfa58MNYnnef5ZZx9dkjpzcRCWhUJbUTtiRB9tr4wZRo6f7MRY");'
+                  aria-label="Expert Support"
+                  role="img"
+                ></figure>
+                <h4 class="text-[#0c151d] font-medium text-lg">Expert Support</h4>
+                <p class="text-[#4574a1] text-base">Our team of water quality experts is available to answer your questions and provide guidance.</p>
+              </article>
+            </div>
+          </div>
+        </section>
+        <!-- End Section: Why AquaCheck -->
+
+        <!-- CALL TO ACTION SECTION -->
+        <section class="container pb-7" aria-labelledby="cta-heading">
+          <div class="flex flex-col justify-end gap-6 px-4 py-10">
+            <div class="flex flex-col gap-2 text-center">
+              <h2
+                id="cta-heading"
+                class="text-[#0d151c] tracking-light text-[32px] font-bold leading-tight"
+              >
+                Ready to Improve Your Water Systems?
+              </h2>
+            </div>
+            <div class="flex flex-1 justify-center">
+              <div class="flex justify-center">
+                <button
+                  class="flex cursor-pointer items-center justify-center overflow-hidden rounded-full px-5 py-4 bg-primary text-slate-50 text-sm font-bold leading-normal tracking-wide"
+                >
+                  <span class="truncate">Contact us</span>
+                </button>
+              </div>
+            </div>
+          </div>
+        </section>
+      </main>
+      <!-- Footer -->
     <footer class="bg-footer text-gray-300 pt-16 pb-10 text-sm">
       <div class="container mx-auto px-6 grid grid-cols-1 md:grid-cols-4 gap-12">
 
@@ -465,9 +403,7 @@
         &copy; 2025 AquaCheck Ltd. All rights reserved. Company No. 12345678 | VAT GB123456789
       </div>
     </footer>
-    
-  <script type="module" src="/src/main.ts"></script>
-  <script type="module" src="/src/services.ts"></script>
-  <script type="module" src="/src/carousel.ts"></script>
-</body>
+  <script src="/src/main.ts" type="module"></script>
+  <script src="/src/services.ts" type="module"></script>  
+  </body>
 </html>

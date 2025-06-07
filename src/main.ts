@@ -32,13 +32,6 @@ document.addEventListener('DOMContentLoaded', () => {
       delay: 0.5
       });
     }
-    gsap.from(".hero-cta", {
-    opacity: 0,
-    y: 30,
-    duration: 0.8,
-    delay: 2,
-    ease: "power2.out"
-    });
 
     const servicesElement = document.getElementById('services');
     if (servicesElement) {
