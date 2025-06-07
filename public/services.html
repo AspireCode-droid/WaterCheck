@@ -9,18 +9,20 @@
   </head>
   <body class="bg-white text-gray-800">
 
-    <header class="bg-white shadow-md">
+    <header class="header bg-white sticky top-0 z-10 transition-all duration-300">
       <div class="container mx-auto px-6 py-4 flex justify-between items-center">
         <h1 class="text-2xl lg:text-4xl font-bold text-primary py-2">AquaCheck</h1>
     
         <!-- Desktop Nav -->
-        <nav class="hidden md:flex gap-6 text-sm font-medium">
-          <a href="/index.html" class="hover:text-primary">Home</a>
-          <a href="/services.html" class="text-primary">Services</a>
-          <a href="/booking.html" class="hover:text-primary">Booking</a>
-          <a href="/about.html" class="hover:text-primary">About</a>
-          <a href="/resource.html" class="hover:text-primary">Resources</a>
-          <a href="/contact.html" class="hover:text-primary">Contact</a>
+        <nav class="hidden md:flex gap-6 text-sm font-medium" aria-label="Main Navigation">
+          <ul class="flex gap-6">
+            <li><a href="/index.html" class="hover:text-primary">Home</a></li>
+            <li><a href="/services.html" class="text-primary">Services</a></li>
+            <li><a href="/booking.html" class="hover:text-primary">Booking</a></li>
+            <li><a href="/about.html" class="hover:text-primary">About</a></li>
+            <li><a href="/resource.html" class="hover:text-primary">Resources</a></li>
+            <li><a href="/contact.html" class="hover:text-primary">Contact</a></li>
+          </ul>
         </nav>
     
         <!-- Mobile Hamburger -->
@@ -30,10 +32,8 @@
             <path d="M4 6h16M4 12h16M4 18h16" />
           </svg>
         </button>
-      </div>
-    
       <!-- Mobile Nav Menu -->
-      <nav id="mobile-menu" class="md:hidden hidden px-6 pb-4">
+      <nav id="mobile-menu" class="md:hidden hidden px-6 pb-4" aria-label="Mobile Navigation">
         <ul class="flex flex-col gap-4 text-sm font-medium">
           <li><a href="/index.html" class="block hover:text-blue-600">Home</a></li>
           <li><a href="/services.html" class="block hover:text-blue-600">Services</a></li>
@@ -44,7 +44,6 @@
         </ul>
       </nav>
     </header>
-    <!-- Page Hero -->
 
     <!-- Intro Section -->
     <section class="py-24 bg-primary text-center">
@@ -383,7 +382,7 @@
     <!-- Booking CTA -->
     <section id="booking" class="py-16 bg-primary relative">
       <!-- Top Wave Divider -->
-      <div class="absolute z-10 top-0 left-0 w-full overflow-hidden leading-none rotate-180">
+      <div class="absolute top-0 left-0 w-full overflow-hidden leading-none rotate-180">
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 100" preserveAspectRatio="none" class="w-full h-24">
           <path fill="#0B3D91" fill-opacity="0.1" d="M0,50 C200,80 400,20 720,50 C1040,80 1240,20 1440,50 L1440,100 L0,100 Z"></path>
           <path fill="#0B3D91" fill-opacity="0.2" d="M0,60 C200,90 400,30 720,60 C1040,90 1240,30 1440,60 L1440,100 L0,100 Z"></path>

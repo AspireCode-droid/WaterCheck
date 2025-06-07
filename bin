@@ -1,0 +1,27 @@
+Design a clean, modern "Services" webpage section for a water treatment company. Use a responsive grid layout with six visually consistent service cards. Each card should have:
+
+A soft white background, subtle shadow, rounded corners (xl radius), and hover effect that slightly lifts the card with a deeper shadow.
+
+An icon in a circular container with a soft blue background (#0077be1a) and icon color #0077be.
+
+Title: bold, large (text-xl), centered or left-aligned.
+
+Description: small, muted grey (text-gray-700), concise.
+
+CTA link styled in #0077be, medium weight, with hover underline.
+
+Services:
+
+Water Quality Testing – "Thorough lab analysis for bacteria, chemical levels, and contaminants in water systems." – CTA: Book Now
+
+Legionella Risk Assessment – "Certified assessments aligned with UK HSE guidelines. Full reports included." – CTA: Contact Us
+
+Ongoing Compliance Monitoring – "Scheduled inspections, logging, flushing, and documentation services." – CTA: Learn More
+
+Tank Cleaning & Disinfection – "Deep cleaning and sterilisation of water storage tanks to maintain system hygiene." – CTA: Enquire
+
+Water Purification Solutions – "Custom filtration and treatment for clean, safe water in commercial environments." – CTA: Explore Options
+
+Water System Installations – "Design and installation of compliant water systems tailored to your property." – CTA: Get Started
+
+Style: Light, breathable spacing, tailwind utility feel. Use grid columns (1–3 cols depending on screen size). Animate on hover. Match web-ready layout logic.

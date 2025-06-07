@@ -100,5 +100,14 @@ document.addEventListener('DOMContentLoaded', () => {
         start: 'top 80%'
       }
     });
+    //navbar shadow class toglle
+    ScrollTrigger.create({
+      start: 'top -10',
+      end: 99999,
+      toggleClass: {
+        targets: '.nav-header',
+        className: 'scrolled'
+      }
+    });
     console.log('App started');
 });

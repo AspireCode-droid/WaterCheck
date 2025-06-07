@@ -1,248 +1,378 @@
+<!DOCTYPE html>
 <html>
   <head>
-    <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin="" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="description" content="Explore guides, articles, FAQs, and support documentation for AquaCheck water quality solutions." />
+    <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin />
     <link
       rel="stylesheet"
       as="style"
       onload="this.rel='stylesheet'"
-      href="https://fonts.googleapis.com/css2?display=swap&amp;family=Noto+Sans%3Awght%40400%3B500%3B700%3B900&amp;family=Public+Sans%3Awght%40400%3B500%3B700%3B900"
+      href="https://fonts.googleapis.com/css2?display=swap&family=Noto+Sans:wght@400;500;700;900&family=Public+Sans:wght@400;500;700;900"
     />
-
-    <title>Stitch Design</title>
+    <title>AquaCheck Resources</title>
     <link rel="icon" type="image/x-icon" href="data:image/x-icon;base64," />
-
-    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
   </head>
   <body>
-    <div class="relative flex size-full min-h-screen flex-col bg-white group/design-root overflow-x-hidden" style='font-family: "Public Sans", "Noto Sans", sans-serif;'>
-      <div class="layout-container flex h-full grow flex-col">
-        <header class="flex items-center justify-between whitespace-nowrap border-b border-solid border-b-[#f0f3f4] px-10 py-3">
-          <div class="flex items-center gap-4 text-[#111518]">
-            <div class="size-4">
-              <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path
-                  d="M24 45.8096C19.6865 45.8096 15.4698 44.5305 11.8832 42.134C8.29667 39.7376 5.50128 36.3314 3.85056 32.3462C2.19985 28.361 1.76794 23.9758 2.60947 19.7452C3.451 15.5145 5.52816 11.6284 8.57829 8.5783C11.6284 5.52817 15.5145 3.45101 19.7452 2.60948C23.9758 1.76795 28.361 2.19986 32.3462 3.85057C36.3314 5.50129 39.7376 8.29668 42.134 11.8833C44.5305 15.4698 45.8096 19.6865 45.8096 24L24 24L24 45.8096Z"
-                  fill="currentColor"
-                ></path>
-              </svg>
-            </div>
-            <h2 class="text-[#111518] text-lg font-bold leading-tight tracking-[-0.015em]">Aquacheck</h2>
-          </div>
-          <div class="flex flex-1 justify-end gap-8">
-            <div class="flex items-center gap-9">
-              <a class="text-[#111518] text-sm font-medium leading-normal" href="#">Overview</a>
-              <a class="text-[#111518] text-sm font-medium leading-normal" href="#">Features</a>
-              <a class="text-[#111518] text-sm font-medium leading-normal" href="#">Pricing</a>
-              <a class="text-[#111518] text-sm font-medium leading-normal" href="#">Resources</a>
-            </div>
-            <button
-              class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-10 px-4 bg-[#1993e5] text-white text-sm font-bold leading-normal tracking-[0.015em]"
-            >
-              <span class="truncate">Get Started</span>
-            </button>
+    <!-- ================= HEADER / NAVIGATION ================= -->
+    <header class="nav-header bg-white sticky top-0 z-20 transition-all duration-300">
+      <div class="container mx-auto px-6 py-4 flex justify-between items-center">
+        <h1 class="text-2xl lg:text-4xl font-bold text-primary py-2">AquaCheck</h1>
+        <!-- Desktop Nav -->
+        <nav class="hidden md:flex gap-6 text-sm font-medium" aria-label="Main Navigation">
+          <ul class="flex gap-6">
+            <li><a href="/index.html" class="text-primary">Home</a></li>
+            <li><a href="/services.html" class="hover:text-primary">Services</a></li>
+            <li><a href="/booking.html" class="hover:text-primary">Booking</a></li>
+            <li><a href="/about.html" class="hover:text-primary">About</a></li>
+            <li><a href="/resource.html" class="hover:text-primary">Resources</a></li>
+            <li><a href="/contact.html" class="hover:text-primary">Contact</a></li>
+          </ul>
+        </nav>
+        <!-- Mobile Hamburger -->
+        <button id="menu-toggle" class="md:hidden focus:outline-none text-gray-700">
+          <svg class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="2"
+            viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M4 6h16M4 12h16M4 18h16" />
+          </svg>
+        </button>
+        <!-- Mobile Nav Menu -->
+        <nav id="mobile-menu" class="md:hidden hidden px-6 pb-4" aria-label="Mobile Navigation">
+          <ul class="flex flex-col gap-4 text-sm font-medium">
+            <li><a href="/index.html" class="block hover:text-blue-600">Home</a></li>
+            <li><a href="/services.html" class="block hover:text-blue-600">Services</a></li>
+            <li><a href="/booking.html" class="block hover:text-blue-600">Booking</a></li>
+            <li><a href="/about.html" class="block hover:text-blue-600">About</a></li>
+            <li><a href="/resource.html" class="block hover:text-blue-600">Resources</a></li>
+            <li><a href="/contact.html" class="block hover:text-blue-600">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <!-- ================= MAIN CONTENT ================= -->
+    <main class="flex flex-col gap-y-10 bg-neutral">
+      <!-- ========== HERO SECTION ========== -->
+      <section class="w-full">
+        <header
+          class="relative flex min-h-[520px] items-center justify-center bg-cover bg-center bg-no-repeat px-4 py-12 md:rounded-lg"
+          style="background-image: url('/assets/img/resourceHero.png');"
+        >
+          <!-- Overlay for contrast -->
+          <div class="absolute inset-0 bg-gradient-to-b from-black/10 to-black/50"></div>
+
+          <div class="relative z-10 flex flex-col items-center text-center max-w-3xl gap-6 md:gap-8">
+            <!-- Heading -->
+            <h1 class="text-white text-4xl md:text-5xl font-extrabold leading-tight tracking-tight">
+              Resources
+            </h1>
+            <!-- Subtext -->
+            <p class="text-white text-base md:text-lg font-medium leading-relaxed">
+              Explore our comprehensive library of guides, articles, FAQs, and support documentation to help you get the most out of AquaCheck.
+            </p>
+
+            <!-- Search Form -->
+            <form role="search" class="w-full max-w-xl">
+              <div class="flex w-full overflow-hidden rounded-lg shadow-md">
+                <!-- Icon -->
+                <div class="flex items-center justify-center px-4 bg-white border border-r-0 border-gray-200">
+                  <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 text-gray-500" fill="currentColor" viewBox="0 0 256 256">
+                    <path
+                      d="M229.66,218.34l-50.07-50.06a88.11,88.11,0,1,0-11.31,11.31l50.06,50.07a8,8,0,0,0,11.32-11.32ZM40,112a72,72,0,1,1,72,72A72.08,72.08,0,0,1,40,112Z"
+                    ></path>
+                  </svg>
+                </div>
+                <!-- Input -->
+                <input
+                  type="search"
+                  placeholder="Search resources"
+                  aria-label="Search resources"
+                  class="flex-1 px-4 py-3 text-sm md:text-base placeholder-gray-500 text-gray-800 border-t border-b border-gray-200 focus:outline-none focus:ring-2 focus:ring-[#1993e5]"
+                />
+                <!-- Button -->
+                <button
+                  type="submit"
+                  class="px-5 bg-[#1993e5] text-white font-semibold text-sm md:text-base hover:bg-[#1585d2] transition-colors"
+                >
+                  Search
+                </button>
+              </div>
+            </form>
           </div>
         </header>
-        <div class="px-40 flex flex-1 justify-center py-5">
-          <div class="layout-content-container flex flex-col max-w-[960px] flex-1">
-            <div class="@container">
-              <div class="@[480px]:p-4">
-                <div
-                  class="flex min-h-[480px] flex-col gap-6 bg-cover bg-center bg-no-repeat @[480px]:gap-8 @[480px]:rounded-lg items-center justify-center p-4"
-                  style='background-image: linear-gradient(rgba(0, 0, 0, 0.1) 0%, rgba(0, 0, 0, 0.4) 100%), url("https://lh3.googleusercontent.com/aida-public/AB6AXuAMEMUzqydI_oQB7Q2q6mJpYR3p7gST41brRHXK3FfmC9iCj7wto_O6LnrxHLpkkVs1WiebvjaXF47xE1CfZCmkw9O5_wi-am9T8g1rar3Z4gsDtt4gMlERsY8ppqh8Gnhb3pxeWlFgPOuENGyTNvqncKKbkScDpldhIxMr0Q0lUMn71-8-6fSV2cFAD-5KsV__d6b9j6rWowHEcpha76cFaexb7bo_jW7f1dJFfOJCWXo13wvO4C-NP4qSkdyzooAQh5eBpHJ3Us8");'
-                >
-                  <div class="flex flex-col gap-2 text-center">
-                    <h1
-                      class="text-white text-4xl font-black leading-tight tracking-[-0.033em] @[480px]:text-5xl @[480px]:font-black @[480px]:leading-tight @[480px]:tracking-[-0.033em]"
-                    >
-                      Resources
-                    </h1>
-                    <h2 class="text-white text-sm font-normal leading-normal @[480px]:text-base @[480px]:font-normal @[480px]:leading-normal">
-                      Explore our comprehensive library of guides, articles, FAQs, and support documentation to help you get the most out of Aquacheck.
-                    </h2>
-                  </div>
-                  <label class="flex flex-col min-w-40 h-14 w-full max-w-[480px] @[480px]:h-16">
-                    <div class="flex w-full flex-1 items-stretch rounded-lg h-full">
-                      <div
-                        class="text-[#637988] flex border border-[#dce1e5] bg-white items-center justify-center pl-[15px] rounded-l-lg border-r-0"
-                        data-icon="MagnifyingGlass"
-                        data-size="20px"
-                        data-weight="regular"
-                      >
-                        <svg xmlns="http://www.w3.org/2000/svg" width="20px" height="20px" fill="currentColor" viewBox="0 0 256 256">
-                          <path
-                            d="M229.66,218.34l-50.07-50.06a88.11,88.11,0,1,0-11.31,11.31l50.06,50.07a8,8,0,0,0,11.32-11.32ZM40,112a72,72,0,1,1,72,72A72.08,72.08,0,0,1,40,112Z"
-                          ></path>
-                        </svg>
-                      </div>
-                      <input
-                        placeholder="Search resources"
-                        class="form-input flex w-full min-w-0 flex-1 resize-none overflow-hidden rounded-lg text-[#111518] focus:outline-0 focus:ring-0 border border-[#dce1e5] bg-white focus:border-[#dce1e5] h-full placeholder:text-[#637988] px-[15px] rounded-r-none border-r-0 pr-2 rounded-l-none border-l-0 pl-2 text-sm font-normal leading-normal @[480px]:text-base @[480px]:font-normal @[480px]:leading-normal"
-                        value=""
-                      />
-                      <div class="flex items-center justify-center rounded-r-lg border-l-0 border border-[#dce1e5] bg-white pr-[7px]">
-                        <button
-                          class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-10 px-4 @[480px]:h-12 @[480px]:px-5 bg-[#1993e5] text-white text-sm font-bold leading-normal tracking-[0.015em] @[480px]:text-base @[480px]:font-bold @[480px]:leading-normal @[480px]:tracking-[0.015em]"
-                        >
-                          <span class="truncate">Search</span>
-                        </button>
-                      </div>
-                    </div>
-                  </label>
-                </div>
-              </div>
+      </section>
+
+
+      <!-- ========== FEATURED RESOURCES ========== -->
+      <section aria-labelledby="featured-resources" class="mx-auto px-4 py-12 flex flex-col gap-y-10">
+        <!-- Section Heading -->
+        <h2 id="featured-resources" class="text-center text-2xl md:text-4xl font-bold tracking-wide text-primary">
+          Featured Resources
+        </h2>
+        <p class="text-gray-700 text-base md:text-2xl text-center -mt-5">
+            Hand-picked guides and articles to help you get started and solve common challenges with AquaCheck.
+        </p>
+
+        <!-- Resource Cards -->
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-10">
+          <!-- Card 1 -->
+          <article class="group flex flex-col overflow-hidden rounded-xl bg-white shadow-md transition-transform hover:scale-[1.02] hover:shadow-lg">
+            <div
+              class="aspect-video w-full bg-cover bg-center transition-opacity group-hover:opacity-95"
+              style="background-image: url('/assets/img/featured1.png');"
+            ></div>
+            <div class="p-5 flex flex-col gap-3">
+              <h3 class="text-lg md:text-xl font-semibold text-[#111518] group-hover:text-[#1993e5] transition-colors">
+                Quick Start Guide
+              </h3>
+              <p class="text-sm md:text-base text-[#637988]">
+                Get started with AquaCheck in minutes with our easy-to-follow guide.
+              </p>
             </div>
-            <h2 class="text-[#111518] text-[22px] font-bold leading-tight tracking-[-0.015em] px-4 pb-3 pt-5">Featured Resources</h2>
-            <div class="flex overflow-y-auto [-ms-scrollbar-style:none] [scrollbar-width:none] [&amp;::-webkit-scrollbar]:hidden">
-              <div class="flex items-stretch p-4 gap-3">
-                <div class="flex h-full flex-1 flex-col gap-4 rounded-lg min-w-60">
-                  <div
-                    class="w-full bg-center bg-no-repeat aspect-video bg-cover rounded-lg flex flex-col"
-                    style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuDG5vgp2QNcxETKq42QzfmjFToiMEQZbxeJ_PI_UFEcv1ZL8t-GuvoFhOcnmaNPUNF5FdjCVcMhNDyl21zhNqBK9gEaC71jYz1jx9Y4pef6HFazR6RJGJot26SoysTnYuZsD5-LMWLnm9PWekeMZxz6epcdakSsje_yfpglA7BmUtnlkXMAxOvYGtNGJnW0thVw_txB5PaJlzvXk91oj7XLHwbpiW4F6LD8fewEG57YyKgnD4ruKWVo8FafLEC1Fg9LflJLuHEGRW8");'
-                  ></div>
-                  <div>
-                    <p class="text-[#111518] text-base font-medium leading-normal">Quick Start Guide</p>
-                    <p class="text-[#637988] text-sm font-normal leading-normal">Get started with Aquacheck in minutes with our easy-to-follow guide.</p>
-                  </div>
-                </div>
-                <div class="flex h-full flex-1 flex-col gap-4 rounded-lg min-w-60">
-                  <div
-                    class="w-full bg-center bg-no-repeat aspect-video bg-cover rounded-lg flex flex-col"
-                    style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuAsBXm5PFpecd9vvBuXToJD_Cgag8pzE3P5iclU9mjPV3LuT7wQjA6LyDKFBRlyJWndcipQbCAB4llJGUBMIPKZ-nR8teutM3OyPuC3kcHQzPvE6MjA7Qp7tQ0eXzvtBNipFJQTKvJ8h0EDxm8W1J4EVSq8ePNOqiB2RsLSadFB3TfEDsvWtYwqfY7hqeE_d6CldykQdlXFoHaXa6nqeO5Z4-0Zb1K8yfYIb5gHf1gR5khlZ8XFZeUrJzNjqpolErhgtPg5RgY71io");'
-                  ></div>
-                  <div>
-                    <p class="text-[#111518] text-base font-medium leading-normal">Troubleshooting Tips</p>
-                    <p class="text-[#637988] text-sm font-normal leading-normal">Solve common issues quickly with our troubleshooting tips.</p>
-                  </div>
-                </div>
-              </div>
+          </article>
+
+          <!-- Card 2 -->
+          <article class="group flex flex-col overflow-hidden rounded-xl bg-white shadow-md transition-transform hover:scale-[1.02] hover:shadow-lg">
+            <div
+              class="aspect-video w-full bg-cover bg-center transition-opacity group-hover:opacity-95"
+              style="background-image: url('/assets/img/featured2.png');"
+            ></div>
+            <div class="p-5 flex flex-col gap-3">
+              <h3 class="text-lg md:text-xl font-semibold text-[#111518] group-hover:text-[#1993e5] transition-colors">
+                Troubleshooting Tips
+              </h3>
+              <p class="text-sm md:text-base text-[#637988]">
+                Solve common issues quickly with our troubleshooting tips.
+              </p>
             </div>
-            <h2 class="text-[#111518] text-[22px] font-bold leading-tight tracking-[-0.015em] px-4 pb-3 pt-5">Resource Library</h2>
-            <div class="pb-3">
-              <div class="flex border-b border-[#dce1e5] px-4 gap-8">
-                <a class="flex flex-col items-center justify-center border-b-[3px] border-b-[#111518] text-[#111518] gap-1 pb-[7px] pt-2.5" href="#">
-                  <div class="text-[#111518]" data-icon="File" data-size="24px" data-weight="fill">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="24px" height="24px" fill="currentColor" viewBox="0 0 256 256">
-                      <path
-                        d="M213.66,82.34l-56-56A8,8,0,0,0,152,24H56A16,16,0,0,0,40,40V216a16,16,0,0,0,16,16H200a16,16,0,0,0,16-16V88A8,8,0,0,0,213.66,82.34ZM152,88V44l44,44Z"
-                      ></path>
-                    </svg>
-                  </div>
-                  <p class="text-[#111518] text-sm font-bold leading-normal tracking-[0.015em]">Guides</p>
+          </article>
+        </div>
+      </section>
+
+
+      <!-- ========== RESOURCE LIBRARY TABS ========== -->
+      <nav aria-label="Resource Library Tabs" class="w-full border-b border-[#dce1e5] bg-neutral py-6">
+        <ul class="flex justify-center flex-wrap gap-6 px-4 sm:gap-10">
+          <!-- Tab Template -->
+          <li>
+            <a href="#" class="group flex flex-col items-center justify-center gap-1 px-2 pb-2.5 pt-1.5 text-[#111518] focus:outline-none focus-visible:ring-2 focus-visible:ring-primary transition-all">
+              <span class="text-[#111518] group-hover:text-primary" aria-hidden="true">
+                <!-- File Icon -->
+                <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6 transition-colors" fill="currentColor" viewBox="0 0 256 256">
+                  <path d="M213.66,82.34l-56-56A8,8,0,0,0,152,24H56A16,16,0,0,0,40,40V216a16,16,0,0,0,16,16H200a16,16,0,0,0,16-16V88A8,8,0,0,0,213.66,82.34ZM152,88V44l44,44Z"/>
+                </svg>
+              </span>
+              <span class="text-sm font-medium tracking-wide transition-colors group-hover:text-primary">Guides</span>
+              <span class="mt-1 block h-[3px] w-6 bg-[#111518] rounded-full transition-all group-hover:w-8 group-hover:bg-primary"></span>
+            </a>
+          </li>
+
+          <li>
+            <a href="#" class="group flex flex-col items-center justify-center gap-1 px-2 pb-2.5 pt-1.5 text-[#637988] focus:outline-none focus-visible:ring-2 focus-visible:ring-primary transition-all">
+              <span class="text-[#637988] group-hover:text-primary" aria-hidden="true">
+                <!-- Article Icon -->
+                <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6 transition-colors" fill="currentColor" viewBox="0 0 256 256">
+                  <path d="M216,40H40A16,16,0,0,0,24,56V200a16,16,0,0,0,16,16H216a16,16,0,0,0,16-16V56A16,16,0,0,0,216,40Zm0,160H40V56H216V200ZM184,96a8,8,0,0,1-8,8H80a8,8,0,0,1,0-16h96A8,8,0,0,1,184,96Zm0,32a8,8,0,0,1-8,8H80a8,8,0,0,1,0-16h96A8,8,0,0,1,184,128Zm0,32a8,8,0,0,1-8,8H80a8,8,0,0,1,0-16h96A8,8,0,0,1,184,160Z"/>
+                </svg>
+              </span>
+              <span class="text-sm font-medium tracking-wide transition-colors group-hover:text-primary">Articles</span>
+              <span class="mt-1 block h-[3px] w-0 bg-primary rounded-full transition-all group-hover:w-6"></span>
+            </a>
+          </li>
+
+          <li>
+            <a href="#" class="group flex flex-col items-center justify-center gap-1 px-2 pb-2.5 pt-1.5 text-[#637988] focus:outline-none focus-visible:ring-2 focus-visible:ring-primary transition-all">
+              <span class="text-[#637988] group-hover:text-primary" aria-hidden="true">
+                <!-- FAQ Icon -->
+                <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6 transition-colors" fill="currentColor" viewBox="0 0 256 256">
+                  <path d="M140,180a12,12,0,1,1-12-12A12,12,0,0,1,140,180ZM128,72c-22.06,0-40,16.15-40,36v4a8,8,0,0,0,16,0v-4c0-11,10.77-20,24-20s24,9,24,20-10.77,20-24,20a8,8,0,0,0-8,8v8a8,8,0,0,0,16,0v-.72c18.24-3.35,32-17.9,32-35.28C168,88.15,150.06,72,128,72Zm104,56A104,104,0,1,1,128,24,104.11,104.11,0,0,1,232,128Zm-16,0a88,88,0,1,0-88,88A88.1,88.1,0,0,0,216,128Z"/>
+                </svg>
+              </span>
+              <span class="text-sm font-medium tracking-wide transition-colors group-hover:text-primary">FAQs</span>
+              <span class="mt-1 block h-[3px] w-0 bg-primary rounded-full transition-all group-hover:w-6"></span>
+            </a>
+          </li>
+
+          <li>
+            <a href="#" class="group flex flex-col items-center justify-center gap-1 px-2 pb-2.5 pt-1.5 text-[#637988] focus:outline-none focus-visible:ring-2 focus-visible:ring-primary transition-all">
+              <span class="text-[#637988] group-hover:text-primary" aria-hidden="true">
+                <!-- Support Icon -->
+                <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6 transition-colors" fill="currentColor" viewBox="0 0 256 256">
+                  <path d="M128,24A104,104,0,1,0,232,128,104.11,104.11,0,0,0,128,24Zm39.1,131.79a47.84,47.84,0,0,0,0-55.58l28.5-28.49a87.83,87.83,0,0,1,0,112.56ZM96,128a32,32,0,1,1,32,32A32,32,0,0,1,96,128Zm88.28-67.6L155.79,88.9a47.84,47.84,0,0,0-55.58,0L71.72,60.4a87.83,87.83,0,0,1,112.56,0ZM60.4,71.72l28.5,28.49a47.84,47.84,0,0,0,0,55.58L60.4,184.28a87.83,87.83,0,0,1,0-112.56ZM71.72,195.6l28.49-28.5a47.84,47.84,0,0,0,55.58,0l28.49,28.5a87.83,87.83,0,0,1-112.56,0Z"/>
+                </svg>
+              </span>
+              <span class="text-sm font-medium tracking-wide transition-colors group-hover:text-primary">Support</span>
+              <span class="mt-1 block h-[3px] w-0 bg-primary rounded-full transition-all group-hover:w-6"></span>
+            </a>
+          </li>
+        </ul>
+      </nav>
+
+      <!-- ========== RESOURCE LIBRARY LIST ========== -->
+      <section aria-labelledby="resource-library" class="bg-neutral md:px-4 mx-5 md:mx-10">
+        <h2 id="resource-library" class="text-primary text-2xl md:text-4xl font-bold leading-tight tracking-wide mb-10 text-center">
+          Resource Library
+        </h2>
+
+        <ul class="grid gap-6 sm:grid-cols-1 md:grid-cols-2 xl:grid-cols-3">
+          <!-- Card 1 -->
+          <li>
+            <article class="group bg-white rounded-2xl overflow-hidden shadow hover:shadow-lg transition-shadow duration-300 flex flex-col h-full">
+              <div class="relative aspect-video bg-cover bg-center" style='background-image: url("/assets/img/userManual.png");'>
+                <div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent rounded-t-2xl transition-opacity"></div>
+              </div>
+              <div class="p-5 flex flex-col gap-4 flex-1 justify-between">
+                <div>
+                  <h3 class="text-[#111518] text-xl font-bold">Aquacheck User Manual</h3>
+                  <p class="text-[#637988] text-base">Learn about all the features and functionalities of Aquacheck.</p>
+                </div>
+                <a href="#" class="inline-flex items-center gap-2 bg-[#f0f3f4] text-[#111518] text-sm font-medium px-4 py-2 rounded-lg w-fit hover:bg-[#e5eaec] transition-colors">
+                  View Guide
+                  <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"/>
+                  </svg>
                 </a>
-                <a class="flex flex-col items-center justify-center border-b-[3px] border-b-transparent text-[#637988] gap-1 pb-[7px] pt-2.5" href="#">
-                  <div class="text-[#637988]" data-icon="Article" data-size="24px" data-weight="regular">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="24px" height="24px" fill="currentColor" viewBox="0 0 256 256">
-                      <path
-                        d="M216,40H40A16,16,0,0,0,24,56V200a16,16,0,0,0,16,16H216a16,16,0,0,0,16-16V56A16,16,0,0,0,216,40Zm0,160H40V56H216V200ZM184,96a8,8,0,0,1-8,8H80a8,8,0,0,1,0-16h96A8,8,0,0,1,184,96Zm0,32a8,8,0,0,1-8,8H80a8,8,0,0,1,0-16h96A8,8,0,0,1,184,128Zm0,32a8,8,0,0,1-8,8H80a8,8,0,0,1,0-16h96A8,8,0,0,1,184,160Z"
-                      ></path>
-                    </svg>
-                  </div>
-                  <p class="text-[#637988] text-sm font-bold leading-normal tracking-[0.015em]">Articles</p>
-                </a>
-                <a class="flex flex-col items-center justify-center border-b-[3px] border-b-transparent text-[#637988] gap-1 pb-[7px] pt-2.5" href="#">
-                  <div class="text-[#637988]" data-icon="Question" data-size="24px" data-weight="regular">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="24px" height="24px" fill="currentColor" viewBox="0 0 256 256">
-                      <path
-                        d="M140,180a12,12,0,1,1-12-12A12,12,0,0,1,140,180ZM128,72c-22.06,0-40,16.15-40,36v4a8,8,0,0,0,16,0v-4c0-11,10.77-20,24-20s24,9,24,20-10.77,20-24,20a8,8,0,0,0-8,8v8a8,8,0,0,0,16,0v-.72c18.24-3.35,32-17.9,32-35.28C168,88.15,150.06,72,128,72Zm104,56A104,104,0,1,1,128,24,104.11,104.11,0,0,1,232,128Zm-16,0a88,88,0,1,0-88,88A88.1,88.1,0,0,0,216,128Z"
-                      ></path>
-                    </svg>
-                  </div>
-                  <p class="text-[#637988] text-sm font-bold leading-normal tracking-[0.015em]">FAQs</p>
-                </a>
-                <a class="flex flex-col items-center justify-center border-b-[3px] border-b-transparent text-[#637988] gap-1 pb-[7px] pt-2.5" href="#">
-                  <div class="text-[#637988]" data-icon="Lifebuoy" data-size="24px" data-weight="regular">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="24px" height="24px" fill="currentColor" viewBox="0 0 256 256">
-                      <path
-                        d="M128,24A104,104,0,1,0,232,128,104.11,104.11,0,0,0,128,24Zm39.1,131.79a47.84,47.84,0,0,0,0-55.58l28.5-28.49a87.83,87.83,0,0,1,0,112.56ZM96,128a32,32,0,1,1,32,32A32,32,0,0,1,96,128Zm88.28-67.6L155.79,88.9a47.84,47.84,0,0,0-55.58,0L71.72,60.4a87.83,87.83,0,0,1,112.56,0ZM60.4,71.72l28.5,28.49a47.84,47.84,0,0,0,0,55.58L60.4,184.28a87.83,87.83,0,0,1,0-112.56ZM71.72,195.6l28.49-28.5a47.84,47.84,0,0,0,55.58,0l28.49,28.5a87.83,87.83,0,0,1-112.56,0Z"
-                      ></path>
-                    </svg>
-                  </div>
-                  <p class="text-[#637988] text-sm font-bold leading-normal tracking-[0.015em]">Support</p>
+              </div>
+            </article>
+          </li>
+
+          <!-- Card 2 -->
+          <li>
+            <article class="group bg-white rounded-2xl overflow-hidden shadow hover:shadow-lg transition-shadow duration-300 flex flex-col h-full">
+              <div class="relative aspect-video bg-cover bg-center" style='background-image: url("/assets/img/testingTech.png");'>
+                <div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent rounded-t-2xl transition-opacity"></div>
+              </div>
+              <div class="p-5 flex flex-col gap-4 flex-1 justify-between">
+                <div>
+                  <h3 class="text-[#111518] text-xl font-bold">Advanced Testing Techniques</h3>
+                  <p class="text-[#637988] text-base">Explore advanced methods for accurate water quality analysis.</p>
+                </div>
+                <a href="#" class="inline-flex items-center gap-2 bg-[#f0f3f4] text-[#111518] text-sm font-medium px-4 py-2 rounded-lg w-fit hover:bg-[#e5eaec] transition-colors">
+                  View Guide
+                  <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"/>
+                  </svg>
                 </a>
               </div>
-            </div>
-            <div class="p-4">
-              <div class="flex items-stretch justify-between gap-4 rounded-lg">
-                <div class="flex flex-[2_2_0px] flex-col gap-4">
-                  <div class="flex flex-col gap-1">
-                    <p class="text-[#111518] text-base font-bold leading-tight">Aquacheck User Manual</p>
-                    <p class="text-[#637988] text-sm font-normal leading-normal">Learn about all the features and functionalities of Aquacheck.</p>
-                  </div>
-                  <button
-                    class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-8 px-4 flex-row-reverse bg-[#f0f3f4] text-[#111518] text-sm font-medium leading-normal w-fit"
-                  >
-                    <span class="truncate">View Guide</span>
-                  </button>
-                </div>
-                <div
-                  class="w-full bg-center bg-no-repeat aspect-video bg-cover rounded-lg flex-1"
-                  style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuDg8iJdEH3S78-_7gReaKrbXEkvF0TtXLzp4yOXOC3wwdh4ftuammhfOXv28uZ4PUaGbpx3GcpJ9IJOQWN0kbJmGk5N7MZC4Lx2AYyjM1Xm03HaQtEwNyr-QF58FQaK1SaucbwXfqYtkdQLAOt8Ba7MX4XcU8dhxhpy_CW8jIqYYutaMwlyvou-X3cxv3ZJsrfq-L6qu37v3p9fVIx745KI1Go3FuPhNDkhtxRyhsPVCcNsnVIQ_mD0BjdGIOmpZFhWR34WSWaZNEY");'
-                ></div>
+            </article>
+          </li>
+
+          <!-- Card 3 -->
+          <li>
+            <article class="group bg-white rounded-2xl overflow-hidden shadow hover:shadow-lg transition-shadow duration-300 flex flex-col h-full">
+              <div class="relative aspect-video bg-cover bg-center" style='background-image: url("/assets/img/dataInt.png");'>
+                <div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent rounded-t-2xl transition-opacity"></div>
               </div>
-            </div>
-            <div class="p-4">
-              <div class="flex items-stretch justify-between gap-4 rounded-lg">
-                <div class="flex flex-[2_2_0px] flex-col gap-4">
-                  <div class="flex flex-col gap-1">
-                    <p class="text-[#111518] text-base font-bold leading-tight">Advanced Testing Techniques</p>
-                    <p class="text-[#637988] text-sm font-normal leading-normal">Explore advanced methods for accurate water quality analysis.</p>
-                  </div>
-                  <button
-                    class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-8 px-4 flex-row-reverse bg-[#f0f3f4] text-[#111518] text-sm font-medium leading-normal w-fit"
-                  >
-                    <span class="truncate">View Guide</span>
-                  </button>
+              <div class="p-5 flex flex-col gap-4 flex-1 justify-between">
+                <div>
+                  <h3 class="text-[#111518] text-xl font-bold">Data Interpretation Guide</h3>
+                  <p class="text-[#637988] text-base">Understand and interpret your water quality data effectively.</p>
                 </div>
-                <div
-                  class="w-full bg-center bg-no-repeat aspect-video bg-cover rounded-lg flex-1"
-                  style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuBucBWB51SyQdHj2ZPQv0tgyO6lhxM5lHK-gd3eNJ3tlzqeuiCq2gv6Cb6mY9X3xYy1ikfuQfYdtmAtqhXp_lLwH45D0IqdkJ0ikY1xaZ_euYZvB9-c9qf1sHl2AU9bNceZx9aP-lrH6AG302k9tU08G885757rKItt9Yc4Ncu-0dEautI_d766ayM4H8cXT65IFoaWaxVWOkYBBxitxoYbakm9sfv2rItnvcj9Ybh-J0RHfeLvF3-DeWqIP9K2nozYeHb01lLCESQ");'
-                ></div>
+                <a href="#" class="inline-flex items-center gap-2 bg-[#f0f3f4] text-[#111518] text-sm font-medium px-4 py-2 rounded-lg w-fit hover:bg-[#e5eaec] transition-colors">
+                  View Guide
+                  <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"/>
+                  </svg>
+                </a>
               </div>
-            </div>
-            <div class="p-4">
-              <div class="flex items-stretch justify-between gap-4 rounded-lg">
-                <div class="flex flex-[2_2_0px] flex-col gap-4">
-                  <div class="flex flex-col gap-1">
-                    <p class="text-[#111518] text-base font-bold leading-tight">Data Interpretation Guide</p>
-                    <p class="text-[#637988] text-sm font-normal leading-normal">Understand and interpret your water quality data effectively.</p>
-                  </div>
-                  <button
-                    class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-8 px-4 flex-row-reverse bg-[#f0f3f4] text-[#111518] text-sm font-medium leading-normal w-fit"
-                  >
-                    <span class="truncate">View Guide</span>
-                  </button>
-                </div>
-                <div
-                  class="w-full bg-center bg-no-repeat aspect-video bg-cover rounded-lg flex-1"
-                  style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuANhheNDIceLt3AFlNuy6z4CHsV2TzOMxJ--xTSs7_UDoI6pRlQJBh2nwWo4csl9hhre8MRXyAhWo4P0Nuk3Flm_EyLn7_21CLP7FNnb96n41oryOE1fqL0ryWz9QsHSuD2vAPUwAZZJCcouAabRW2XZF0ZHDIhBmu7EokqPSzXRW2J6x7vgQsEHczvhj0f2D02aOydsiZ1e0CySd6QjSTKiEaRXsDIMPvilCmEzwgN5H28Mxbk6qFkkZsP6J5IBISOrXBwCAUVqew");'
-                ></div>
-              </div>
-            </div>
-            <h2 class="text-[#111518] text-[22px] font-bold leading-tight tracking-[-0.015em] px-4 pb-3 pt-5">Contact Support</h2>
-            <p class="text-[#111518] text-base font-normal leading-normal pb-3 pt-1 px-4 text-center">
-              If you can't find what you're looking for, our support team is here to help.
-            </p>
-            <div class="flex px-4 py-3 justify-center">
-              <button
-                class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-10 px-4 bg-[#1993e5] text-white text-sm font-bold leading-normal tracking-[0.015em]"
+            </article>
+          </li>
+        </ul>
+      </section>
+      <!-- ========== END RESOURCE LIBRARY LIST ========== -->
+
+
+        <!-- ========== CALL TO ACTION SECTION ========== -->
+        <section class="@container pt-16 pb-10" aria-labelledby="cta-heading">
+          <div class="flex flex-col justify-end gap-6 px-4 py-10">
+            <div class="flex flex-col gap-2 text-center">
+              <h2
+                id="cta-heading"
+                class="text-[#0d151c] tracking-light text-[32px] font-bold leading-tight"
               >
-                <span class="truncate">Contact Support</span>
-              </button>
+                Ready to Improve Your Water Systems?
+              </h2>
             </div>
+            <div class="flex flex-1 justify-center">
+              <div class="flex justify-center">
+                <button
+                  class="flex cursor-pointer items-center justify-center overflow-hidden rounded-full h-10 px-4 @[480px]:h-12 @[480px]:px-5 bg-primary text-slate-50 text-sm font-bold leading-normal tracking-[0.015em] @[480px]:text-base @[480px]:font-bold @[480px]:leading-normal @[480px]:tracking-[0.015em] grow"
+                >
+                  <span class="truncate">Contact us</span>
+                </button>
+              </div>
+            </div>
+          </div>
+        </section>
+
+    <!-- Footer -->
+    <footer class="bg-footer text-gray-300 pt-16 pb-10 text-sm">
+      <div class="container mx-auto px-6 grid grid-cols-1 md:grid-cols-4 gap-12">
+
+        <!-- Company Summary -->
+        <div>
+          <h4 class="text-lg font-semibold text-white mb-4">AquaCheck Ltd.</h4>
+          <p class="text-gray-400 leading-relaxed">
+            UK specialists in water safety and compliance. We deliver certified testing, Legionella risk assessment, and regulatory support tailored for facilities nationwide.
+          </p>
+        </div>
+
+        <!-- Quick Links -->
+        <div>
+          <h4 class="text-lg font-semibold text-white mb-4">Quick Links</h4>
+          <ul class="space-y-2 text-gray-400">
+            <li><a href="/" class="hover:text-white transition">Home</a></li>
+            <li><a href="/services" class="hover:text-white transition">Services</a></li>
+            <li><a href="/about" class="hover:text-white transition">About Us</a></li>
+            <li><a href="/contact" class="hover:text-white transition">Contact</a></li>
+            <li><a href="/careers" class="hover:text-white transition">Careers</a></li>
+          </ul>
+        </div>
+
+        <!-- Legal -->
+        <div>
+          <h4 class="text-lg font-semibold text-white mb-4">Legal</h4>
+          <ul class="space-y-2 text-gray-400">
+            <li><a href="/privacy-policy" class="hover:text-white transition">Privacy Policy</a></li>
+            <li><a href="/terms-of-service" class="hover:text-white transition">Terms of Service</a></li>
+            <li><a href="/cookie-policy" class="hover:text-white transition">Cookie Policy</a></li>
+            <li><a href="/accessibility" class="hover:text-white transition">Accessibility Statement</a></li>
+          </ul>
+        </div>
+
+        <!-- Contact Info -->
+        <div>
+          <h4 class="text-lg font-semibold text-white mb-4">Contact</h4>
+          <ul class="space-y-2 text-gray-400">
+            <li><span class="text-white">Email:</span> <a href="mailto:info@aquacheck.co.uk" class="hover:text-white transition">info@aquacheck.co.uk</a></li>
+            <li><span class="text-white">Phone:</span> <a href="tel:+441234567890" class="hover:text-white transition">+44 1234 567 890</a></li>
+            <li><span class="text-white">Address:</span> 123 Aqua Street, London, UK</li>
+          </ul>
+
+          <!-- Optional Social Icons -->
+          <div class="flex space-x-4 mt-4">
+            <a href="#" aria-label="LinkedIn" class="text-gray-400 hover:text-white transition">
+              <!-- LinkedIn Icon SVG -->
+              <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+                <path d="M4.98 3.5C4.98 4.88 3.86 6 2.5 6S0 4.88 0 3.5 1.12 1 2.5 1 4.98 2.12 4.98 3.5zM0 8h5v16H0V8zm7.5 0h4.7v2.2h.1c.7-1.3 2.4-2.7 4.9-2.7 5.2 0 6.2 3.4 6.2 7.7V24h-5v-7.6c0-1.8 0-4.2-2.5-4.2s-2.9 2-2.9 4v7.8h-5V8z"/>
+              </svg>
+            </a>
+            <!-- Add other platforms similarly -->
           </div>
         </div>
-        <footer class="flex justify-center">
-          <div class="flex max-w-[960px] flex-1 flex-col">
-            <footer class="flex flex-col gap-6 px-5 py-10 text-center @container">
-              <div class="flex flex-wrap items-center justify-center gap-6 @[480px]:flex-row @[480px]:justify-around">
-                <a class="text-[#637988] text-base font-normal leading-normal min-w-40" href="#">Privacy Policy</a>
-                <a class="text-[#637988] text-base font-normal leading-normal min-w-40" href="#">Terms of Service</a>
-              </div>
-              <p class="text-[#637988] text-base font-normal leading-normal">© 2023 Aquacheck. All rights reserved.</p>
-            </footer>
-          </div>
-        </footer>
+
       </div>
-    </div>
+
+      <!-- Bottom Disclaimer -->
+      <div class="mt-12 border-t border-gray-800 pt-6 text-center text-xs text-gray-500">
+        &copy; 2025 AquaCheck Ltd. All rights reserved. Company No. 12345678 | VAT GB123456789
+      </div>
+    </footer>
+
+      </div>
+    </main>
+    <script type="module" src="/src/main.ts"></script>
   </body>
 </html>

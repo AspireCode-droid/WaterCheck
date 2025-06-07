@@ -1,208 +1,197 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
     <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Book a Water Test | AquaCheck</title>
-    <link href="/src/style.css" rel="stylesheet" />
+        <meta charset="utf-8"/>
+        <link crossorigin="" href="https://fonts.gstatic.com/" rel="preconnect"/>
+        <link as="style" href="https://fonts.googleapis.com/css2?display=swap&amp;family=Noto+Sans%3Awght%40400%3B500%3B700%3B900&amp;family=Space+Grotesk%3Awght%40400%3B500%3B700" onload="this.rel='stylesheet'" rel="stylesheet"/>
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined" rel="stylesheet"/>
+        <title>AquaTest Booking</title>
+        <link href="data:image/x-icon;base64," rel="icon" type="image/x-icon"/>
+        <meta name="viewport" content="width=device-width" initial-scale="1">
+        <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+        <style>
+            .material-icons-outlined {
+                font-size: inherit;
+                vertical-align: middle;
+            }
+        </style>
     </head>
-    <body class="bg-ice font-sans leading-relaxed text-gray-800">
-
-        <header class="bg-white shadow-md">
+    <body class="bg-slate-100">
+        <header class="nav-header bg-white sticky top-0 z-20 transition-all duration-300">
             <div class="container mx-auto px-6 py-4 flex justify-between items-center">
-              <h1 class="text-2xl lg:text-4xl py-2 font-bold text-primary">AquaCheck</h1>
-          
-              <!-- Desktop Nav -->
-              <nav class="hidden md:flex gap-6 text-sm font-medium">
-                <a href="/index.html" class="hover:text-blue-600">Home</a>
-                <a href="/services.html" class="hover:text-blue-600">Services</a>
-                <a href="/booking.html" class="hover:text-blue-600">Booking</a>
-                <a href="/about.html" class="hover:text-blue-600">About</a>
-                <a href="/resource.html" class="hover:text-blue-600">Resources</a>
-                <a href="/contact.html" class="hover:text-blue-600">Contact</a>
-              </nav>
-          
-              <!-- Mobile Hamburger -->
-              <button id="menu-toggle" class="md:hidden focus:outline-none text-gray-700">
-                <svg class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="2"
-                  viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round">
-                  <path d="M4 6h16M4 12h16M4 18h16" />
-                </svg>
-              </button>
-            </div>
-          
-            <!-- Mobile Nav Menu -->
-            <nav id="mobile-menu" class="md:hidden hidden px-6 pb-4">
-              <ul class="flex flex-col gap-4 text-sm font-medium">
-                <li><a href="/index.html" class="block hover:text-blue-600">Home</a></li>
-                <li><a href="/services.html" class="block hover:text-blue-600">Services</a></li>
-                <li><a href="/booking.html" class="block hover:text-blue-600">Booking</a></li>
-                <li><a href="/about.html" class="block hover:text-blue-600">About</a></li>
-                <li><a href="/resource.html" class="block hover:text-blue-600">Resources</a></li>
-                <li><a href="/contact.html" class="block hover:text-blue-600">Contact</a></li>
-              </ul>
-            </nav>
-        </header>
-
-        <!-- Booking Section -->
-        <main class="bg-ice py-24">
-            <div class="container mx-auto px-6 max-w-lg">
-            <h2 class="text-4xl font-bold mb-8 text-primary text-center">Book a Water Test</h2>
-            <p class="text-center mb-12 text-gray-600">
-                Schedule your water testing or legionella control inspection with AquaCheck. Certified and trusted experts to protect your facility.
-            </p>
-
-            <form id="bookingForm" class="space-y-6" novalidate>
-                <div>
-                <label for="name" class="block mb-2 font-semibold">Full Name</label>
-                <input
-                    id="name"
-                    name="name"
-                    type="text"
-                    placeholder="John Doe"
-                    required
-                    class="w-full px-4 py-3 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
-                />
-                <p class="mt-1 text-red-600 text-sm hidden" id="nameError">Please enter your full name.</p>
-                </div>
-
-                <div>
-                <label for="email" class="block mb-2 font-semibold">Email Address</label>
-                <input
-                    id="email"
-                    name="email"
-                    type="email"
-                    placeholder="john@example.com"
-                    required
-                    class="w-full px-4 py-3 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
-                />
-                <p class="mt-1 text-red-600 text-sm hidden" id="emailError">Please enter a valid email address.</p>
-                </div>
-
-                <div>
-                <label for="phone" class="block mb-2 font-semibold">Phone Number</label>
-                <input
-                    id="phone"
-                    name="phone"
-                    type="tel"
-                    placeholder="+1234567890"
-                    pattern="^\+?[0-9\s\-]{7,15}$"
-                    required
-                    class="w-full px-4 py-3 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
-                />
-                <p class="mt-1 text-red-600 text-sm hidden" id="phoneError">Please enter a valid phone number.</p>
-                </div>
-
-                <div>
-                <label for="address" class="block mb-2 font-semibold">Facility Address</label>
-                <input
-                    id="address"
-                    name="address"
-                    type="text"
-                    placeholder="123 Water St, City, Country"
-                    required
-                    class="w-full px-4 py-3 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
-                />
-                <p class="mt-1 text-red-600 text-sm hidden" id="addressError">Please enter the facility address.</p>
-                </div>
-
-                <div>
-                <label for="datetime" class="block mb-2 font-semibold">Preferred Date & Time</label>
-                <input
-                    id="datetime"
-                    name="datetime"
-                    type="datetime-local"
-                    required
-                    class="w-full px-4 py-3 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
-                />
-                <p class="mt-1 text-red-600 text-sm hidden" id="datetimeError">Please select a preferred date and time.</p>
-                </div>
-
-                <div>
-                <label for="service" class="block mb-2 font-semibold">Select Service</label>
-                <select
-                    id="service"
-                    name="service"
-                    required
-                    class="w-full px-4 py-3 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
-                >
-                    <option value="" disabled selected>Choose a service</option>
-                    <option value="water-testing">Water Testing</option>
-                    <option value="legionella-control">Legionella Control</option>
-                    <option value="inspection">Certified Inspection</option>
-                </select>
-                <p class="mt-1 text-red-600 text-sm hidden" id="serviceError">Please select a service.</p>
-                </div>
-
-                <button
-                type="submit"
-                class="w-full bg-primary text-white py-3 rounded-lg font-semibold hover:bg-background transition duration-300"
-                >
-                Submit Booking
+                <h1 class="text-2xl lg:text-4xl font-bold text-primary py-2">AquaCheck</h1>
+            
+                <!-- Desktop Nav -->
+                <nav class="hidden md:flex gap-6 text-sm font-medium" aria-label="Main Navigation">
+                    <ul class="flex gap-6">
+                    <li><a href="/index.html" class="hover:text-primary">Home</a></li>
+                    <li><a href="/services.html" class="text-primary">Services</a></li>
+                    <li><a href="/booking.html" class="text-primary">Booking</a></li>
+                    <li><a href="/about.html" class="hover:text-primary">About</a></li>
+                    <li><a href="/resource.html" class="hover:text-primary">Resources</a></li>
+                    <li><a href="/contact.html" class="hover:text-primary">Contact</a></li>
+                    </ul>
+                </nav>
+            
+                <!-- Mobile Hamburger -->
+                <button id="menu-toggle" class="md:hidden focus:outline-none text-gray-700">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="2"
+                    viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M4 6h16M4 12h16M4 18h16" />
+                    </svg>
                 </button>
-            </form>
-
-            <!-- Confirmation Message -->
-            <div
-                id="confirmation"
-                class="hidden mt-8 bg-green-100 border border-green-400 text-green-700 px-4 py-3 rounded relative"
-                role="alert"
-            >
-                <strong class="font-bold">Success!</strong>
-                <span class="block sm:inline"> Your booking request has been received. We will contact you shortly.</span>
+                <!-- Mobile Nav Menu -->
+                <nav id="mobile-menu" class="md:hidden hidden px-6 pb-4" aria-label="Mobile Navigation">
+                    <ul class="flex flex-col gap-4 text-sm font-medium">
+                        <li><a href="/index.html" class="block hover:text-blue-600">Home</a></li>
+                        <li><a href="/services.html" class="block hover:text-blue-600">Services</a></li>
+                        <li><a href="/booking.html" class="block hover:text-blue-600">Booking</a></li>
+                        <li><a href="/about.html" class="block hover:text-blue-600">About</a></li>
+                        <li><a href="/resource.html" class="block hover:text-blue-600">Resources</a></li>
+                        <li><a href="/contact.html" class="block hover:text-blue-600">Contact</a></li>
+                    </ul>
+                </nav>
             </div>
-            </div>
-        </main>
-
-        <footer class="bg-gray-900 text-gray-200 py-12">
-            <div class="container mx-auto px-6 grid grid-cols-1 md:grid-cols-4 gap-10 text-sm">
-        
-            <!-- Company Info -->
-            <div>
-                <h4 class="text-lg font-bold text-white mb-4">AquaCheck Ltd.</h4>
-                <p>Experts in Water Testing & Legionella Control across the UK. Ensuring safety, compliance, and peace of mind.</p>
-            </div>
-        
-            <!-- Quick Links -->
-            <div>
-                <h4 class="text-lg font-bold text-white mb-4">Quick Links</h4>
-                <ul class="space-y-2">
-                <li><a href="#services" class="hover:text-white">Services</a></li>
-                <li><a href="#about" class="hover:text-white">About Us</a></li>
-                <li><a href="#booking" class="hover:text-white">Book a Test</a></li>
-                <li><a href="#contact" class="hover:text-white">Contact</a></li>
-                </ul>
-            </div>
-        
-            <!-- Contact Info -->
-            <div>
-                <h4 class="text-lg font-bold text-white mb-4">Contact</h4>
-                <ul class="space-y-2">
-                <li>Email: <a href="mailto:info@aquacheck.co.uk" class="hover:text-white">info@aquacheck.co.uk</a></li>
-                <li>Phone: <a href="tel:+441234567890" class="hover:text-white">+44 1234 567890</a></li>
-                <li>Address: 123 Aqua Street, London, UK</li>
-                </ul>
-            </div>
-        
-            <!-- Legal & Social -->
-            <div>
-                <h4 class="text-lg font-bold text-white mb-4">Legal</h4>
-                <ul class="space-y-2">
-                <li><a href="#" class="hover:text-white">Privacy Policy</a></li>
-                <li><a href="#" class="hover:text-white">Terms of Service</a></li>
-                </ul>
-                <div class="mt-4 flex space-x-4">
-                <a href="#" aria-label="LinkedIn" class="hover:text-white">🔗</a>
-                <a href="#" aria-label="Twitter" class="hover:text-white">🐦</a>
-                <a href="#" aria-label="Facebook" class="hover:text-white">📘</a>
+        </header>
+            <main class="flex flex-1 justify-center px-4 sm:px-6 lg:px-8">
+                <div class="layout-content-container flex flex-col w-full max-w-3xl">
+                    <div class="bg-white shadow-xl rounded-b-xl overflow-hidden">
+                        <div class="p-6 sm:p-8">
+                            <h2 class="text-primary tracking-tight text-3xl sm:text-4xl font-bold leading-tight mb-8 text-center">Schedule Your Water Quality Test</h2>
+                            <section class="mb-8">
+                                <h3 class="text-slate-800 text-xl font-semibold leading-tight tracking-[-0.015em] mb-4">Select Service Type</h3>
+                                <div class="grid grid-cols-1 sm:grid-cols-3 gap-4">
+                                    <label class="flex flex-col items-center gap-3 rounded-xl border border-solid border-slate-300 p-4 hover:border-[#47a9ea] transition-all cursor-pointer has-[:checked]:bg-[#e0f2fe] has-[:checked]:border-[#47a9ea] has-[:checked]:ring-2 has-[:checked]:ring-[#47a9ea]">
+                                        <input checked="" class="h-5 w-5 border-2 border-slate-400 bg-transparent text-transparent checked:border-[#47a9ea] checked:bg-[image:--radio-dot-svg] focus:outline-none focus:ring-0 focus:ring-offset-0 checked:focus:border-[#47a9ea]" name="service_type" type="radio" value="basic"/>
+                                        <div class="text-center">
+                                            <p class="text-slate-800 text-base font-medium leading-normal">Basic Test</p>
+                                            <p class="text-slate-600 text-xs font-normal leading-normal mt-1">Essential parameters for basic safety check.</p>
+                                        </div>
+                                    </label>
+                                    <label class="flex flex-col items-center gap-3 rounded-xl border border-solid border-slate-300 p-4 hover:border-[#47a9ea] transition-all cursor-pointer has-[:checked]:bg-[#e0f2fe] has-[:checked]:border-[#47a9ea] has-[:checked]:ring-2 has-[:checked]:ring-[#47a9ea]">
+                                        <input class="h-5 w-5 border-2 border-slate-400 bg-transparent text-transparent checked:border-[#47a9ea] checked:bg-[image:--radio-dot-svg] focus:outline-none focus:ring-0 focus:ring-offset-0 checked:focus:border-[#47a9ea]" name="service_type" type="radio" value="standard"/>
+                                        <div class="text-center">
+                                            <p class="text-slate-800 text-base font-medium leading-normal">Standard Test</p>
+                                            <p class="text-slate-600 text-xs font-normal leading-normal mt-1">Includes additional parameters for a more detailed analysis.</p>
+                                        </div>
+                                    </label>
+                                    <label class="flex flex-col items-center gap-3 rounded-xl border border-solid border-slate-300 p-4 hover:border-[#47a9ea] transition-all cursor-pointer has-[:checked]:bg-[#e0f2fe] has-[:checked]:border-[#47a9ea] has-[:checked]:ring-2 has-[:checked]:ring-[#47a9ea]">
+                                        <input class="h-5 w-5 border-2 border-slate-400 bg-transparent text-transparent checked:border-[#47a9ea] checked:bg-[image:--radio-dot-svg] focus:outline-none focus:ring-0 focus:ring-offset-0 checked:focus:border-[#47a9ea]" name="service_type" type="radio" value="comprehensive"/>
+                                        <div class="text-center">
+                                            <p class="text-slate-800 text-base font-medium leading-normal">Comprehensive Test</p>
+                                            <p class="text-slate-600 text-xs font-normal leading-normal mt-1">Complete analysis covering all major parameters.</p>
+                                        </div>
+                                    </label>
+                                </div>
+                            </section>
+                            <section class="mb-8">
+                                <h3 class="text-slate-800 text-xl font-semibold leading-tight tracking-[-0.015em] mb-4">Choose Date and Time</h3>
+                                <div class="grid grid-cols-1 md:grid-cols-2 gap-6 items-start">
+                                    <div class="border border-slate-300 rounded-xl p-4">
+                                        <div class="flex items-center justify-between mb-3">
+                                            <button class="text-slate-600 hover:text-[#47a9ea] p-2 rounded-full transition-colors">
+                                                <span class="material-icons-outlined text-xl">chevron_left</span>
+                                            </button>
+                                            <p class="text-slate-800 text-base font-bold leading-tight">July 2024</p>
+                                            <button class="text-slate-600 hover:text-[#47a9ea] p-2 rounded-full transition-colors">
+                                                <span class="material-icons-outlined text-xl">chevron_right</span>
+                                            </button>
+                                        </div>
+                                        <div class="grid grid-cols-7 gap-1 text-center">
+                                            <p class="text-slate-600 text-xs font-bold leading-normal tracking-[0.015em] py-2">S</p>
+                                            <p class="text-slate-600 text-xs font-bold leading-normal tracking-[0.015em] py-2">M</p>
+                                            <p class="text-slate-600 text-xs font-bold leading-normal tracking-[0.015em] py-2">T</p>
+                                            <p class="text-slate-600 text-xs font-bold leading-normal tracking-[0.015em] py-2">W</p>
+                                            <p class="text-slate-600 text-xs font-bold leading-normal tracking-[0.015em] py-2">T</p>
+                                            <p class="text-slate-600 text-xs font-bold leading-normal tracking-[0.015em] py-2">F</p>
+                                            <p class="text-slate-600 text-xs font-bold leading-normal tracking-[0.015em] py-2">S</p>
+                                            <button class="h-10 w-full text-slate-500 text-sm font-medium leading-normal col-start-4 hover:bg-slate-100 rounded-full transition-colors disabled:opacity-50" disabled="">1</button>
+                                            <button class="h-10 w-full text-slate-500 text-sm font-medium leading-normal hover:bg-slate-100 rounded-full transition-colors disabled:opacity-50" disabled="">2</button>
+                                            <button class="h-10 w-full text-slate-500 text-sm font-medium leading-normal hover:bg-slate-100 rounded-full transition-colors disabled:opacity-50" disabled="">3</button>
+                                            <button class="h-10 w-full text-slate-500 text-sm font-medium leading-normal hover:bg-slate-100 rounded-full transition-colors disabled:opacity-50" disabled="">4</button>
+                                            <button class="h-10 w-full text-white bg-[#47a9ea] text-sm font-bold leading-normal rounded-full">5</button>
+                                            <button class="h-10 w-full text-slate-700 text-sm font-medium leading-normal hover:bg-slate-100 rounded-full transition-colors">6</button>
+                                            <button class="h-10 w-full text-slate-700 text-sm font-medium leading-normal hover:bg-slate-100 rounded-full transition-colors">7</button>
+                                            <button class="h-10 w-full text-slate-700 text-sm font-medium leading-normal hover:bg-slate-100 rounded-full transition-colors">8</button>
+                                            <button class="h-10 w-full text-slate-700 text-sm font-medium leading-normal hover:bg-slate-100 rounded-full transition-colors">9</button>
+                                            <button class="h-10 w-full text-slate-700 text-sm font-medium leading-normal hover:bg-slate-100 rounded-full transition-colors">10</button>
+                                            <button class="h-10 w-full text-slate-700 text-sm font-medium leading-normal hover:bg-slate-100 rounded-full transition-colors">11</button>
+                                            <button class="h-10 w-full text-slate-700 text-sm font-medium leading-normal hover:bg-slate-100 rounded-full transition-colors">12</button>
+                                            <button class="h-10 w-full text-slate-700 text-sm font-medium leading-normal hover:bg-slate-100 rounded-full transition-colors">13</button>
+                                            <button class="h-10 w-full text-slate-700 text-sm font-medium leading-normal hover:bg-slate-100 rounded-full transition-colors">14</button>
+                                            <button class="h-10 w-full text-slate-700 text-sm font-medium leading-normal hover:bg-slate-100 rounded-full transition-colors">15</button>
+                                        </div>
+                                    </div>
+                                    <div class="space-y-4">
+                                        <label class="block">
+                                            <span class="text-slate-700 text-sm font-medium mb-1 block">Select Time</span>
+                                            <select class="form-select block w-full min-w-0 flex-1 resize-none overflow-hidden rounded-lg text-slate-900 focus:outline-0 focus:ring-2 focus:ring-[#47a9ea] border border-slate-300 bg-white focus:border-[#47a9ea] h-12 placeholder:text-slate-500 px-3 text-sm font-normal leading-normal appearance-none bg-[image:--select-button-svg] bg-no-repeat bg-[center_right_0.75rem]">
+                                                <option value="">Select Time</option>
+                                                <option value="09:00">09:00 AM</option>
+                                                <option value="10:00">10:00 AM</option>
+                                                <option value="11:00">11:00 AM</option>
+                                                <option value="14:00">02:00 PM</option>
+                                                <option value="15:00">03:00 PM</option>
+                                            </select>
+                                        </label>
+                                        <div class="bg-slate-50 p-4 rounded-lg border border-slate-200">
+                                            <p class="text-sm text-slate-700"><span class="font-medium text-slate-800">Selected:</span> Friday, July 5, 2024 at 10:00 AM</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </section>
+                            <section class="mb-8">
+                                <h3 class="text-slate-800 text-xl font-semibold leading-tight tracking-[-0.015em] mb-4">Contact Information</h3>
+                                <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
+                                    <div>
+                                        <label class="block text-sm font-medium text-slate-700 mb-1" for="fullName">Full Name</label>
+                                        <input class="form-input block w-full min-w-0 flex-1 resize-none overflow-hidden rounded-lg text-slate-900 focus:outline-0 focus:ring-2 focus:ring-[#47a9ea] border border-slate-300 bg-white focus:border-[#47a9ea] h-12 placeholder:text-slate-400 px-3 text-sm font-normal leading-normal" id="fullName" placeholder="e.g. John Doe" type="text" value=""/>
+                                    </div>
+                                    <div>
+                                        <label class="block text-sm font-medium text-slate-700 mb-1" for="email">Email Address</label>
+                                        <input class="form-input block w-full min-w-0 flex-1 resize-none overflow-hidden rounded-lg text-slate-900 focus:outline-0 focus:ring-2 focus:ring-[#47a9ea] border border-slate-300 bg-white focus:border-[#47a9ea] h-12 placeholder:text-slate-400 px-3 text-sm font-normal leading-normal" id="email" placeholder="e.g. john.doe@example.com" type="email" value=""/>
+                                    </div>
+                                    <div class="sm:col-span-2">
+                                        <label class="block text-sm font-medium text-slate-700 mb-1" for="phoneNumber">Phone Number</label>
+                                        <input class="form-input block w-full min-w-0 flex-1 resize-none overflow-hidden rounded-lg text-slate-900 focus:outline-0 focus:ring-2 focus:ring-[#47a9ea] border border-slate-300 bg-white focus:border-[#47a9ea] h-12 placeholder:text-slate-400 px-3 text-sm font-normal leading-normal" id="phoneNumber" placeholder="e.g. (555) 123-4567" type="tel" value=""/>
+                                    </div>
+                                </div>
+                            </section>
+                            <section class="mb-8 bg-slate-50 p-6 rounded-xl border border-slate-200">
+                                <h3 class="text-slate-800 text-xl font-semibold leading-tight tracking-[-0.015em] mb-4">Booking Summary</h3>
+                                <div class="space-y-3">
+                                    <div class="flex justify-between items-center">
+                                        <p class="text-slate-600 text-sm font-normal leading-normal">Service Type:</p>
+                                        <p class="text-slate-800 text-sm font-medium leading-normal text-right">Standard Test</p>
+                                    </div>
+                                    <div class="flex justify-between items-center">
+                                        <p class="text-slate-600 text-sm font-normal leading-normal">Date:</p>
+                                        <p class="text-slate-800 text-sm font-medium leading-normal text-right">July 15, 2024</p>
+                                    </div>
+                                    <div class="flex justify-between items-center">
+                                        <p class="text-slate-600 text-sm font-normal leading-normal">Time:</p>
+                                        <p class="text-slate-800 text-sm font-medium leading-normal text-right">10:00 AM</p>
+                                    </div>
+                                    <hr class="border-slate-200 my-3"/>
+                                    <div class="flex justify-between items-center">
+                                        <p class="text-slate-700 text-base font-bold leading-normal">Total Cost:</p>
+                                        <p class="text-[#47a9ea] text-xl font-bold leading-normal text-right">$150</p>
+                                    </div>
+                                </div>
+                            </section>
+                            <div class="flex justify-center">
+                                <button class="flex w-full sm:w-auto min-w-[200px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-12 px-6 bg-[#47a9ea] text-white text-base font-bold leading-normal tracking-[0.015em] hover:bg-[#3a8bc7] transition-colors focus:outline-none focus:ring-2 focus:ring-[#47a9ea] focus:ring-offset-2">
+                                    <span class="truncate">Confirm Booking</span>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <footer class="text-center py-8 text-slate-500 text-sm">
+                        © 2024 AquaTest. All rights reserved.
+                    </footer>
                 </div>
-            </div>
-            </div>
-        
-            <div class="text-center text-xs text-gray-500 mt-10 border-t border-gray-700 pt-6">
-            &copy; 2025 AquaCheck Ltd. All rights reserved.
-            </div>
-        </footer>
-    <script type="module" src="/src/main.ts"></script>
+            </main>
+    <script type="module" src="/src/main.ts"></script>        
+    <script type="module" src=""></script>
     </body>
 </html>
