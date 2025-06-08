@@ -1,8 +1,9 @@
 import './style.css';
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
+import { SplitText } from "gsap/SplitText";
 
-gsap.registerPlugin(ScrollTrigger);
+gsap.registerPlugin(ScrollTrigger, SplitText);
  
 document.addEventListener('DOMContentLoaded', () => {
     const toggle = document.getElementById('menu-toggle');
@@ -19,80 +20,32 @@ document.addEventListener('DOMContentLoaded', () => {
       ease: "power3.out"
     });
 
-    const subtitle = document.getElementById('heroSubtitle');
-    if (subtitle && subtitle.textContent) {
-      const words = subtitle.textContent.trim().split(' ');
-      subtitle.innerHTML = words.map(word => `<span class="subtitle-word">${word}</span>`).join(" ");
-      gsap.from('.subtitle-word', {
-      opacity: 0,
-      y: 20,
-      duration: 0.6,
-      ease: "power2.out",
-      stagger: 0.1,
-      delay: 0.5
+    const sectionHeaders = document.querySelectorAll('.section-header');
+    sectionHeaders.forEach(header => {
+      gsap.from(header, {
+        opacity: 0,
+        y: 30,
+        duration: 1,
+        ease: "power2.out",
+        scrollTrigger: {
+          trigger: header,
+          start: "top 80%",
+          toggleActions: "play none none none"
+        }
       });
-    }
-
-    const servicesElement = document.getElementById('services');
-    if (servicesElement) {
-      gsap.from(".service-card", {
-      opacity: 0,
-      y: 40,
-      duration: 2.5,
-      delay:0.5,
-      ease: "power2.out",
-      stagger: 0.5,
-      scrollTrigger:{
-      trigger: "#services",
-      start: "top 80%"
-      }
-      })
-    }
-    const ctatext = document.getElementById('ctatext');
-    if (ctatext && ctatext.textContent) {
-      const words = ctatext.textContent.trim().split(' ');
-      ctatext.innerHTML = words.map(word => `<span class="cta-word">${word}</span>`).join(" ");
-      gsap.from('.cta-word', {
-      opacity: 0,
-      y: 20,
-      duration: 0.4,
-      ease: "power2.out",
-      scrollTrigger:{
-      trigger: "#booking",
-      // The animation starts when the top of the #services element reaches 80% of the viewport height.
-      start: "top 80%"
-      },
-      stagger: 0.1,
-      delay: 0.5
-      });
-    }
-    const ctasub = document.getElementById('ctasub');
-    if (ctasub && ctasub.textContent) {
-      const words = ctasub.textContent.trim().split(' ');
-      ctasub.innerHTML = words.map(word => `<span class="cta-sub">${word}</span>`).join(" ");
-      gsap.from('.cta-sub', {
-      opacity: 0,
-      y: 20,
-      duration: 0.4,
-      ease: "power2.out",
-       scrollTrigger:{
-      trigger: "#booking",
-      start: "top 80%"
-      },
-      stagger: 0.1,
-      delay: 1.7
-      });
-    }
-    gsap.from('.cta-btn', {
-      opacity: 0, 
-      duration: 2, 
-      delay: 2,    
-      ease: "power2.in",
-      scrollTrigger:{
-        trigger: '#booking',
-        start: 'top 80%'
-      }
     });
+    const ctaText = document.querySelector("#cta-heading");
+    if (ctaText) {
+      const splitSub = new SplitText(ctaText, { type: "chars,words" });
+      gsap.from(splitSub.chars, {
+        opacity: 0,
+        y: 10,
+        duration: 0.6,
+        ease: "power2.out",
+        stagger: 0.04,
+        delay: 1
+      });
+    }
     //navbar shadow class toglle
     ScrollTrigger.create({
       start: 'top -10',
@@ -102,5 +55,26 @@ document.addEventListener('DOMContentLoaded', () => {
         className: 'scrolled'
       }
     });
+
+    const container = document.querySelector('section[aria-labelledby="testimonials-heading"] > div.flex.overflow-x-auto');
+    const thumb = document.getElementById('scroll-thumb');
+    if (!container || !thumb) return;
+
+    function updateThumb() {
+      if (!container || !thumb) return;
+      const scrollWidth = container.scrollWidth;
+      const clientWidth = container.clientWidth;
+      const scrollLeft = container.scrollLeft;
+      const ratio = clientWidth / scrollWidth;
+      const thumbWidth = Math.max(ratio * 100, 10); // min 10%
+      const left = (scrollLeft / (scrollWidth - clientWidth)) * (100 - thumbWidth);
+      thumb.style.width = thumbWidth + '%';
+      thumb.style.left = left + '%';
+      thumb.style.position = 'absolute';
+    }
+    updateThumb();
+    container.addEventListener('scroll', updateThumb);
+    window.addEventListener('resize', updateThumb);
+
     console.log('App started');
 });

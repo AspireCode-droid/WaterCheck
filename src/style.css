@@ -1,7 +1,7 @@
 @import "tailwindcss";
 @theme {
   --color-primary: #0077be;
-  --color-secondary: #6EC1E4;
+  --color-secondary: #157acb;
   --color-accent: #E94E4E;
   --color-neutral: #f3f7fd;
   --color-dark: #333A45;
@@ -24,3 +24,11 @@
   padding-bottom: 0.2rem !important;
 }
 /** About Cta **/
+/* Hide native scrollbar cross-browser */
+.hide-scrollbar {
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+.hide-scrollbar::-webkit-scrollbar {
+  display: none;
+}

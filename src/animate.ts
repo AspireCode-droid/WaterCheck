@@ -20,20 +20,7 @@ document.addEventListener("DOMContentLoaded", ()=> {
         }
       }); 
     }
-    gsap.utils.toArray<HTMLElement>(".service-card").forEach((card) => {
-    gsap.from(card, {
-        y: 50,
-        opacity: 0,
-        duration: 0.8,
-        ease: "power3.out",
-        scrollTrigger: {
-        trigger: card,
-        start: "top 85%",
-        toggleActions: "play none none none",
-        },
-    });
-    });
-    
+
     const heroText = document.querySelector(".hero-animate");
     if (heroText) {
       const split = new SplitText(heroText, { type: "chars,words" });
@@ -103,8 +90,50 @@ document.addEventListener("DOMContentLoaded", ()=> {
       },
       });
     });
-
-    
+    const serviceCards = document.querySelectorAll<HTMLElement>(".service-card");
+    serviceCards.forEach((card, idx) => {
+      gsap.from(card, {
+        opacity: 0,
+        y: 40,
+        duration: 0.8,
+        ease: "power3.out",
+        delay: 0.3 * idx,
+        scrollTrigger: {
+          trigger: card,
+          start: "top 85%",
+          toggleActions: "play none none none",
+        },
+      });
+    });
+    const benefitCards = document.querySelectorAll<HTMLElement>(".benefit-card");
+    benefitCards.forEach((card, idx) => {
+      gsap.from(card, {
+      opacity: 0,
+      y: 40,
+      duration: 0.8,
+      ease: "power3.out",
+      delay: 0.3 * idx,
+      scrollTrigger: {
+        trigger: card,
+        start: "top 85%",
+        toggleActions: "play none none none",
+      },
+      });
+    });
+    // Animate testimonial cards as they enter the viewport
+    document.querySelectorAll<HTMLElement>('.testimonial-card').forEach((tcard, index) => {
+      gsap.from(tcard, {
+        scrollTrigger: {
+          trigger: tcard,
+          start: 'top 85%',
+          toggleActions: 'play none none none',
+        },
+        opacity: 0,
+        y: 50,
+        duration: 0.6,
+        delay: index * 0.1,
+      });
+    });
 });
 
 
